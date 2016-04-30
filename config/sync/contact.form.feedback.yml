@@ -1,0 +1,12 @@
+uuid: 675dc353-3e72-4b1a-9a03-fce3d9323ca7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - info@drupal-camp.gr
+reply: ''
+weight: 0

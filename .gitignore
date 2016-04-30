@@ -37,3 +37,7 @@ sites/simpletest
 
 # Ignore SimpleTest multi-site environment.
 # simpletest
+
+#custom
+protection.php
+sites/default/drushrc.php
