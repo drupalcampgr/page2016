@@ -1,6 +1,8 @@
 <?php
 
-include 'protection.php';
+if (file_exists('protection.php')) {
+  include 'protection.php';
+}
 
 /**
  * @file
