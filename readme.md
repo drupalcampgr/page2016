@@ -14,7 +14,7 @@ git clone https://github.com/drupalcampgr/page2016.git
 
 ```sh
 cd page2016
-cp sites/default/default/settings.php sites/default/settings.php
+cp sites/default/default.settings.php sites/default/settings.php
 nano settings.php
 ```
 ```sh
