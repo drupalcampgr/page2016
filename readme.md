@@ -32,6 +32,7 @@ $config_directories['sync'] = 'config/sync';
 ```
 
 **Note: I also initialized hash_salt as it was also required for me**
+
 If you get any errors just add a random string in settings.php
 
 ```sh
