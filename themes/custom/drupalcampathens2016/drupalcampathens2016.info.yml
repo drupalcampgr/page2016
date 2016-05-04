@@ -1,0 +1,15 @@
+name: DrupalCampAthens2016
+type: theme
+description: Drupal8 Theme for DrupalCamp Athens 2016
+package: Other
+core: 8.x
+libraries:
+  - drupalcampathens2016/global-styling
+
+base theme: classy
+#Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer
