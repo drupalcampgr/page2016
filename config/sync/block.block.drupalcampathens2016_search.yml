@@ -1,0 +1,22 @@
+uuid: 00150fcb-71bc-49a6-afbf-ccd5eaee990e
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - drupalcampathens2016
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: drupalcampathens2016_search
+theme: drupalcampathens2016
+region: '-1'
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

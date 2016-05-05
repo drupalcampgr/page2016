@@ -1,0 +1,22 @@
+uuid: 60d17327-92ca-40c5-926a-19c6a9ae7cce
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - drupalcampathens2016
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: drupalcampathens2016_help
+theme: drupalcampathens2016
+region: '-1'
+weight: 5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

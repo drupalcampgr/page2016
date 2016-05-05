@@ -1,0 +1,22 @@
+uuid: 6e443103-aba8-4239-8d5c-111a9a670d66
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalcampathens2016
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: drupalcampathens2016_breadcrumbs
+theme: drupalcampathens2016
+region: '-1'
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 67b04313-839d-4bdc-ad4c-cc6c31ff985b
+langcode: en
+status: false
+dependencies:
+  theme:
+    - drupalcampathens2016
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: drupalcampathens2016_local_actions
+theme: drupalcampathens2016
+region: '-1'
+weight: 6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
