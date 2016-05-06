@@ -2,10 +2,19 @@
 
 .header {
   background-color: #17337C;
-  height:100vh;
 
   &__branding {
     width: 398px;
     margin: 0 auto;
+    text-align: center;
+  }
+
+  &__date{
+    background: url("../images/header__date.png") no-repeat;
+    background-position: center;
+    height: 342px;
+    background-size: 680px;
+    margin: 0 auto;
+    width: 800px;
   }
 }

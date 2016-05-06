@@ -109,10 +109,19 @@ html {
 /* line 3, ../sass/components/_header.scss */
 .header {
   background-color: #17337C;
-  height: 100vh;
 }
-/* line 7, ../sass/components/_header.scss */
+/* line 6, ../sass/components/_header.scss */
 .header__branding {
   width: 398px;
   margin: 0 auto;
+  text-align: center;
+}
+/* line 12, ../sass/components/_header.scss */
+.header__date {
+  background: url("../images/header__date.png") no-repeat;
+  background-position: center;
+  height: 342px;
+  background-size: 680px;
+  margin: 0 auto;
+  width: 800px;
 }
