@@ -110,3 +110,8 @@ html {
 .header {
   background-color: #17337C;
 }
+/* line 6, ../sass/components/_header.scss */
+.header__branding {
+  width: 256px;
+  margin: 0 auto;
+}

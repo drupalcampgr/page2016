@@ -2,4 +2,9 @@
 
 .header {
   background-color: #17337C;
+
+  &__branding {
+    width: 256px;
+    margin: 0 auto;
+  }
 }
