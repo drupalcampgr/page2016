@@ -60,10 +60,18 @@ function drupalcampathens2016_theme_suggestions_node_alter(array &$suggestions, 
 }
 
 /**
- * Implements hook_preprocess_HOOK() for Block document templates.
+ * Implements hook_preprocess_HOOK() for block templates.
  */
-function drupalcampathens2016_preprocess_block(array &$variables) {
+function drupalcampathens2016_preprocess_block(&$variables) {
+  switch ($variables['base_plugin_id']) {
+    case 'system_branding_block':
+      $variables['site_logo'] = '';
+      if ($variables['content']['site_logo']['#access'] && $variables['content']['site_logo']['#uri']) {
+        $variables['site_logo'] = str_replace('.svg', '.png', $variables['content']['site_logo']['#uri']);
+      }
+      break;
 
+  }
 }
 
 /**

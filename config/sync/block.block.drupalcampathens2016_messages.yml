@@ -1,0 +1,22 @@
+uuid: b6b8c54e-ddb2-45f4-9847-e4c79988923a
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalcampathens2016
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: drupalcampathens2016_messages
+theme: drupalcampathens2016
+region: '-1'
+weight: -2
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
