@@ -109,8 +109,9 @@ html {
 /* line 3, ../sass/components/_header.scss */
 .header {
   background-color: #17337C;
+  height: 100vh;
 }
-/* line 6, ../sass/components/_header.scss */
+/* line 7, ../sass/components/_header.scss */
 .header__branding {
   width: 256px;
   margin: 0 auto;
