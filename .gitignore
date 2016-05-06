@@ -42,3 +42,4 @@ sites/simpletest
 protection.php
 sites/default/drushrc.php
 .idea/
+themes/custom/drupalcampathens2016/.sass-cache/

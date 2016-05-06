@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700);
+
+
+$libre: 'Libre Baskerville', serif;
+
+$heading-font: $libre;
+$body-font: $libre;
+
+$base-line-height: 24;
+$base-font-size: 17;
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading-font;
+  margin: ($base-line-height)*1px 0;
+}
+
+h1 {
+	font-weight: 700;
+}
+
+p {
+	margin: ($base-line-height)*1px 0;
+}
+
+body {
+  color: #17337b;
+  font-size: ($base-font-size/16)*100%;
+  line-height: $base-line-height/$base-font-size*1em;
+  font-family: $body-font;
+}
