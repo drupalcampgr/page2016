@@ -105,6 +105,19 @@ html {
 }
 
 /* Layouts */
+/* line 18, ../sass/layouts/_layout-center.scss */
+.layout-center {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+/* line 29, ../sass/layouts/_layout-center.scss */
+.layout-center--shared-grid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* Components */
 /* line 3, ../sass/components/_misc.scss */
 .site-logo img {
@@ -129,4 +142,11 @@ html {
   background-size: 680px;
   margin: 0 auto;
   width: 800px;
+}
+
+/* line 3, ../sass/components/_social.scss */
+.social {
+  background-color: #17337C;
+  color: #FFF;
+  padding: 70px 0;
 }

@@ -1,0 +1,33 @@
+// Layout Center
+//
+// All other layouts should be nested inside this centered layout to ensure that
+// content does not get too wide on very large screens.
+//
+// Applying a `.layout-*` class to the same HTML element as `.layout-center`
+// would cause that element's grid to mis-align with the rest of the grid on the
+// page, but this component will automatically detect the other `.layout-*`
+// class and automatically use the `.layout-center--shared-grid` variant
+// instead.
+//
+// .layout-center--shared-grid - If `.layout-center` is applied to the same div
+//   as another .layout-* class, then this variant should be used to prevent the
+//   shared layout's grid from mis-aligning. Note: Each time a new .layout-*
+//   component is created, this component will need to be modified.
+//
+
+.layout-center,
+%layout-center {
+  padding-left: $gutter/2;
+  padding-right: $gutter/2;
+  margin: 0 auto;
+
+  max-width: 960px + $gutter;
+
+  // Since .layout-center has overridden the negative margin on another
+  // .layout-* container, the grid children will be misaligned due to
+  // .layout-center's gutter padding. So we remove it.
+  &--shared-grid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
