@@ -45,57 +45,60 @@
 #}
 <div class="layout-container">
 
-  <header class="header" role="banner">
-    {{ page.header }}
-  </header>
-
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
-
-  {{ page.breadcrumb }}
-
-  {{ page.highlighted }}
-
-  {{ page.help }}
-
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
-
-  </main>
-
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-      <div class="social">
-        <div class="social__inner layout-center">
-          <h2 class="title social__title">
-            Stay Tuned!
-          </h2>
-          <div class="social__text">
-            If you 're interested, follow us on social media and stay tuned about the event!
-          </div>
-          <div class="social__text social__text--small">
-            Or contact at <a href="mailto:info@drupal-camp.gr">info@drupal-camp.gr</a>
-          </div>
+    <header class="header" role="banner">
+        {{ page.header }}
+        <div class="header__date">
+            &nbsp;
         </div>
-      </div>
-    </footer>
-  {% endif %}
+    </header>
+
+    {{ page.primary_menu }}
+    {{ page.secondary_menu }}
+
+    {{ page.breadcrumb }}
+
+    {{ page.highlighted }}
+
+    {{ page.help }}
+
+    <main role="main">
+        <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+        <div class="layout-content">
+            {{ page.content }}
+        </div>{# /.layout-content #}
+
+        {% if page.sidebar_first %}
+            <aside class="layout-sidebar-first" role="complementary">
+                {{ page.sidebar_first }}
+            </aside>
+        {% endif %}
+
+        {% if page.sidebar_second %}
+            <aside class="layout-sidebar-second" role="complementary">
+                {{ page.sidebar_second }}
+            </aside>
+        {% endif %}
+
+    </main>
+
+    {% if page.footer %}
+        <footer role="contentinfo">
+            {{ page.footer }}
+            <div class="social">
+                <div class="social__inner layout-center">
+                    <h2 class="title social__title">
+                        Stay Tuned!
+                    </h2>
+                    <div class="social__text">
+                        If you 're interested, follow us on social media and stay tuned about the event!
+                    </div>
+                    <div class="social__text social__text--small">
+                        Or contact at <a href="mailto:info@drupal-camp.gr">info@drupal-camp.gr</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    {% endif %}
 
 </div>{# /.layout-container #}

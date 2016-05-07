@@ -1,0 +1,27 @@
+
+// Variables Set
+$particles-bg:								#002449;
+$dark-blue:									#0050a2;
+$lighter-blue:								#005fac;
+$logo-width:								250px;
+
+// Variables
+$page-width:									800px;
+
+// Layout
+$gutter: 40px;
+
+// Colors
+$blue-light: #88d3db;
+$blue: #0275bb;
+$blue-dark: #17337b;
+
+// * { Box-sizing: Border-box } FTW, http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
