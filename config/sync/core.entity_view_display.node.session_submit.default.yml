@@ -1,0 +1,42 @@
+uuid: 0f43bb40-cfb6-44de-952f-78006b86dce7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.session_submit.body
+    - field.field.node.session_submit.field_speaker
+    - field.field.node.session_submit.field_track
+    - node.type.session_submit
+  module:
+    - options
+    - text
+    - user
+id: node.session_submit.default
+targetEntityType: node
+bundle: session_submit
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_speaker:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_track:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

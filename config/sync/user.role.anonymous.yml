@@ -14,3 +14,5 @@ permissions:
   - 'access comments'
   - 'access site-wide contact form'
   - 'search content'
+  - 'create session_submit content'
+  - 'edit own session_submit content'
