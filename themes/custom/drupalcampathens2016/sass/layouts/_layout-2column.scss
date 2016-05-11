@@ -1,0 +1,41 @@
+// Layout 2column
+//
+// A simple two column 50-50 layout that only works for 2 elements (due to
+// display table, that was necessary for the border.).
+//
+
+.layout-2column,
+%layout-2column {
+  margin-left: -($gutter/2);
+  margin-right: -($gutter/2);
+  display: table;
+
+  &__col-x {
+    display: table-cell;
+    width: 50%;
+    padding-left: $gutter/2;
+    padding-right: $gutter/2;
+
+    //strange top padding fixed by vertical-align:middle;
+    vertical-align: middle;
+
+    &:not(.plain):nth-child(2n+1) {
+      //border-right: 1px solid $blue-light;
+    }
+  }
+}
+// Mobile styles ( visible on all media up to 767px which is usually tablets on portrait orientation )
+@media (max-width: 767px) {
+  .layout-2column,
+  %layout-2column {
+    display: block;
+    &__col-x {
+      display: block;
+      width: 100%;
+      &:not(.plain):nth-child(2n+1) {
+        border-right: none;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
