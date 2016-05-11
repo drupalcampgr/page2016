@@ -1,10 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+$open: 'Open Sans', sans-serif;
 
-$libre: 'Libre Baskerville', serif;
-
-$heading-font: $libre;
-$body-font: $libre;
+$heading-font: $open;
+$body-font: $open;
 
 $base-line-height: 24;
 $base-font-size: 17;

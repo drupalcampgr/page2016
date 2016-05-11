@@ -12,8 +12,10 @@
 
 /* Layouts */
 @import "layouts/layout-center.scss";
+@import "layouts/layout-2column.scss";
 
 /* Components */
 @import "components/misc.scss";
 @import "components/header.scss";
 @import "components/social.scss";
+@import "components/newsletter.scss";
