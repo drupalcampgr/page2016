@@ -151,9 +151,15 @@ html {
   }
 }
 /* Components */
-/* line 3, ../sass/components/_misc.scss */
+/* line 2, ../sass/components/_misc.scss */
 .site-logo img {
   width: 300px;
+}
+
+/* line 7, ../sass/components/_misc.scss */
+.title {
+  font-size: 2em;
+  font-weight: bold;
 }
 
 /* line 3, ../sass/components/_header.scss */
@@ -196,35 +202,33 @@ html {
 /* line 19, ../sass/components/_social.scss */
 .social__title {
   margin-bottom: 35px;
-  font-size: 2em;
-  font-weight: bold;
 }
-/* line 25, ../sass/components/_social.scss */
+/* line 23, ../sass/components/_social.scss */
 .social__text {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 35px;
   margin-top: 35px;
 }
-/* line 31, ../sass/components/_social.scss */
+/* line 29, ../sass/components/_social.scss */
 .social__text--small {
   font-size: 15px;
 }
-/* line 36, ../sass/components/_social.scss */
+/* line 34, ../sass/components/_social.scss */
 .social__copy {
   font-size: 11px;
   letter-spacing: -0.1px;
   padding: 30px 0;
 }
-/* line 42, ../sass/components/_social.scss */
+/* line 40, ../sass/components/_social.scss */
 .social__copyright {
   text-align: left;
 }
-/* line 45, ../sass/components/_social.scss */
+/* line 43, ../sass/components/_social.scss */
 .social__copyright img {
   vertical-align: middle;
 }
-/* line 50, ../sass/components/_social.scss */
+/* line 48, ../sass/components/_social.scss */
 .social__devs {
   text-align: right;
 }
@@ -232,7 +236,7 @@ html {
 /* line 3, ../sass/components/_newsletter.scss */
 .newsletter {
   background-color: #0275bb;
-  background-image: url("../assets/images/newsletter-bg.png");
+  background-image: url("../images/newsletter-bg.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   color: #fff;
