@@ -11,7 +11,7 @@ _core:
 id: drupalcampathens2016_content
 theme: drupalcampathens2016
 region: content
-weight: -6
+weight: -4
 provider: null
 plugin: system_main_block
 settings:
