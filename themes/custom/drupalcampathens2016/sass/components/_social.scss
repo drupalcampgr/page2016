@@ -3,7 +3,6 @@
 .social{
   background-color: #17337C;
   color: #FFF;
-  //padding: 70px 0;
 
   &__links{
     float: right;
@@ -42,6 +41,10 @@
 
   &__copyright {
     text-align: left;
+
+    img{
+      vertical-align: middle;
+    }
   }
 
   &__devs{

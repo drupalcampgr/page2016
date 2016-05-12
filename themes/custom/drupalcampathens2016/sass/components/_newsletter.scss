@@ -7,6 +7,7 @@
   background-position: center bottom;
   color: #fff;
   overflow: hidden;
+  padding: 70px 0;
 
   &__title {
     margin-top: 50px;
@@ -57,7 +58,7 @@
     width: 80px;
     height: 100%;
     border: 0;
-    background: url('../assets/images/submit.jpg') no-repeat 50% 50%;
+    background: url('../images/submit.jpg') no-repeat 50% 50%;
     text-indent: -66666px;
     position: absolute;
     z-index: 10;
