@@ -1,6 +1,6 @@
 uuid: 5f1cc3b1-6f65-48a6-b540-28db42642343
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main
@@ -12,8 +12,8 @@ _core:
   default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
 id: drupalcampathens2016_main_menu
 theme: drupalcampathens2016
-region: '-1'
-weight: -4
+region: header
+weight: -5
 provider: null
 plugin: 'system_menu_block:main'
 settings:

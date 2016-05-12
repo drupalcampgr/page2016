@@ -1,6 +1,6 @@
 uuid: 287fdf45-a110-45a8-b214-83d7f0a3cde1
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
 id: drupalcampathens2016_powered
 theme: drupalcampathens2016
-region: footer
-weight: -6
+region: '-1'
+weight: -3
 provider: null
 plugin: system_powered_by_block
 settings:
