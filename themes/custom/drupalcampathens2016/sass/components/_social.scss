@@ -3,6 +3,7 @@
 .social{
   background-color: #17337C;
   color: #FFF;
+  position: relative;
 
   &__links{
     float: right;
@@ -18,8 +19,6 @@
 
   &__title {
     margin-bottom: 35px;
-    font-size: 2em;
-    font-weight: bold;
   }
 
   &__text {
@@ -49,5 +48,21 @@
 
   &__devs{
     text-align: right;
+  }
+
+  &__bg-top-lines {
+    background-image: url("../images/blue-lines.png");
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+    top: 25px;
+  }
+
+  &__bg-bottom-lines {
+    background-image: url("../images/blue-lines.png");
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+    bottom: 85px;
   }
 }

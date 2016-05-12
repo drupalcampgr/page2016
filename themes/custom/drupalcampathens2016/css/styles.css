@@ -151,9 +151,15 @@ html {
   }
 }
 /* Components */
-/* line 3, ../sass/components/_misc.scss */
+/* line 2, ../sass/components/_misc.scss */
 .site-logo img {
   width: 300px;
+}
+
+/* line 7, ../sass/components/_misc.scss */
+.title {
+  font-size: 2em;
+  font-weight: bold;
 }
 
 /* line 3, ../sass/components/_header.scss */
@@ -180,59 +186,74 @@ html {
 .social {
   background-color: #17337C;
   color: #FFF;
+  position: relative;
 }
-/* line 7, ../sass/components/_social.scss */
+/* line 8, ../sass/components/_social.scss */
 .social__links {
   float: right;
 }
-/* line 11, ../sass/components/_social.scss */
+/* line 12, ../sass/components/_social.scss */
 .social__link {
   float: left;
 }
-/* line 15, ../sass/components/_social.scss */
+/* line 16, ../sass/components/_social.scss */
 .social a {
   color: #88d3db;
 }
-/* line 19, ../sass/components/_social.scss */
+/* line 20, ../sass/components/_social.scss */
 .social__title {
   margin-bottom: 35px;
-  font-size: 2em;
-  font-weight: bold;
 }
-/* line 25, ../sass/components/_social.scss */
+/* line 24, ../sass/components/_social.scss */
 .social__text {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 35px;
   margin-top: 35px;
 }
-/* line 31, ../sass/components/_social.scss */
+/* line 30, ../sass/components/_social.scss */
 .social__text--small {
   font-size: 15px;
 }
-/* line 36, ../sass/components/_social.scss */
+/* line 35, ../sass/components/_social.scss */
 .social__copy {
   font-size: 11px;
   letter-spacing: -0.1px;
   padding: 30px 0;
 }
-/* line 42, ../sass/components/_social.scss */
+/* line 41, ../sass/components/_social.scss */
 .social__copyright {
   text-align: left;
 }
-/* line 45, ../sass/components/_social.scss */
+/* line 44, ../sass/components/_social.scss */
 .social__copyright img {
   vertical-align: middle;
 }
-/* line 50, ../sass/components/_social.scss */
+/* line 49, ../sass/components/_social.scss */
 .social__devs {
   text-align: right;
+}
+/* line 53, ../sass/components/_social.scss */
+.social__bg-top-lines {
+  background-image: url("../images/blue-lines.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+  top: 25px;
+}
+/* line 61, ../sass/components/_social.scss */
+.social__bg-bottom-lines {
+  background-image: url("../images/blue-lines.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+  bottom: 85px;
 }
 
 /* line 3, ../sass/components/_newsletter.scss */
 .newsletter {
   background-color: #0275bb;
-  background-image: url("../assets/images/newsletter-bg.png");
+  background-image: url("../images/newsletter-bg.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   color: #fff;
@@ -298,7 +319,7 @@ html {
   position: absolute;
   z-index: 10;
   top: 0;
-  right: 0;
+  right: 20px;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.68, -1.55, 0.265, 1.55);
 }
