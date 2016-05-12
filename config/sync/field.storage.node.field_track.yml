@@ -1,0 +1,30 @@
+uuid: 82d8aff4-055d-4563-99c2-15b4ee448a07
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_track
+field_name: field_track
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Track 1'
+      label: 'Track 1'
+    -
+      value: 'Track 2'
+      label: 'Track 2'
+    -
+      value: 'Track 3'
+      label: 'Track 3'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

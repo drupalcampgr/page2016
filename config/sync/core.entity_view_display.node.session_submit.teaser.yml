@@ -1,0 +1,30 @@
+uuid: c6f235f5-4906-4abc-aeaf-a1cf83a2d21f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.session_submit.body
+    - field.field.node.session_submit.field_speaker
+    - field.field.node.session_submit.field_track
+    - node.type.session_submit
+  module:
+    - text
+    - user
+id: node.session_submit.teaser
+targetEntityType: node
+bundle: session_submit
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_speaker: true
+  field_track: true

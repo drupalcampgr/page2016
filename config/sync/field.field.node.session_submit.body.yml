@@ -1,0 +1,22 @@
+uuid: d3dc132d-ef3e-4522-9a92-14ec0890aedc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.session_submit
+  module:
+    - text
+id: node.session_submit.body
+field_name: body
+entity_type: node
+bundle: session_submit
+label: Description
+description: 'Describe what you want to present to Drupal Camp and Why'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

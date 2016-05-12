@@ -1,0 +1,18 @@
+uuid: f94cdd26-2bcc-4ed2-a839-7f2b8d0c6a07
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Session Submit'
+type: session_submit
+description: 'This is the form that will be used when someone submits a session for presenting in Drupal Camp Athens'
+help: 'This will be shown to the public!'
+new_revision: false
+preview_mode: 1
+display_submitted: false
