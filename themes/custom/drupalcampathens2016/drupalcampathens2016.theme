@@ -152,7 +152,7 @@ function drupalcampathens2016_preprocess_menu_local_task(array &$variables) {
   //$variables['element']['#link']['url']->setOption('attributes', ['class'=>'rounded']);
 }
 
-function drupalcampathens2016_preprocess_block__system_branding_block(&$variables)
+/*function drupalcampathens2016_preprocess_block__system_branding_block(&$variables)
 {
   $variables['attributes']['class'][] = "header__branding";
-}
+}*/
