@@ -123,8 +123,9 @@ html {
   margin-left: -20px;
   margin-right: -20px;
   display: table;
+  padding: 70px 0;
 }
-/* line 13, ../sass/layouts/_layout-2column.scss */
+/* line 14, ../sass/layouts/_layout-2column.scss */
 .layout-2column__col-x {
   display: table-cell;
   width: 50%;
@@ -134,16 +135,16 @@ html {
 }
 
 @media (max-width: 767px) {
-  /* line 29, ../sass/layouts/_layout-2column.scss */
+  /* line 30, ../sass/layouts/_layout-2column.scss */
   .layout-2column {
     display: block;
   }
-  /* line 32, ../sass/layouts/_layout-2column.scss */
+  /* line 33, ../sass/layouts/_layout-2column.scss */
   .layout-2column__col-x {
     display: block;
     width: 100%;
   }
-  /* line 35, ../sass/layouts/_layout-2column.scss */
+  /* line 36, ../sass/layouts/_layout-2column.scss */
   .layout-2column__col-x:not(.plain):nth-child(2n+1) {
     border-right: none;
     margin-bottom: 10px;
@@ -180,46 +181,50 @@ html {
   background-color: #17337C;
   color: #FFF;
 }
-/* line 8, ../sass/components/_social.scss */
+/* line 7, ../sass/components/_social.scss */
 .social__links {
   float: right;
 }
-/* line 12, ../sass/components/_social.scss */
+/* line 11, ../sass/components/_social.scss */
 .social__link {
   float: left;
 }
-/* line 16, ../sass/components/_social.scss */
+/* line 15, ../sass/components/_social.scss */
 .social a {
   color: #88d3db;
 }
-/* line 20, ../sass/components/_social.scss */
+/* line 19, ../sass/components/_social.scss */
 .social__title {
   margin-bottom: 35px;
   font-size: 2em;
   font-weight: bold;
 }
-/* line 26, ../sass/components/_social.scss */
+/* line 25, ../sass/components/_social.scss */
 .social__text {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 35px;
   margin-top: 35px;
 }
-/* line 32, ../sass/components/_social.scss */
+/* line 31, ../sass/components/_social.scss */
 .social__text--small {
   font-size: 15px;
 }
-/* line 37, ../sass/components/_social.scss */
+/* line 36, ../sass/components/_social.scss */
 .social__copy {
   font-size: 11px;
   letter-spacing: -0.1px;
   padding: 30px 0;
 }
-/* line 43, ../sass/components/_social.scss */
+/* line 42, ../sass/components/_social.scss */
 .social__copyright {
   text-align: left;
 }
-/* line 47, ../sass/components/_social.scss */
+/* line 45, ../sass/components/_social.scss */
+.social__copyright img {
+  vertical-align: middle;
+}
+/* line 50, ../sass/components/_social.scss */
 .social__devs {
   text-align: right;
 }
@@ -232,25 +237,26 @@ html {
   background-position: center bottom;
   color: #fff;
   overflow: hidden;
+  padding: 70px 0;
 }
-/* line 11, ../sass/components/_newsletter.scss */
+/* line 12, ../sass/components/_newsletter.scss */
 .newsletter__title {
   margin-top: 50px;
   margin-bottom: 35px;
 }
-/* line 16, ../sass/components/_newsletter.scss */
+/* line 17, ../sass/components/_newsletter.scss */
 .newsletter__text {
   max-width: 570px;
   margin-bottom: 35px;
 }
-/* line 21, ../sass/components/_newsletter.scss */
+/* line 22, ../sass/components/_newsletter.scss */
 .newsletter__form {
   position: relative;
   width: 400px;
   margin-bottom: 100px;
   overflow: hidden;
 }
-/* line 28, ../sass/components/_newsletter.scss */
+/* line 29, ../sass/components/_newsletter.scss */
 .newsletter__email {
   padding: 26px 24px;
   font-size: 14px;
@@ -260,34 +266,34 @@ html {
   border-bottom: 1px solid #88d3db;
   color: #0275bb;
 }
-/* line 37, ../sass/components/_newsletter.scss */
+/* line 38, ../sass/components/_newsletter.scss */
 .newsletter__email::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #0275bb;
 }
-/* line 41, ../sass/components/_newsletter.scss */
+/* line 42, ../sass/components/_newsletter.scss */
 .newsletter__email:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #0275bb;
   opacity: 1;
 }
-/* line 46, ../sass/components/_newsletter.scss */
+/* line 47, ../sass/components/_newsletter.scss */
 .newsletter__email::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #0275bb;
   opacity: 1;
 }
-/* line 51, ../sass/components/_newsletter.scss */
+/* line 52, ../sass/components/_newsletter.scss */
 .newsletter__email:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #0275bb;
 }
-/* line 56, ../sass/components/_newsletter.scss */
+/* line 57, ../sass/components/_newsletter.scss */
 .newsletter__submit {
   width: 80px;
   height: 100%;
   border: 0;
-  background: url("../assets/images/submit.jpg") no-repeat 50% 50%;
+  background: url("../images/submit.jpg") no-repeat 50% 50%;
   text-indent: -66666px;
   position: absolute;
   z-index: 10;
@@ -296,17 +302,17 @@ html {
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.68, -1.55, 0.265, 1.55);
 }
-/* line 68, ../sass/components/_newsletter.scss */
+/* line 69, ../sass/components/_newsletter.scss */
 .newsletter__submit:hover {
   transform: translateX(15px) scale(1.02);
 }
 
 @media (max-width: 767px) {
-  /* line 78, ../sass/components/_newsletter.scss */
+  /* line 79, ../sass/components/_newsletter.scss */
   .newsletter__form {
     width: 300px;
   }
-  /* line 81, ../sass/components/_newsletter.scss */
+  /* line 82, ../sass/components/_newsletter.scss */
   .newsletter__email {
     width: 300px;
   }
