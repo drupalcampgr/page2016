@@ -6,15 +6,15 @@ $lighter-blue:								#005fac;
 $logo-width:								250px;
 
 // Variables
-$page-width:									800px;
+$page-width:								800px;
 
 // Layout
-$gutter: 40px;
+$gutter:                                    40px;
 
 // Colors
-$blue-light: #88d3db;
-$blue: #0275bb;
-$blue-dark: #17337b;
+$blue-light:                                #88d3db;
+$blue:                                      #0275bb;
+$blue-dark:                                 #17337b;
 
 // * { Box-sizing: Border-box } FTW, http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -25,3 +25,18 @@ html {
   box-sizing: inherit;
 }
 
+/* Global Container and fluid classes
+ * maybe this can go into layouts/grid.scss
+ * looks like base to me though
+ */
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Center Content
+.align-center {
+  text-align: center;
+}

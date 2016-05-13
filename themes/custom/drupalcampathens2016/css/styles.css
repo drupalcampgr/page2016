@@ -69,30 +69,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Base stuff: variables, typography */
-/* line 11, ../sass/_typography.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
-  margin: 24px 0;
-}
-
-/* line 16, ../sass/_typography.scss */
-h1 {
-  font-weight: 700;
-}
-
-/* line 20, ../sass/_typography.scss */
-p {
-  margin: 24px 0;
-}
-
-/* line 24, ../sass/_typography.scss */
-body {
-  color: #17337b;
-  font-size: 106.25%;
-  line-height: 1.41176em;
-  font-family: "Open Sans", sans-serif;
-}
-
 /* apply a natural box layout model to all elements, but allowing components to change */
 /* line 21, ../sass/_base.scss */
 html {
@@ -102,6 +78,69 @@ html {
 /* line 24, ../sass/_base.scss */
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+/* Global Container and fluid classes
+ * maybe this can go into layouts/grid.scss
+ * looks like base to me though
+ */
+/* line 33, ../sass/_base.scss */
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 40, ../sass/_base.scss */
+.align-center {
+  text-align: center;
+}
+
+/* line 19, ../sass/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  margin: 24px 0;
+}
+
+/* line 24, ../sass/_typography.scss */
+h1 {
+  font-weight: 700;
+}
+
+/* line 28, ../sass/_typography.scss */
+p {
+  margin: 24px 0;
+}
+
+/* line 32, ../sass/_typography.scss */
+body {
+  color: #17337b;
+  font-size: 106.25%;
+  line-height: 1.41176em;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 39, ../sass/_typography.scss */
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #17337b;
+}
+
+/* line 45, ../sass/_typography.scss */
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #0275bb;
+  text-transform: uppercase;
+}
+
+/* line 52, ../sass/_typography.scss */
+h3 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: #0275bb;
+  text-transform: uppercase;
 }
 
 /* Layouts */
@@ -157,7 +196,7 @@ html {
 /* line 10, ../sass/layouts/_grid.scss */
 .grid {
   box-sizing: border-box;
-  background: inherit;
+  background: initial;
   margin: 0 0 20px 0;
 }
 /* line 14, ../sass/layouts/_grid.scss */
@@ -406,4 +445,9 @@ html {
   background-repeat: no-repeat, repeat;
   position: relative;
   height: 80vh;
+}
+/* line 11, ../sass/components/_plane.scss */
+.plane-container .subtitle {
+  margin-top: 0;
+  padding-top: 10%;
 }

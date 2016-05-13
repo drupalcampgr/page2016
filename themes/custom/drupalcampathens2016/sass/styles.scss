@@ -7,8 +7,8 @@
 @import "compass/support";
 
 /* Base stuff: variables, typography */
-@import "typography.scss";
 @import "base.scss";
+@import "typography.scss";
 
 /* Layouts */
 @import "layouts/layout-center.scss";

@@ -1,12 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+// fonts used
 $open: 'Open Sans', sans-serif;
 
-$heading-font: $open;
-$body-font: $open;
+// typo variables
+$heading-font:                  $open;
+$body-font:                     $open;
+$base-line-height:              24;
+$base-font-size:                17;
+$h1-font-size:                  3rem;
+$h1-line-height:                1.2;
+$h2-font-size:                  2rem;
+$h2-line-height:                1.2;
+$h3-font-size:                  1.6rem;
+$h3-line-height:                1.2;
 
-$base-line-height: 24;
-$base-font-size: 17;
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $heading-font;
@@ -26,4 +34,24 @@ body {
   font-size: ($base-font-size/16)*100%;
   line-height: $base-line-height/$base-font-size*1em;
   font-family: $body-font;
+}
+
+h1 { // this is big and dark blue, normalcase
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+  color: $blue-dark;
+}
+
+h2 { // this is uppercase and used for section heading such as sponsors and registration
+  font-size: $h2-font-size;
+  line-height: $h2-line-height;
+  color: $blue;
+  text-transform: uppercase;
+}
+
+h3 { // this is light blue and smaller heading, uppercase
+  font-size: $h3-font-size;
+  line-height: $h3-line-height;
+  color: $blue;
+  text-transform: uppercase;
 }
