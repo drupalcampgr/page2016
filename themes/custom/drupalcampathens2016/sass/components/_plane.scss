@@ -1,0 +1,30 @@
+// The plane component.
+
+// The background layers
+.plane-container {
+  background-image: url('../images/info/back-overlay.png'),
+                    url('../images/info/cont-back.jpg');
+  background-position: center center, center center ;
+  background-repeat: no-repeat, repeat;
+  position: relative;
+  height: 80vh;
+  .subtitle {
+    margin-top: 0;
+    padding-top: 10%;
+  }
+  .horizontal-divider {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 3px;
+      height: 100%;
+      background: $blue-light;
+    }
+    & + .col-1-2 {
+      padding-left: $grid-gutter;
+    }
+  }
+}

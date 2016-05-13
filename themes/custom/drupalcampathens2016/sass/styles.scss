@@ -7,12 +7,13 @@
 @import "compass/support";
 
 /* Base stuff: variables, typography */
-@import "typography.scss";
 @import "base.scss";
+@import "typography.scss";
 
 /* Layouts */
 @import "layouts/layout-center.scss";
 @import "layouts/layout-2column.scss";
+@import "layouts/grid.scss";
 
 /* Components */
 @import "components/misc.scss";
@@ -20,3 +21,4 @@
 @import "components/main-menu.scss";
 @import "components/social.scss";
 @import "components/newsletter.scss";
+@import "components/plane.scss";
