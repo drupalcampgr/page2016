@@ -4,13 +4,13 @@
  */
 
 // Variables
-$gutter:                    20px;
+$grid-gutter:                    20px;
 $grid-background:           initial;
 
 .grid {
   box-sizing: border-box;
   background: $grid-background;
-  margin: 0 0 $gutter 0;
+  margin: 0 0 $grid-gutter 0;
   &:after {
     content: '';
     display: table;
@@ -20,7 +20,7 @@ $grid-background:           initial;
 
 [class*='col-'] {
   float: left;
-  padding-right: $gutter;
+  padding-right: $grid-gutter;
   .grid &:last-of-type {
     padding-right: 0;
   }
@@ -45,8 +45,8 @@ $grid-background:           initial;
 
 // outside padding
 .grid-pad {
-  padding: $gutter 0 $gutter $gutter;
+  padding: $grid-gutter 0 $grid-gutter $grid-gutter;
   [class*='col-']:last-of-type {
-    padding-right: $gutter;
+    padding-right: $grid-gutter;
   }
 }

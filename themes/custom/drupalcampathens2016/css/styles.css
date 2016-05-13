@@ -451,3 +451,21 @@ h3 {
   margin-top: 0;
   padding-top: 10%;
 }
+/* line 15, ../sass/components/_plane.scss */
+.plane-container .horizontal-divider {
+  position: relative;
+}
+/* line 17, ../sass/components/_plane.scss */
+.plane-container .horizontal-divider:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #88d3db;
+}
+/* line 26, ../sass/components/_plane.scss */
+.plane-container .horizontal-divider + .col-1-2 {
+  padding-left: 20px;
+}
