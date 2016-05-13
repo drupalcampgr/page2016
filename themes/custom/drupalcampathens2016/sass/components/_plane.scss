@@ -1,0 +1,11 @@
+// The plane component.
+
+// The background layers
+.plane-container {
+  background-image: url('../images/info/back-overlay.png'),
+                    url('../images/info/cont-back.jpg');
+  background-position: center center, center center ;
+  background-repeat: no-repeat, repeat;
+  position: relative;
+  height: 80vh;
+}

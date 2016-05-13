@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-/* line 5, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -150,6 +150,67 @@ html {
     margin-bottom: 10px;
   }
 }
+/* This is a very simple grid system
+ * that can be easily customized.
+ * feel free to make it better ;)
+ */
+/* line 10, ../sass/layouts/_grid.scss */
+.grid {
+  box-sizing: border-box;
+  background: inherit;
+  margin: 0 0 20px 0;
+}
+/* line 14, ../sass/layouts/_grid.scss */
+.grid:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 21, ../sass/layouts/_grid.scss */
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+}
+/* line 24, ../sass/layouts/_grid.scss */
+.grid [class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+/* line 30, ../sass/layouts/_grid.scss */
+.col-2-3 {
+  width: 66.66%;
+}
+
+/* line 33, ../sass/layouts/_grid.scss */
+.col-1-3 {
+  width: 33.33%;
+}
+
+/* line 36, ../sass/layouts/_grid.scss */
+.col-1-2 {
+  width: 50%;
+}
+
+/* line 39, ../sass/layouts/_grid.scss */
+.col-1-4 {
+  width: 25%;
+}
+
+/* line 42, ../sass/layouts/_grid.scss */
+.col-1-8 {
+  width: 12.5%;
+}
+
+/* line 47, ../sass/layouts/_grid.scss */
+.grid-pad {
+  padding: 20px 0 20px 20px;
+}
+/* line 49, ../sass/layouts/_grid.scss */
+.grid-pad [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+
 /* Components */
 /* line 2, ../sass/components/_misc.scss */
 .site-logo img {
@@ -337,4 +398,12 @@ html {
   .newsletter__email {
     width: 300px;
   }
+}
+/* line 4, ../sass/components/_plane.scss */
+.plane-container {
+  background-image: url("../images/info/back-overlay.png"), url("../images/info/cont-back.jpg");
+  background-position: center center, center center;
+  background-repeat: no-repeat, repeat;
+  position: relative;
+  height: 80vh;
 }
