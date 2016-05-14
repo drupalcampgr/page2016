@@ -8,7 +8,7 @@
   background-repeat: no-repeat, repeat;
   position: relative;
   //height: 80vh;
-  padding: 100px 0;
+  padding: 100px 0 150px 0;
   z-index: 1;
   .subtitle {
     margin-top: 0;
@@ -54,7 +54,7 @@
       right: 19%;
     }
     &.drupalosima {
-      bottom: 0;
+      bottom: 50px;
       left: 50%;
       margin-left: -103px;
     }

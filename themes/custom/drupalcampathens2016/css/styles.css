@@ -444,7 +444,7 @@ h3 {
   background-position: center center, center center;
   background-repeat: no-repeat, repeat;
   position: relative;
-  padding: 100px 0;
+  padding: 100px 0 150px 0;
   z-index: 1;
 }
 /* line 13, ../sass/components/_plane.scss */
@@ -500,7 +500,7 @@ h3 {
 }
 /* line 56, ../sass/components/_plane.scss */
 .plane-container .fx.drupalosima {
-  bottom: 0;
+  bottom: 50px;
   left: 50%;
   margin-left: -103px;
 }
