@@ -96,3 +96,45 @@
         </div>
     </section>
 {% endblock %}
+
+{% block main %}
+    <!-- override -->
+    <section id="tickets">
+        <div class="container">
+            <h2 class="align-center">Registration</h2>
+            <p class="align-center">
+                We're gonna have a great lineup so don't forget to register for news and updates
+                about the event, speakers and schedule.
+            </p>
+            <div class="grid">
+                <div class="col-1-3">
+                    <div class="register-panel to-poulaki-tsiou align-center">
+                        <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                        <h3>Register For<br>The Event</h3>
+                        <p class="">for free</p>
+                        <p class="small light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque enim fugit nisi.</p>
+                        <a href="#" class="circular-button">GO</a>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="register-panel bottom-flair align-center">
+                        <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                        <h3>Paid<br>Registration</h3>
+                        <p class="">50 Euros</p>
+                        <p class="small light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque enim fugit nisi.</p>
+                        <a href="#" class="circular-button">GO</a>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="register-panel top-flair align-center">
+                        <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                        <h3>Be A<br>Volunteer</h3>
+                        <p class="">and help us!</p>
+                        <p class="small light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque enim fugit nisi.</p>
+                        <a href="#" class="circular-button">GO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock main %}

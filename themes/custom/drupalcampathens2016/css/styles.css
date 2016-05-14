@@ -92,11 +92,17 @@ html {
 }
 
 /* line 48, ../sass/_base.scss */
+section > * {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 54, ../sass/_base.scss */
 .align-center {
   text-align: center;
 }
 
-/* line 53, ../sass/_base.scss */
+/* line 59, ../sass/_base.scss */
 .button {
   -webkit-appearance: none;
   margin: 0;

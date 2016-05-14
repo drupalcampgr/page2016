@@ -44,6 +44,12 @@ html {
   margin-right: auto;
 }
 
+// Section padding
+section > * {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 // Center Content
 .align-center {
   text-align: center;
