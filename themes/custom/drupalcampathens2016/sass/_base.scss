@@ -16,6 +16,14 @@ $blue-light:                                #88d3db;
 $blue:                                      #0275bb;
 $blue-dark:                                 #17337b;
 
+// Buttons
+$button-color:                              #ffffff;
+$button-padding-horizontal:                 45px;
+$button-background:                         $blue;
+$button-height:                             80px;
+$button-font-size:                          1.3em;
+$button-radius:                             1px;
+
 // * { Box-sizing: Border-box } FTW, http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -39,4 +47,27 @@ html {
 // Center Content
 .align-center {
   text-align: center;
+}
+
+// Buttons
+.button {
+  -webkit-appearance: none;
+  margin: 0;
+  border: none;
+  overflow: visible;
+  font: inherit;
+  color: $button-color;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 $button-padding-horizontal;
+  background: $button-background;
+  vertical-align: middle;
+  line-height: $button-height;
+  min-height: $button-height;
+  font-size: $button-font-size;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: $button-radius;
 }

@@ -27,6 +27,9 @@ h1 {
 
 p {
 	margin: ($base-line-height)*1px 0;
+  &.light {
+    color: $blue;
+  }
 }
 
 body {
@@ -54,4 +57,9 @@ h3 { // this is light blue and smaller heading, uppercase
   line-height: $h3-line-height;
   color: $blue;
   text-transform: uppercase;
+  &.dark {
+    color: $blue-dark;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
 }

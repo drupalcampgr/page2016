@@ -73,4 +73,26 @@
             <div class="fx drupalosima"><img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">&nbsp;</div>
         </div>
     </section>
+    <!-- Featured Speakers Section -->
+    {# we shall do this dynamically on version 2.0 #}
+    <section id="speakers">
+        <div class="container">
+            <h3 class="align-center">Featured Speakers</h3>
+            <div class="grid">
+                <div class="col-1-2 align-center">
+                    <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                    <h3 class="dark">Dries Butyaert</h3>
+                    <p class="light">Creator of the universe</p>
+                </div>
+                <div class="col-1-2 align-center">
+                    <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                    <h3 class="dark">Morten DK</h3>
+                    <p class="light">Creator of twig magic</p>
+                </div>
+            </div>
+            <div class="align-center">
+                <a href="#" class="button">Submit Your Proposal</a>
+            </div>
+        </div>
+    </section>
 {% endblock %}
