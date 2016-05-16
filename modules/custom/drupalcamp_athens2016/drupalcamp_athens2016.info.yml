@@ -1,0 +1,5 @@
+name: drupalcamp_athens2016
+type: module
+description: Various functionality for the drupal camp athens 2016 site.
+core: 8.x
+package: Custom

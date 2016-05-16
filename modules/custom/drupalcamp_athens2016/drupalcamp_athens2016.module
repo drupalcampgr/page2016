@@ -1,0 +1,64 @@
+<?php
+
+/**
+ * @file
+ * Contains drupalcamp_athens2016.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function drupalcamp_athens2016_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the drupalcamp_athens2016 module.
+    case 'help.page.drupalcamp_athens2016':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Various functionality for the drupal camp athens 2016 site.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_mail().
+ */
+function drupalcamp_athens2016_mail($key, &$message, $params) {
+  $options = array(
+    'langcode' => $message['langcode'],
+  );
+  switch ($key) {
+    case 'create_session':
+      $message['from'] = \Drupal::config('system.site')->get('mail');
+      $message['subject'] = t('Session proposal created: @title', array('@title' => $params['node_title']), $options);
+      $message['body'][] = $params['message'];
+      break;
+  }
+}
+
+/**
+ * Implements hook_entity_insert().
+ */
+function drupalcamp_athens2016_entity_insert(Drupal\Core\Entity\EntityInterface $entity) {
+  if ($entity->getEntityTypeId() !== 'node' || ($entity->getEntityTypeId() === 'node' && $entity->bundle() !== 'session_submit')) {
+    return;
+  }
+  $mailManager = \Drupal::service('plugin.manager.mail');
+  $module = ‘drupalcamp_athens2016’;
+  $key = 'create_session';
+  $to = 'kostas@pointblank.gr';
+  $params['message'] = $entity->get('body')->value;
+  $params['node_title'] = $entity->label();
+  $langcode = \Drupal::currentUser()->getPreferredLangcode();
+  $send = TRUE;
+  $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
+  if ($result['result'] !== TRUE) {
+    drupal_set_message(t('There was a problem sending your message and it was not sent.'), 'error');
+  }
+  else {
+    drupal_set_message(t('Session proposal has been submitted.'));
+  }
+}
