@@ -14,21 +14,7 @@
     margin-top: 0;
     //padding-top: 10%;
   }
-  .horizontal-divider {
-    position: relative;
-    &:after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 2px;
-      height: 100%;
-      background: $blue-light;
-    }
-    & + .col-1-2 {
-      padding-left: $grid-gutter;
-    }
-  }
+
   .sun-bg {
     background: url("../images/info/sun.png") 50% 50% no-repeat;
     background-size: contain;

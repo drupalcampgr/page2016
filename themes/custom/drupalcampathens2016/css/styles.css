@@ -289,6 +289,25 @@ h3.dark {
   padding-right: 20px;
 }
 
+/* line 55, ../sass/layouts/_grid.scss */
+.horizontal-divider {
+  position: relative;
+}
+/* line 57, ../sass/layouts/_grid.scss */
+.horizontal-divider:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #88d3db;
+}
+/* line 66, ../sass/layouts/_grid.scss */
+.horizontal-divider + .col-1-2 {
+  padding-left: 20px;
+}
+
 /* Components */
 /* line 2, ../sass/components/_misc.scss */
 .site-logo img {
@@ -490,25 +509,7 @@ h3.dark {
 .plane-container .subtitle {
   margin-top: 0;
 }
-/* line 17, ../sass/components/_plane.scss */
-.plane-container .horizontal-divider {
-  position: relative;
-}
-/* line 19, ../sass/components/_plane.scss */
-.plane-container .horizontal-divider:after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  background: #88d3db;
-}
-/* line 28, ../sass/components/_plane.scss */
-.plane-container .horizontal-divider + .col-1-2 {
-  padding-left: 20px;
-}
-/* line 32, ../sass/components/_plane.scss */
+/* line 18, ../sass/components/_plane.scss */
 .plane-container .sun-bg {
   background: url("../images/info/sun.png") 50% 50% no-repeat;
   background-size: contain;
@@ -516,28 +517,28 @@ h3.dark {
   margin: 50px auto;
   padding: 50px 0;
 }
-/* line 40, ../sass/components/_plane.scss */
+/* line 26, ../sass/components/_plane.scss */
 .plane-container .fx {
   position: absolute;
   display: block;
   z-index: -1;
 }
-/* line 44, ../sass/components/_plane.scss */
+/* line 30, ../sass/components/_plane.scss */
 .plane-container .fx.aeroplanaki {
   left: 15%;
   top: 28%;
 }
-/* line 48, ../sass/components/_plane.scss */
+/* line 34, ../sass/components/_plane.scss */
 .plane-container .fx.sinefaki-bottom-left {
   bottom: 15%;
   left: 23%;
 }
-/* line 52, ../sass/components/_plane.scss */
+/* line 38, ../sass/components/_plane.scss */
 .plane-container .fx.sinefaki-top-right {
   top: 35%;
   right: 19%;
 }
-/* line 56, ../sass/components/_plane.scss */
+/* line 42, ../sass/components/_plane.scss */
 .plane-container .fx.drupalosima {
   bottom: 50px;
   left: 50%;
