@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-/* line 5, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,57 +25,57 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /* Base stuff: variables, typography */
 /* apply a natural box layout model to all elements, but allowing components to change */
-/* line 29, ../sass/_base.scss */
+/* line 33, ../sass/_base.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 32, ../sass/_base.scss */
+/* line 36, ../sass/_base.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -84,25 +84,25 @@ html {
  * maybe this can go into layouts/grid.scss
  * looks like base to me though
  */
-/* line 41, ../sass/_base.scss */
+/* line 45, ../sass/_base.scss */
 .container {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 48, ../sass/_base.scss */
+/* line 52, ../sass/_base.scss */
 section > * {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 54, ../sass/_base.scss */
+/* line 58, ../sass/_base.scss */
 .align-center {
   text-align: center;
 }
 
-/* line 59, ../sass/_base.scss */
+/* line 63, ../sass/_base.scss */
 .button {
   -webkit-appearance: none;
   margin: 0;
@@ -228,6 +228,17 @@ h3.dark {
     margin-bottom: 10px;
   }
 }
+/* line 7, ../sass/layouts/_layout-3column.scss */
+.layout-3column {
+  display: table;
+  width: 100%;
+}
+/* line 12, ../sass/layouts/_layout-3column.scss */
+.layout-3column__col {
+  display: table-cell;
+  width: 33.33%;
+}
+
 /* This is a very simple grid system
  * that can be easily customized.
  * feel free to make it better ;)
@@ -548,4 +559,36 @@ h3.dark {
   bottom: 50px;
   left: 50%;
   margin-left: -103px;
+}
+
+/* line 3, ../sass/components/_register.scss */
+.register {
+  background-color: #88d3db;
+}
+/* line 6, ../sass/components/_register.scss */
+.register__panel {
+  background-color: white;
+  padding: 30px 35px 35px 35px;
+}
+/* line 10, ../sass/components/_register.scss */
+.register__panel--to-poulaki-tsiou {
+  position: relative;
+}
+/* line 13, ../sass/components/_register.scss */
+.register__panel--to-poulaki-tsiou:before {
+  width: 102px;
+  height: 76px;
+  display: block;
+  content: "";
+  position: absolute;
+  top: -76px;
+  left: 30px;
+  background-image: url("../images/poulaki.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+/* line 28, ../sass/components/_register.scss */
+.register__panel--bottom-flair {
+  background-color: #ed1845;
 }
