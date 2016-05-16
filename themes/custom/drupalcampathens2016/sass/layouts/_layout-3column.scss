@@ -1,0 +1,16 @@
+// Layout 3column
+//
+// A simple guterless three column 50-50 layout that only works for 3 elements (due to
+// display table, that was necessary for the border.).
+//
+
+.layout-3column,
+%layout-3column {
+  display: table;
+  width: 100%;
+
+  &__col {
+    display: table-cell;
+    width: 33.33%;
+  }
+}
