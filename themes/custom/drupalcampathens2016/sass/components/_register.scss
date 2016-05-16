@@ -1,0 +1,36 @@
+// The slice component.
+
+.register {
+  background-color: $another-lighter-blue;
+
+  &__panel {
+    background-color: white;
+    padding: 30px 35px 35px 35px;
+
+    &--to-poulaki-tsiou {
+      position: relative;
+
+      &:before {
+        width: 102px;
+        height: 76px;
+        display: block;
+        content: "";
+        position: absolute;
+        top: -76px;
+        left: 30px;
+        background-image: url('../images/poulaki.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+      }
+    }
+
+    &--bottom-flair {
+      background-color: $red;
+    }
+
+    &--top-flair {
+
+    }
+  }
+}
