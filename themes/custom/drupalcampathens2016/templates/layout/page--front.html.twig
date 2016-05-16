@@ -58,15 +58,104 @@
             <div class="container">
                 <h3 class="subtitle align-center">About the event</h3>
                 <h1 class="align-center">DrupalCamp Greece is back!<br>Bigger! Better!</h1>
-                <div class="grid">
+                <div class="grid sun-bg">
                     <div class="col-1-2 horizontal-divider">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque impedit ipsa iure laborum nemo perspiciatis quibusdam reiciendis totam! Architecto commodi dolorem dolores ducimus eos, fugit ipsum quo ratione tempore.
+                        DrupalCamp Greece is a conference that brings together web developers, designers, site-builders, content administrators and simple curious minds to learn, network and discuss about Drupal, Design, Development and Cutting Edge Web Technologies.
                     </div>
                     <div class="col-1-2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, dolore dolorem eum facilis fuga iste laborum minus modi nihil nulla, optio porro quis ratione repellat saepe soluta, tenetur voluptas voluptatum.
+                        Drupal is strong because its community is stronger. With the release of Drupal 8 there is so much to hear and talk about that you’ll need lots of notes… Come for the code, stay for the community!
                     </div>
                 </div>
+            </div>
+            <div class="fx aeroplanaki"><img src="{{ base_path ~ directory }}/images/info/plane.png" alt="drupal airplane">&nbsp;</div>
+            <div class="fx sinefaki-bottom-left"><img src="{{ base_path ~ directory }}/images/info/cloud-bottom-left.png" alt="">&nbsp;</div>
+            <div class="fx sinefaki-top-right"><img src="{{ base_path ~ directory }}/images/info/cloud-top-right.png" alt="">&nbsp;</div>
+            <div class="fx drupalosima"><img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">&nbsp;</div>
+        </div>
+    </section>
+    <!-- Featured Speakers Section -->
+    {# we shall do this dynamically on version 2.0 #}
+    <section id="speakers">
+        <div class="container">
+            <h3 class="align-center">Featured Speakers</h3>
+            <div class="grid">
+                <div class="col-1-2 align-center">
+                    <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                    <h3 class="dark">Dries Butyaert</h3>
+                    <p class="light">Creator of the universe</p>
+                </div>
+                <div class="col-1-2 align-center">
+                    <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                    <h3 class="dark">Morten DK</h3>
+                    <p class="light">Creator of twig magic</p>
+                </div>
+            </div>
+            <div class="align-center">
+                <a href="#" class="button">Submit Your Proposal</a>
             </div>
         </div>
     </section>
 {% endblock %}
+
+{% block main %}
+    <!-- override -->
+    <section id="tickets">
+        <div class="container">
+            <h2 class="align-center">Registration</h2>
+            <p class="align-center">
+                We're gonna have a great lineup so don't forget to register for news and updates
+                about the event, speakers and schedule.
+            </p>
+            <div class="grid">
+                <div class="col-1-3">
+                    <div class="register-panel to-poulaki-tsiou align-center">
+                        <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                        <h3>Register For<br>The Event</h3>
+                        <p class="">for free</p>
+                        <p class="small light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque enim fugit nisi.</p>
+                        <a href="#" class="circular-button">GO</a>
+                    </div>
+                    <p class="align-center"><a href="">View Attendees List</a></p>
+                </div>
+                <div class="col-1-3">
+                    <div class="register-panel bottom-flair align-center">
+                        <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                        <h3>Paid<br>Registration</h3>
+                        <p class="">50 Euros</p>
+                        <p class="small light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque enim fugit nisi.</p>
+                        <a href="#" class="circular-button">GO</a>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="register-panel top-flair align-center">
+                        <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                        <h3>Be A<br>Volunteer</h3>
+                        <p class="">and help us!</p>
+                        <p class="small light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque enim fugit nisi.</p>
+                        <a href="#" class="circular-button">GO</a>
+                    </div>
+                    <p class="align-center"><a href="#">View Volunteers List</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section id="sponsors">
+        <div class="container">
+            <h2 class="align-center">Sponsors</h2>
+            <p class="align-center">A big thanks to those organizations that given us their hard earned money in order to organize a big event for the
+            open source community.</p>
+            <div class="grid">
+                <div class="col-1-2 horizontal-divider align-center">
+                    <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                    <p>Drupal Association</p>
+                </div>
+                <div class="col-1-2 align-center">
+                    <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                    <p>Ote Academy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock main %}

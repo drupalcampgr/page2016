@@ -7,24 +7,42 @@
   background-position: center center, center center ;
   background-repeat: no-repeat, repeat;
   position: relative;
-  height: 80vh;
+  //height: 80vh;
+  padding: 100px 0 150px 0;
+  z-index: 1;
   .subtitle {
     margin-top: 0;
-    padding-top: 10%;
+    //padding-top: 10%;
   }
-  .horizontal-divider {
-    position: relative;
-    &:after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 3px;
-      height: 100%;
-      background: $blue-light;
+
+  .sun-bg {
+    background: url("../images/info/sun.png") 50% 50% no-repeat;
+    background-size: contain;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 50px 0;
+  }
+  // graphics
+  .fx {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    &.aeroplanaki {
+      left: 15%;
+      top: 28%;
     }
-    & + .col-1-2 {
-      padding-left: $grid-gutter;
+    &.sinefaki-bottom-left {
+      bottom: 15%;
+      left: 23%;
+    }
+    &.sinefaki-top-right {
+      top: 35%;
+      right: 19%;
+    }
+    &.drupalosima {
+      bottom: 50px;
+      left: 50%;
+      margin-left: -103px;
     }
   }
 }
