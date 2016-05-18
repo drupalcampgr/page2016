@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-/* line 5, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Users/iro/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -267,44 +267,49 @@ h3.dark {
 }
 
 /* line 30, ../sass/layouts/_grid.scss */
-.col-2-3 {
+.col-2-3,
+.width-2-3 {
   width: 66.66%;
 }
 
-/* line 33, ../sass/layouts/_grid.scss */
-.col-1-3 {
+/* line 34, ../sass/layouts/_grid.scss */
+.col-1-3,
+.width-1-3 {
   width: 33.33%;
 }
 
-/* line 36, ../sass/layouts/_grid.scss */
-.col-1-2 {
+/* line 38, ../sass/layouts/_grid.scss */
+.col-1-2,
+.width-1-2 {
   width: 50%;
 }
 
-/* line 39, ../sass/layouts/_grid.scss */
-.col-1-4 {
+/* line 42, ../sass/layouts/_grid.scss */
+.col-1-4,
+.width-1-4 {
   width: 25%;
 }
 
-/* line 42, ../sass/layouts/_grid.scss */
-.col-1-8 {
+/* line 46, ../sass/layouts/_grid.scss */
+.col-1-8,
+.width-1-8 {
   width: 12.5%;
 }
 
-/* line 47, ../sass/layouts/_grid.scss */
+/* line 52, ../sass/layouts/_grid.scss */
 .grid-pad {
   padding: 20px 0 20px 20px;
 }
-/* line 49, ../sass/layouts/_grid.scss */
+/* line 54, ../sass/layouts/_grid.scss */
 .grid-pad [class*='col-']:last-of-type {
   padding-right: 20px;
 }
 
-/* line 55, ../sass/layouts/_grid.scss */
+/* line 60, ../sass/layouts/_grid.scss */
 .horizontal-divider {
   position: relative;
 }
-/* line 57, ../sass/layouts/_grid.scss */
+/* line 62, ../sass/layouts/_grid.scss */
 .horizontal-divider:after {
   content: '';
   position: absolute;
@@ -314,7 +319,7 @@ h3.dark {
   height: 100%;
   background: #88d3db;
 }
-/* line 66, ../sass/layouts/_grid.scss */
+/* line 71, ../sass/layouts/_grid.scss */
 .horizontal-divider + .col-1-2 {
   padding-left: 20px;
 }
@@ -561,20 +566,20 @@ h3.dark {
   margin-left: -103px;
 }
 
-/* line 3, ../sass/components/_register.scss */
+/* line 2, ../sass/components/_register.scss */
 .register {
   background-color: #88d3db;
 }
-/* line 6, ../sass/components/_register.scss */
+/* line 5, ../sass/components/_register.scss */
 .register__panel {
   background-color: white;
   padding: 30px 35px 35px 35px;
 }
-/* line 10, ../sass/components/_register.scss */
+/* line 9, ../sass/components/_register.scss */
 .register__panel--to-poulaki-tsiou {
   position: relative;
 }
-/* line 13, ../sass/components/_register.scss */
+/* line 12, ../sass/components/_register.scss */
 .register__panel--to-poulaki-tsiou:before {
   width: 102px;
   height: 76px;
@@ -588,7 +593,50 @@ h3.dark {
   background-position: center bottom;
   background-size: contain;
 }
-/* line 28, ../sass/components/_register.scss */
+/* line 27, ../sass/components/_register.scss */
 .register__panel--bottom-flair {
   background-color: #ed1845;
+}
+
+/* line 40, ../sass/components/_register.scss */
+.circular-button {
+  -webkit-appearance: none;
+  overflow: visible;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #17337b;
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+  border-radius: 50%;
+  border-image: url("../images/circle-border.svg") 20 stretch;
+  border-image-width: 20px;
+  border-width: 5px;
+  border-style: solid;
+  box-shadow: 0 0 0 3px #17337b;
+  transition: 0.1s all;
+}
+/* line 61, ../sass/components/_register.scss */
+.circular-button:hover {
+  box-shadow: 0 0 0 5px #17337b;
+}
+
+/* line 3, ../sass/components/_speakers.scss */
+#speakers {
+  background: url("../images/speakers/speakers-bg.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+/* line 10, ../sass/components/_speakers.scss */
+.decagon {
+  max-width: 175px;
+  height: auto;
+  opacity: 0.8;
+  -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
 }
