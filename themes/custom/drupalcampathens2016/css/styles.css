@@ -336,12 +336,6 @@ h3.dark {
   display: none;
 }
 
-/* line 19, ../sass/components/_misc.scss */
-#speakers {
-  background: url("../images/speakers/speakers-bg.jpg") 50% 50% no-repeat;
-  background-size: cover;
-}
-
 /* line 3, ../sass/components/_header.scss */
 .header {
   background-color: #17337C;
@@ -597,4 +591,19 @@ h3.dark {
 /* line 28, ../sass/components/_register.scss */
 .register__panel--bottom-flair {
   background-color: #ed1845;
+}
+
+/* line 3, ../sass/components/_speakers.scss */
+#speakers {
+  background: url("../images/speakers/speakers-bg.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+/* line 10, ../sass/components/_speakers.scss */
+.decagon {
+  max-width: 175px;
+  height: auto;
+  opacity: 0.8;
+  -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
 }
