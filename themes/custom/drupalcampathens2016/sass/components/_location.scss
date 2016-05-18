@@ -1,0 +1,32 @@
+// Location Component
+
+#location {
+  background: url("../images/location/location-bg.jpg") 50% 0 no-repeat;
+  min-height: 1000px;
+  background-size: cover;
+  h2 {
+    color: #fff;
+    font-weight: 700;
+
+  }
+
+}
+
+// art on panels
+.layout-2column__col-x.relative {
+  z-index: 0;
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url("../images/location/blue.png") 50% 50% no-repeat;
+    background-size: contain;
+    height: 540px;
+    width: 500px;
+    z-index: -1;
+    margin-top: -140px;
+  }
+  &.alt:before {
+    background: url("../images/location/white.png") 50% 50% no-repeat;
+  }
+}
