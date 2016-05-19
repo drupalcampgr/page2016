@@ -1,0 +1,42 @@
+// lets do this
+
+.node-session-submit-form {
+  .js-form-item {
+    position:relative;
+    display:block;
+    &.form-type-textfield {
+      height:40px;
+    }
+    input {
+      position: absolute;
+      width:100%;
+      display:block;
+      left:0;
+      top:0;
+      height:40px;
+      background: none;
+      border: 3px solid;
+    }
+    label {
+      position:absolute;
+      top: -10px;
+      left: 15px;
+      background:white;
+      z-index:1;
+      padding:0 10px;
+    }
+    .description {
+      display:none;
+    }
+    input:focus + .description {
+      display:block;
+      position:absolute;
+      bottom:0;
+      right:0;
+    }
+  }
+}
+
+.block-page-title-block {
+  display: none;
+}

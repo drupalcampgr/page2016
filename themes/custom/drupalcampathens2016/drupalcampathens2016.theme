@@ -161,3 +161,11 @@ function drupalcampathens2016_preprocess(&$variables, $hook)
 {
   $variables['base_path'] = base_path();
 }
+
+/**
+ ** Use this to theme each form by machine name
+ ** like this: form--contact-element-machine-name-of-form.html.twig
+ **/
+function drupalcampathens2016_theme_suggestions_form_alter(array &$suggestions, array $variables) {
+  $suggestions[] = 'form__' . $variables['element']['#form_id'];
+}
