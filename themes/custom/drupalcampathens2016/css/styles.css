@@ -353,22 +353,8 @@ h3.dark {
   position: fixed;
   top: -200px;
   z-index: 999;
-  background-color: #112558;
   right: 0;
   left: 0;
-  display: block !important;
-  transition: all 0.5s ease;
-}
-/* line 25, ../sass/components/_misc.scss */
-.path-frontpage .is_fixed {
-  transition: all 0.5s ease;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  background-color: #112558;
-  right: 0;
-  left: 0;
-  display: block !important;
 }
 
 /* line 3, ../sass/components/_header.scss */
@@ -389,6 +375,27 @@ h3.dark {
   background-size: 680px;
   margin: 0 auto;
   width: 800px;
+}
+
+/* line 1, ../sass/components/_main-menu.scss */
+.main-menu {
+  transition: all 0.5s ease;
+  background-color: #030642;
+}
+/* line 5, ../sass/components/_main-menu.scss */
+.main-menu a {
+  color: #FFF;
+}
+
+/* line 10, ../sass/components/_main-menu.scss */
+.is_fixed {
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 0 !important;
+  z-index: 999;
+  background-color: #112558;
+  right: 0;
+  left: 0;
 }
 
 /* line 3, ../sass/components/_social.scss */
