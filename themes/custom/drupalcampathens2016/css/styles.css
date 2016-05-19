@@ -348,9 +348,27 @@ h3.dark {
   font-weight: bold;
 }
 
-/* line 13, ../sass/components/_misc.scss */
+/* line 14, ../sass/components/_misc.scss */
 .path-frontpage .menu--main {
-  display: none;
+  position: fixed;
+  top: -200px;
+  z-index: 999;
+  background-color: #112558;
+  right: 0;
+  left: 0;
+  display: block !important;
+  transition: all 0.5s ease;
+}
+/* line 25, ../sass/components/_misc.scss */
+.path-frontpage .is_fixed {
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #112558;
+  right: 0;
+  left: 0;
+  display: block !important;
 }
 
 /* line 3, ../sass/components/_header.scss */
