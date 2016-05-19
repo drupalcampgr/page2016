@@ -4,13 +4,21 @@
   }
 }
 
-.title{
+.title {
   font-size: 2em;
   font-weight: bold;
 }
 
 .path-frontpage{
+
   .menu--main{
-    display: none;
+    position: fixed;
+    top: -200px;
+    z-index: 999;
+    right: 0;
+    left: 0;
   }
+}
+.layout-container{
+  margin: 0;
 }

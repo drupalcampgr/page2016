@@ -1,0 +1,48 @@
+.main-menu{
+  transition: all 0.5s ease;
+  //background-color: #030642;
+  background-color: #17337C;
+  border-top: solid 23px #030642;
+  height: 136px;
+
+  &__logo{
+    float: left;
+  }
+
+  a{
+    color: #FFF;
+    text-decoration: none;
+  }
+
+  a.is-active{
+    color: #FFF!important;
+    line-height: 80px;
+  }
+
+  img{
+    width: 500px;
+    margin-top: -25px;
+  }
+
+  .menu{
+    background-color: #17337C;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: right;
+    margin: 15px 50px 0;
+  }
+
+  .menu-item{
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+
+.is_fixed{
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 0!important;
+  z-index: 999;
+  right: 0;
+  left: 0;
+}

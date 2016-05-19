@@ -156,3 +156,8 @@ function drupalcampathens2016_preprocess_menu_local_task(array &$variables) {
 {
   $variables['attributes']['class'][] = "header__branding";
 }*/
+
+function drupalcampathens2016_preprocess(&$variables, $hook)
+{
+  $variables['base_path'] = base_path();
+}
