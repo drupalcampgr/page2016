@@ -357,6 +357,11 @@ h3.dark {
   left: 0;
 }
 
+/* line 22, ../sass/components/_misc.scss */
+.layout-container {
+  margin: 0;
+}
+
 /* line 3, ../sass/components/_header.scss */
 .header {
   background-color: #17337C;
@@ -380,20 +385,49 @@ h3.dark {
 /* line 1, ../sass/components/_main-menu.scss */
 .main-menu {
   transition: all 0.5s ease;
-  background-color: #030642;
+  background-color: #17337C;
+  border-top: solid 23px #030642;
+  height: 136px;
 }
-/* line 5, ../sass/components/_main-menu.scss */
+/* line 8, ../sass/components/_main-menu.scss */
+.main-menu__logo {
+  float: left;
+}
+/* line 12, ../sass/components/_main-menu.scss */
 .main-menu a {
   color: #FFF;
+  text-decoration: none;
+}
+/* line 17, ../sass/components/_main-menu.scss */
+.main-menu a.is-active {
+  color: #FFF !important;
+  line-height: 80px;
+}
+/* line 22, ../sass/components/_main-menu.scss */
+.main-menu img {
+  width: 500px;
+  margin-top: -25px;
+}
+/* line 27, ../sass/components/_main-menu.scss */
+.main-menu .menu {
+  background-color: #17337C;
+  font-weight: bold;
+  text-transform: uppercase;
+  float: right;
+  margin: 15px 50px 0;
+}
+/* line 35, ../sass/components/_main-menu.scss */
+.main-menu .menu-item {
+  display: inline-block;
+  margin-left: 20px;
 }
 
-/* line 10, ../sass/components/_main-menu.scss */
+/* line 41, ../sass/components/_main-menu.scss */
 .is_fixed {
   transition: all 0.5s ease;
   position: fixed;
   top: 0 !important;
   z-index: 999;
-  background-color: #112558;
   right: 0;
   left: 0;
 }
