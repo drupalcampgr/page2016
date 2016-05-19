@@ -1,0 +1,44 @@
+// The news component
+
+#news {
+  background: url("../images/news/news-bg.png") 50% 50% no-repeat;
+  min-height: 500px;
+  background-size: cover;
+  h2 {
+    color: $red;
+  }
+  .newspadding {
+    padding: 0 50px;
+  }
+  .newstitle {
+    color: $blue-dark;
+    font-weight: 700;
+    font-size: 1em;
+  }
+  .rem-bottom-margin {
+    margin-bottom: 0;
+  }
+  small {
+    font-size: 0.7em;
+    font-weight: 700;
+    color: $blue-light;
+  }
+}
+
+.more-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  padding: 0 !important;
+  margin-top: -60px;
+  a {
+    text-decoration: none;
+    > img {
+      transition: 0.2s all ease-in;
+    }
+    &:hover > img {
+      transform: translateX(15px);
+    }
+  }
+}

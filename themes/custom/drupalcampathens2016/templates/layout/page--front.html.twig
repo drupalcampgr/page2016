@@ -79,15 +79,23 @@
         <div class="container">
             <h3 class="align-center">Featured Speakers</h3>
             <div class="grid">
-                <div class="col-1-2 align-center">
-                    <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                <div class="col-1-4">
+                    <!-- just a spacer -->
+                    &nbsp;
+                </div>
+                <div class="col-1-4 align-center">
+                    <img class="decagon" src="{{ base_path ~ directory }}/images/speakers/dries.jpg" alt="">
                     <h3 class="dark">Dries Butyaert</h3>
                     <p class="light">Creator of the universe</p>
                 </div>
-                <div class="col-1-2 align-center">
-                    <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                <div class="col-1-4 align-center">
+                    <img class="decagon" src="{{ base_path ~ directory }}/images/speakers/morten.jpg" alt="">
                     <h3 class="dark">Morten DK</h3>
                     <p class="light">Creator of twig magic</p>
+                </div>
+                <div class="col-1-4">
+                    <!-- just a spacer -->
+                    &nbsp;
                 </div>
             </div>
             <div class="align-center">
@@ -102,24 +110,24 @@
     <section id="tickets" class="register">
         <div class="container">
             <h2 class="align-center">Registration</h2>
-            <p class="align-center">
+            <p class="align-center width-2-3">
                 We're gonna have a great lineup so don't forget to register for news and updates
                 about the event, speakers and schedule.
             </p>
             <div class="layout-3column">
                 <div class="layout-3column__col">
                     <div class="register__panel register__panel--to-poulaki-tsiou align-center">
-                        <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                        <img src="{{ base_path ~ directory }}/images/register/sun.png" alt="">
                         <h3>Register For<br>The Event</h3>
                         <p class="">for free</p>
                         <p class="small light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque enim fugit nisi.</p>
                         <a href="#" class="circular-button">GO</a>
                     </div>
-                    <p class="align-center"><a href="">View Attendees List</a></p>
+                    <p class="align-center"><a class="lists" href="">View Attendees List</a></p>
                 </div>
                 <div class="layout-3column__col">
                     <div class="register__panel register__panel--bottom-flair align-center">
-                        <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                        <img src="{{ base_path ~ directory }}/images/register/swag.png" alt="">
                         <h3>Paid<br>Registration</h3>
                         <p class="">50 Euros</p>
                         <p class="small light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque enim fugit nisi.</p>
@@ -128,13 +136,13 @@
                 </div>
                 <div class="layout-3column__col">
                     <div class="register__panel register__panel--top-flair align-center">
-                        <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
+                        <img src="{{ base_path ~ directory }}/images/register/camp.png" alt="">
                         <h3>Be A<br>Volunteer</h3>
                         <p class="">and help us!</p>
                         <p class="small light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque enim fugit nisi.</p>
                         <a href="#" class="circular-button">GO</a>
                     </div>
-                    <p class="align-center"><a href="#">View Volunteers List</a></p>
+                    <p class="align-center"><a class="lists" href="#">View Volunteers List</a></p>
                 </div>
             </div>
         </div>
@@ -154,6 +162,51 @@
                 <div class="col-1-2 align-center">
                     <img src="{{ base_path ~ directory }}/images/info/drupal.png" alt="">
                     <p>Ote Academy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="relative">
+        <div class="container">
+            <h2 class="align-center">News</h2>
+            <div class="grid">
+                <div class="col-1-2 horizontal-divider newspadding">
+                    <h3 class="newstitle">This is a news title</h3>
+                    <p class="rem-bottom-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis cupiditate necessitatibus nihil perferendis reprehenderit rerum! Assumenda consectetur enim iste iure laborum minima minus molestias qui ut vitae. Aut, consequuntur?</p>
+                    <small>05 May 2016</small>
+                </div>
+                <div class="col-1-2 newspadding">
+                    <h3 class="newstitle">This is a news title</h3>
+                    <p class="rem-bottom-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis cumque, deserunt dicta eaque eos esse est et expedita facere inventore iusto natus necessitatibus nemo qui, recusandae ut velit voluptas!</p>
+                    <small>05 May 2016</small>
+                </div>
+            </div>
+        </div>
+        <div class="more-arrow">
+            <a href="#"><img src="{{ base_path ~ directory }}/images/news/more-arrow.png" alt="">&nbsp;</a>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location">
+        <div class="container">
+            <h2 class="align-center">The Location</h2>
+            <div class="layout-2column">
+                <div class="layout-2column__col-x relative">
+                    <h3>The Cube Athens</h3>
+                    <p>
+                        KLISOVIS 8, ATHENS 106 77<br>
+                        <span class="blue">OPEN 24 HOURS</span><br>
+                        <span class="url">thecube.gr</span>
+                    </p>
+                    <a href="#">View on Maps &amp; Navigate</a>
+                </div>
+                <div class="layout-2column__col-x relative alt">
+                    <h3>Athens</h3>
+                    <p>Athens is a vibrant city with lots of sightseeing and happy people. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, beatae cum harum laboriosam non obcaecati quam quod? Dignissimos error expedita fuga hic, in similique. Aspernatur consequatur iste quod vitae voluptatibus!</p>
+                    <a href="#" class="button button--small">Athens Guide</a>
                 </div>
             </div>
         </div>

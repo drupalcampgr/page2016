@@ -4,7 +4,13 @@
   }
 }
 
-.title{
+.title {
   font-size: 2em;
   font-weight: bold;
+}
+
+.path-frontpage{
+  .menu--main{
+    display: none;
+  }
 }

@@ -1,5 +1,4 @@
 // The slice component.
-
 .register {
   background-color: $another-lighter-blue;
 
@@ -27,10 +26,60 @@
 
     &--bottom-flair {
       background-color: $red;
+      h3 {
+        color: #ffffff;
+      }
+      p {
+        color: $blue-light;
+        &.light {
+          color: #EEEEEE;
+        }
+      }
     }
 
     &--top-flair {
 
     }
+  }
+  .lists {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $blue;
+    &:visited {
+      color: $blue;
+    }
+    &:hover,
+    &:active {
+      color: #ffffff;
+    }
+  }
+}
+
+// The Circular button
+$circle-size:             60px;
+$border-width:            5px;
+.circular-button {
+  -webkit-appearance: none;
+  overflow: visible;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: $blue-dark;
+  width: $circle-size;
+  height: $circle-size;
+  line-height: $circle-size - ($border-width * 2);
+  border-radius: 50%;
+  border-image: url("../images/circle-border.svg") 20 stretch;
+  border-image-width: 20px;
+  border-width: $border-width;
+  border-style: solid;
+  box-shadow: 0 0 0 3px $blue-dark;
+  transition: 0.1s all;
+  &:hover {
+    box-shadow: 0 0 0 5px $blue-dark;
   }
 }
