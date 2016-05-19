@@ -26,10 +26,31 @@
 
     &--bottom-flair {
       background-color: $red;
+      h3 {
+        color: #ffffff;
+      }
+      p {
+        color: $blue-light;
+        &.light {
+          color: #EEEEEE;
+        }
+      }
     }
 
     &--top-flair {
 
+    }
+  }
+  .lists {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $blue;
+    &:visited {
+      color: $blue;
+    }
+    &:hover,
+    &:active {
+      color: #ffffff;
     }
   }
 }

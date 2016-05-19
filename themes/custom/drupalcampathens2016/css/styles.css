@@ -124,6 +124,18 @@ section > * {
   text-transform: uppercase;
   border-radius: 1px;
 }
+/* line 83, ../sass/_base.scss */
+.button--small {
+  font-size: 0.8em;
+  padding: 0 22.5px;
+  line-height: 40px;
+  min-height: 40px;
+}
+
+/* line 92, ../sass/_base.scss */
+.relative {
+  position: relative;
+}
 
 /* line 19, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
@@ -597,8 +609,34 @@ h3.dark {
 .register__panel--bottom-flair {
   background-color: #ed1845;
 }
+/* line 29, ../sass/components/_register.scss */
+.register__panel--bottom-flair h3 {
+  color: #ffffff;
+}
+/* line 32, ../sass/components/_register.scss */
+.register__panel--bottom-flair p {
+  color: #88d3db;
+}
+/* line 34, ../sass/components/_register.scss */
+.register__panel--bottom-flair p.light {
+  color: #EEEEEE;
+}
+/* line 44, ../sass/components/_register.scss */
+.register .lists {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0275bb;
+}
+/* line 48, ../sass/components/_register.scss */
+.register .lists:visited {
+  color: #0275bb;
+}
+/* line 51, ../sass/components/_register.scss */
+.register .lists:hover, .register .lists:active {
+  color: #ffffff;
+}
 
-/* line 40, ../sass/components/_register.scss */
+/* line 61, ../sass/components/_register.scss */
 .circular-button {
   -webkit-appearance: none;
   overflow: visible;
@@ -621,7 +659,7 @@ h3.dark {
   box-shadow: 0 0 0 3px #17337b;
   transition: 0.1s all;
 }
-/* line 61, ../sass/components/_register.scss */
+/* line 82, ../sass/components/_register.scss */
 .circular-button:hover {
   box-shadow: 0 0 0 5px #17337b;
 }
@@ -639,4 +677,90 @@ h3.dark {
   opacity: 0.8;
   -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
   clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+/* line 3, ../sass/components/_news.scss */
+#news {
+  background: url("../images/news/news-bg.png") 50% 50% no-repeat;
+  min-height: 500px;
+  background-size: cover;
+}
+/* line 7, ../sass/components/_news.scss */
+#news h2 {
+  color: #ed1845;
+}
+/* line 10, ../sass/components/_news.scss */
+#news .newspadding {
+  padding: 0 50px;
+}
+/* line 13, ../sass/components/_news.scss */
+#news .newstitle {
+  color: #17337b;
+  font-weight: 700;
+  font-size: 1em;
+}
+/* line 18, ../sass/components/_news.scss */
+#news .rem-bottom-margin {
+  margin-bottom: 0;
+}
+/* line 21, ../sass/components/_news.scss */
+#news small {
+  font-size: 0.7em;
+  font-weight: 700;
+  color: #88d3db;
+}
+
+/* line 28, ../sass/components/_news.scss */
+.more-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  padding: 0 !important;
+  margin-top: -60px;
+}
+/* line 35, ../sass/components/_news.scss */
+.more-arrow a {
+  text-decoration: none;
+}
+/* line 37, ../sass/components/_news.scss */
+.more-arrow a > img {
+  transition: 0.2s all ease-in;
+}
+/* line 40, ../sass/components/_news.scss */
+.more-arrow a:hover > img {
+  transform: translateX(15px);
+}
+
+/* line 3, ../sass/components/_location.scss */
+#location {
+  background: url("../images/location/location-bg.jpg") 50% 0 no-repeat;
+  min-height: 1000px;
+  background-size: cover;
+}
+/* line 7, ../sass/components/_location.scss */
+#location h2 {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* line 16, ../sass/components/_location.scss */
+.layout-2column__col-x.relative {
+  z-index: 0;
+}
+/* line 18, ../sass/components/_location.scss */
+.layout-2column__col-x.relative:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url("../images/location/blue.png") 50% 50% no-repeat;
+  background-size: contain;
+  height: 540px;
+  width: 500px;
+  z-index: -1;
+  margin-top: -140px;
+}
+/* line 29, ../sass/components/_location.scss */
+.layout-2column__col-x.relative.alt:before {
+  background: url("../images/location/white.png") 50% 50% no-repeat;
 }
