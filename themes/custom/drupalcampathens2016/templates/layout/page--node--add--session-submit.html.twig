@@ -46,19 +46,23 @@
 #}
 
 {% block main %}
-    <div class="container">
-        <div class="title">
-            <h1>Submit Your Proposal</h1>
-        </div>
-        <div class="grid">
-            <div class="col-1-2">
-                <p class="large">
-                    DrupalCamp Greece is a conference that brings together web developers, designers, site-builders, content administrators and simple curious minds to learn, network and discuss about Drupal, Design, Development and Cutting Edge Web Technologies.
-                </p>
+    <div class="relative">
+        <div class="container">
+            <div class="title">
+                <h1>Submit Your Proposal</h1>
             </div>
-            <div class="col-1-2">
-                {{ page.content }}
+            <div class="lines-separator"></div>
+            <div class="grid">
+                <div class="col-1-2">
+                    <p class="large">
+                        DrupalCamp Greece is a conference that brings together web developers, designers, site-builders, content administrators and simple curious minds to learn, network and discuss about Drupal, Design, Development and Cutting Edge Web Technologies.
+                    </p>
+                </div>
+                <div class="col-1-2">
+                    {{ page.content }}
+                </div>
             </div>
         </div>
     </div>
+
 {% endblock main %}

@@ -1,11 +1,11 @@
-// lets do this
-
+// Session Submit Form
+$input-height:                60px;
 .node-session-submit-form {
   .js-form-item {
     position:relative;
     display:block;
     &.form-type-textfield {
-      height:40px;
+      height:$input-height;
     }
     input {
       position: absolute;
@@ -13,9 +13,15 @@
       display:block;
       left:0;
       top:0;
-      height:40px;
+      height:$input-height;
       background: none;
-      border: 3px solid;
+      border: 3px solid $blue;
+    }
+    textarea {
+      border: 3px solid $blue;
+    }
+    .filter-wrapper {
+      display: none;
     }
     label {
       position:absolute;
@@ -35,8 +41,39 @@
       right:0;
     }
   }
+  .form-type-select {
+    label {
+      display: block;
+    }
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: $input-height;
+    border: 3px solid $blue;
+    option {
+      font-size: 1.4em;
+    }
+  }
+  #edit-preview {
+    display: none;
+  }
 }
 
+// Hide Content type title since its hardcoded in twig file
 .block-page-title-block {
   display: none;
+}
+
+// Separator below title
+.lines-separator {
+  background-image: url("../images/blue-lines.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  top: 10%;
 }

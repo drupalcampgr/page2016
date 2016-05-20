@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -388,27 +388,28 @@ h3.dark {
   background-color: #17337C;
   border-top: solid 23px #030642;
   height: 136px;
+  margin-bottom: 30px;
 }
-/* line 8, ../sass/components/_main-menu.scss */
+/* line 9, ../sass/components/_main-menu.scss */
 .main-menu__logo {
   float: left;
 }
-/* line 12, ../sass/components/_main-menu.scss */
+/* line 13, ../sass/components/_main-menu.scss */
 .main-menu a {
   color: #FFF;
   text-decoration: none;
 }
-/* line 17, ../sass/components/_main-menu.scss */
+/* line 18, ../sass/components/_main-menu.scss */
 .main-menu a.is-active {
   color: #FFF !important;
   line-height: 80px;
 }
-/* line 22, ../sass/components/_main-menu.scss */
+/* line 23, ../sass/components/_main-menu.scss */
 .main-menu img {
   width: 500px;
   margin-top: -25px;
 }
-/* line 27, ../sass/components/_main-menu.scss */
+/* line 28, ../sass/components/_main-menu.scss */
 .main-menu .menu {
   background-color: #17337C;
   font-weight: bold;
@@ -416,13 +417,13 @@ h3.dark {
   float: right;
   margin: 15px 50px 0;
 }
-/* line 35, ../sass/components/_main-menu.scss */
+/* line 36, ../sass/components/_main-menu.scss */
 .main-menu .menu-item {
   display: inline-block;
   margin-left: 20px;
 }
 
-/* line 41, ../sass/components/_main-menu.scss */
+/* line 42, ../sass/components/_main-menu.scss */
 .is_fixed {
   transition: all 0.5s ease;
   position: fixed;
@@ -831,7 +832,7 @@ h3.dark {
 }
 /* line 7, ../sass/components/_submit-form.scss */
 .node-session-submit-form .js-form-item.form-type-textfield {
-  height: 40px;
+  height: 60px;
 }
 /* line 10, ../sass/components/_submit-form.scss */
 .node-session-submit-form .js-form-item input {
@@ -840,11 +841,19 @@ h3.dark {
   display: block;
   left: 0;
   top: 0;
-  height: 40px;
+  height: 60px;
   background: none;
-  border: 3px solid;
+  border: 3px solid #0275bb;
 }
 /* line 20, ../sass/components/_submit-form.scss */
+.node-session-submit-form .js-form-item textarea {
+  border: 3px solid #0275bb;
+}
+/* line 23, ../sass/components/_submit-form.scss */
+.node-session-submit-form .js-form-item .filter-wrapper {
+  display: none;
+}
+/* line 26, ../sass/components/_submit-form.scss */
 .node-session-submit-form .js-form-item label {
   position: absolute;
   top: -10px;
@@ -853,19 +862,51 @@ h3.dark {
   z-index: 1;
   padding: 0 10px;
 }
-/* line 28, ../sass/components/_submit-form.scss */
+/* line 34, ../sass/components/_submit-form.scss */
 .node-session-submit-form .js-form-item .description {
   display: none;
 }
-/* line 31, ../sass/components/_submit-form.scss */
+/* line 37, ../sass/components/_submit-form.scss */
 .node-session-submit-form .js-form-item input:focus + .description {
   display: block;
   position: absolute;
   bottom: 0;
   right: 0;
 }
+/* line 45, ../sass/components/_submit-form.scss */
+.node-session-submit-form .form-type-select label {
+  display: block;
+}
+/* line 49, ../sass/components/_submit-form.scss */
+.node-session-submit-form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 60px;
+  border: 3px solid #0275bb;
+}
+/* line 56, ../sass/components/_submit-form.scss */
+.node-session-submit-form select option {
+  font-size: 1.4em;
+}
+/* line 60, ../sass/components/_submit-form.scss */
+.node-session-submit-form #edit-preview {
+  display: none;
+}
 
-/* line 40, ../sass/components/_submit-form.scss */
+/* line 66, ../sass/components/_submit-form.scss */
 .block-page-title-block {
   display: none;
+}
+
+/* line 71, ../sass/components/_submit-form.scss */
+.lines-separator {
+  background-image: url("../images/blue-lines.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  top: 10%;
 }
