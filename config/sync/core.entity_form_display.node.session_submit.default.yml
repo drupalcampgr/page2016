@@ -16,14 +16,14 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 2
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
   field_speaker:
-    weight: 2
+    weight: 0
     settings:
       size: 60
       placeholder: ''
@@ -36,7 +36,7 @@ content:
     type: options_select
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     settings:
       size: 60
       placeholder: ''
