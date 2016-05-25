@@ -9,7 +9,11 @@
 
 namespace Drupal\drupalcamp\Form;
 
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Ajax\HtmlCommand;
+use Drupal\Core\Ajax\InvokeCommand;
 use Drupal\Core\Form\FormBase;
+use Drupal\Core\Form\FormStateInterface;
 
 class register extends FormBase {
   public function getFormId() {

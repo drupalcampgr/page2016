@@ -3,4 +3,4 @@ register_page:
   defaults:
     _controller: '\Drupal\drupalcamp\Controller\DrupalcampRegisterPage::getPage'
   requirements:
-    _permission: "access content"
+    _permission: 'access content'
