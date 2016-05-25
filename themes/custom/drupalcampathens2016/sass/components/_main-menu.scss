@@ -21,7 +21,6 @@
   }
 
   img{
-    width: 500px;
     margin-top: -25px;
   }
 
@@ -46,4 +45,14 @@
   z-index: 999;
   right: 0;
   left: 0;
+  border: 0;
+  height: auto;
+
+  .menu{
+    margin-top: 0;
+  }
+
+  img{
+    margin-top: 0;
+  }
 }
