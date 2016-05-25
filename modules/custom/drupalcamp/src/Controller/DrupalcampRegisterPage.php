@@ -15,6 +15,7 @@ class DrupalcampRegisterPage extends ControllerBase
 {
   public function getPage()
   {
+    
     $registerForm =  \Drupal::formBuilder()->getForm('Drupal\drupalcamp\Form\register');
 
     $build = [];
