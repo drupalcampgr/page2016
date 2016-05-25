@@ -13,8 +13,38 @@
     background: url("../images/header__date.png") no-repeat;
     background-position: center;
     height: 338px;
-    background-size: 680px;
     margin: 0 auto;
     width: 800px;
   }
+
+  &__social {
+    position: relative;
+    padding: 38px 0;
+  }
+
+  &__social-title {
+    margin: 0 0 20px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__social-link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px;
+  }
+
+}
+.header__social{
+
+  &:hover {
+    bottom: 0;
+    height: 10px;
+    background: url(../images/triangles.png) no-repeat;
+    width: 200px;
+  }
+
 }
