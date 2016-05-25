@@ -1,0 +1,8 @@
+name: drupalcamp
+type: module
+description: Drupalcamp custom pages
+core: 8.x
+package: Drupalcamp
+dependencies:
+  - block
+  - image_url_formatter

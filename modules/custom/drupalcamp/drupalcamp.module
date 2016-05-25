@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function drupalcamp_theme() {
+  $theme['register_page'] = [
+    'variables' => [
+      'content' => NULL,
+      'registerForm' => NULL,
+    ],
+  ];
+
+  return $theme;
+}
