@@ -372,9 +372,36 @@ h3.dark {
   background: url("../images/header__date.png") no-repeat;
   background-position: center;
   height: 338px;
-  background-size: 680px;
   margin: 0 auto;
   width: 800px;
+}
+/* line 20, ../sass/components/_header.scss */
+.header__social {
+  position: relative;
+  padding: 38px 0;
+}
+/* line 25, ../sass/components/_header.scss */
+.header__social-title {
+  margin: 0 0 20px;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* line 34, ../sass/components/_header.scss */
+.header__social-link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px;
+}
+
+/* line 43, ../sass/components/_header.scss */
+.header__social:hover {
+  bottom: 0;
+  height: 10px;
+  background: url(../images/triangles.png) no-repeat;
+  width: 200px;
 }
 
 /* line 1, ../sass/components/_main-menu.scss */
