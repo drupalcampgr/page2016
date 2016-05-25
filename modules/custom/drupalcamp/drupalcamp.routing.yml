@@ -1,0 +1,6 @@
+register_page:
+  path: '/register'
+  defaults:
+    _controller: '\Drupal\drupalcamp\Controller\DrupalcampRegisterPage::getPage'
+  requirements:
+    _permission: 'access content'
