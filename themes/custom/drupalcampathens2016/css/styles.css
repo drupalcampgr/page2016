@@ -338,17 +338,12 @@ h3.dark {
 
 /* Components */
 /* line 2, ../sass/components/_misc.scss */
-.site-logo img {
-  width: 300px;
-}
-
-/* line 7, ../sass/components/_misc.scss */
 .title {
   font-size: 2em;
   font-weight: bold;
 }
 
-/* line 14, ../sass/components/_misc.scss */
+/* line 9, ../sass/components/_misc.scss */
 .path-frontpage .menu--main {
   position: fixed;
   top: -200px;
@@ -357,7 +352,7 @@ h3.dark {
   left: 0;
 }
 
-/* line 22, ../sass/components/_misc.scss */
+/* line 17, ../sass/components/_misc.scss */
 .layout-container {
   margin: 0;
 }
