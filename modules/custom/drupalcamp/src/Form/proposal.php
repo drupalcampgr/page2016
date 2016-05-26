@@ -11,9 +11,9 @@ namespace Drupal\drupalcamp\Form;
 
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\HtmlCommand;
-use Drupal\Core\Ajax\InvokeCommand;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\Node;
 
 class proposal extends FormBase {
   public function getFormId() {
@@ -76,7 +76,7 @@ class proposal extends FormBase {
         ],
       ],
       '#ajax' => [
-        'callback' => 'Drupal\drupalcamp\Form\register::sendCallback',
+        'callback' => 'Drupal\drupalcamp\Form\proposal::sendCallback',
         'event' => 'click',
         'progress' => [
           'type' => 'throbber',
@@ -138,7 +138,28 @@ class proposal extends FormBase {
   public static function sendCallback(array &$form, FormStateInterface $form_state)
   {
 
-    if((\Drupal::service('email.validator')->isValid($form_state->getValue('email')))&&(!empty($form_state->getValue('name')))&&(!empty($form_state->getValue('subject')))&&(!empty($form_state->getValue('message')))) {
+    if((\Drupal::service('email.validator')->isValid($form_state->getValue('email')))&&(!empty($form_state->getValue('speakerName')))&&(!empty($form_state->getValue('sessionTitle')))&&(!empty($form_state->getValue('description')))) {
+
+      $speakerName = $form_state->getValue('speakerName');
+      $sessionTitle = $form_state->getValue('sessionTitle');
+      $email = $form_state->getValue('email');
+      $description =$form_state->getValue('description');
+      $node = Node::create(array(
+          'type' => 'proposals',
+          'title' => $speakerName.': '.$sessionTitle,
+          'langcode' => 'en',
+          'uid' => '1',
+          'status' => 1,
+          'field_email' => $email,
+          'field_speaker_name' => $speakerName,
+          'field_session_title' => $sessionTitle,
+          'body' => $description,
+      ));
+
+      $node->save();
+
+      $ajax_response = new AjaxResponse();
+
       $mailManager = \Drupal::service('plugin.manager.mail');
 
       $module = 'drupalcamp';
@@ -161,14 +182,13 @@ class proposal extends FormBase {
         $message = t('Your proposal has been submitted.');
         drupal_set_message($message);
         \Drupal::logger('drupalcamp')->notice($message);
+        $ajax_response->addCommand(new HtmlCommand('#proposal-form',''));
       }
     } else {
       $message = t('Proposal not send. Please fill in all fields.');
     }
 
-    $ajax_response = new AjaxResponse();
     $ajax_response->addCommand(new HtmlCommand('#response-message',$message));
-    $ajax_response->addCommand(new InvokeCommand('#edit-message--description', 'css', array('color', 'black')));
 
     // Return the AjaxResponse Object.
     return $ajax_response;
