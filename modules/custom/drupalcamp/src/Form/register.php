@@ -156,6 +156,7 @@ class register extends FormBase {
 
       $node->save();
 
+      $ajax_response = new AjaxResponse();
 
       $mailManager = \Drupal::service('plugin.manager.mail');
 
@@ -179,12 +180,13 @@ class register extends FormBase {
         $message = t('Your registration has been submitted.');
         drupal_set_message($message);
         \Drupal::logger('drupalcamp')->notice($message);
+        $ajax_response->addCommand(new HtmlCommand('#register-form',''));
       }
     } else {
       $message = t('Registration not send. Please fill in all fields.');
     }
 
-    $ajax_response = new AjaxResponse();
+
     $ajax_response->addCommand(new HtmlCommand('#response-message',$message));
 
     // Return the AjaxResponse Object.
