@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.registered_attendants
+  module:
+    - user
+id: node.registered_attendants.teaser
+targetEntityType: node
+bundle: registered_attendants
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

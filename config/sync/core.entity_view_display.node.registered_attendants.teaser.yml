@@ -1,0 +1,17 @@
+uuid: af4169cf-7fa3-44fc-8a74-0faa3415fbf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.registered_attendants
+  module:
+    - user
+id: node.registered_attendants.teaser
+targetEntityType: node
+bundle: registered_attendants
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.registered_attendants.field_email
+    - field.field.node.registered_attendants.field_firstname
+    - field.field.node.registered_attendants.field_lastname
+    - field.field.node.registered_attendants.field_occupation
+    - field.field.node.registered_attendants.field_paid_registration
+    - node.type.registered_attendants
+  module:
+    - user
+id: node.registered_attendants.default
+targetEntityType: node
+bundle: registered_attendants
+mode: default
+content:
+  field_email:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_firstname:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_lastname:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_occupation:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_paid_registration:
+    weight: 105
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  links:
+    weight: 100
+hidden: {  }
