@@ -11,13 +11,13 @@ namespace Drupal\drupalcamp\Form;
 
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\HtmlCommand;
-use Drupal\Core\Ajax\InvokeCommand;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\Node;
 
 class register extends FormBase {
   public function getFormId() {
-    return 'regiter_form';
+    return 'register_form';
   }
 
   public function buildForm(array $form, FormStateInterface $form_state) {
@@ -137,8 +137,26 @@ class register extends FormBase {
 
   public static function sendCallback(array &$form, FormStateInterface $form_state)
   {
+    if((\Drupal::service('email.validator')->isValid($form_state->getValue('email')))&&(!empty($form_state->getValue('firstName')))&&(!empty($form_state->getValue('lastName')))&&(!empty($form_state->getValue('occupation')))) {
+      $firstName = $form_state->getValue('firstName');
+      $lastName = $form_state->getValue('lastName');
+      $email = $form_state->getValue('email');
+      $occupation =$form_state->getValue('occupation');
+      $node = Node::create(array(
+          'type' => 'registered_attendants',
+          'title' => $lastName.' '.$firstName,
+          'langcode' => 'en',
+          'uid' => '1',
+          'status' => 1,
+          'field_email' => $email,
+          'field_firstname' => $firstName,
+          'field_lastname' => $lastName,
+          'field_occupation' => $occupation,
+      ));
 
-    if((\Drupal::service('email.validator')->isValid($form_state->getValue('email')))&&(!empty($form_state->getValue('name')))&&(!empty($form_state->getValue('subject')))&&(!empty($form_state->getValue('message')))) {
+      $node->save();
+
+
       $mailManager = \Drupal::service('plugin.manager.mail');
 
       $module = 'drupalcamp';
@@ -168,7 +186,6 @@ class register extends FormBase {
 
     $ajax_response = new AjaxResponse();
     $ajax_response->addCommand(new HtmlCommand('#response-message',$message));
-    $ajax_response->addCommand(new InvokeCommand('#edit-message--description', 'css', array('color', 'black')));
 
     // Return the AjaxResponse Object.
     return $ajax_response;
