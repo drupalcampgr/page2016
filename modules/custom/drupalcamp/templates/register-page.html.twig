@@ -1,3 +1,54 @@
-REGISTER FOR HERE
+{{ attach_library('drupalcampathens2016/irene-styling') }}
 
-{{ registerForm }}
+<main class="main main--inner">
+    <article>
+        <div class="heading">
+            <h1 class="container">Register to the event</h1>
+        </div>
+        <div class="content">
+            <div class="content__container container">
+                <section class="split-content">
+                    <div class="split-content__side">
+                        DrupalCamp Greece is a conference that brings together web developers, designers, site-builders, content administrators and simple curious minds to learn, network and discuss about Drupal, Design, Development and Cutting Edge Web Technologies.
+                    </div>
+                    <div class="split-content__side">
+                        {# registerForm #}
+                        <form class="form">
+                            <div class="form__element">
+                               {{ registerForm.firstName }}
+                            </div>
+                            <div class="form__element">
+                                {{ registerForm.lastName }}
+                            </div>
+                            <div class="form__element">
+                                {{ registerForm.email }}
+                            </div>
+                            <div class="form__element">
+                                {{ registerForm.occupation }}
+                            </div>
+                            {{ form.form_build_id }} {# required #}
+                            {{ form.form_id }} {# required #}
+                            {{ registerForm.submit }}
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section class="paid-registration">
+            <div class="paid-registration__container container">
+                <h3 class="secondary-title">Give us some love!</h3>
+                <div class="paid-registration__intro">
+                    DrupalCamp Greece is a conference that brings together web developers, designers, site-builders, content administrators and simple curious minds to learn, network and discuss about Drupal, Design, Development and Cutting Edge Web Technologies.
+                </div>
+                <img class="paid-registration__photo" src="/themes/custom/drupalcampathens2016/images/bag_large.png" alt="Paid registration promo">
+                <div class="paid-registration__info">
+                    <div class="paid-registration__more">
+                        <div class="paid-registration__title">Paid<br> registration</div>
+                        <div class="paid-registration__cost">30 euros</div>
+                    </div>
+                    <a class="paid-registration__link" href="">Register</a>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>

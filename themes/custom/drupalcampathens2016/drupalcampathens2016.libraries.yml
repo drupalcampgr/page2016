@@ -5,3 +5,9 @@ global-styling:
       css/styles.css: {}
   js:
     js/scripts.js: {}
+
+irene-styling:
+  version: 1.x
+  css:
+    theme:
+      irene-styles/style.css: {}

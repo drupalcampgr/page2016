@@ -26,6 +26,11 @@ class register extends FormBase {
       '#type' => 'textfield',
       '#title' => t('First Name'),
       '#required' => TRUE,
+      '#attributes' => [
+        'class' => [
+          '',
+        ],
+      ],
       '#prefix' => '',
       '#suffix' => '',
     ];
