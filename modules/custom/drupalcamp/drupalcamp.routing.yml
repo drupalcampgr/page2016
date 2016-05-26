@@ -4,3 +4,10 @@ register_page:
     _controller: '\Drupal\drupalcamp\Controller\DrupalcampRegisterPage::getPage'
   requirements:
     _permission: 'access content'
+
+proposal_page:
+  path: '/submit-proposal'
+  defaults:
+    _controller: '\Drupal\drupalcamp\Controller\DrupalcampSubmitProposalPage::getPage'
+  requirements:
+    _permission: 'access content'

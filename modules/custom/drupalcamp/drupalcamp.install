@@ -9,3 +9,11 @@ function drupalcamp_update_8101(){
     'menu_name' => 'main',
   ])->save();
 }
+
+function drupalcamp_update_8102(){
+  MenuLinkContent::create([
+    'title' => 'Submit your proposal',
+    'link' => ['uri' => 'internal:/submit-proposal'],
+    'menu_name' => 'main',
+  ])->save();
+}
