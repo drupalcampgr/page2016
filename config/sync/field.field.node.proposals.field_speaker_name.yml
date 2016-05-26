@@ -1,0 +1,19 @@
+uuid: 4bef37fe-2ddd-4037-a487-33d84497e1fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_speaker_name
+    - node.type.proposals
+id: node.proposals.field_speaker_name
+field_name: field_speaker_name
+entity_type: node
+bundle: proposals
+label: 'Speaker Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

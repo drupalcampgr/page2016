@@ -1,0 +1,19 @@
+uuid: 36d735cb-d25d-425f-bec5-d09f4a78a4f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.proposals
+id: node.proposals.field_email
+field_name: field_email
+entity_type: node
+bundle: proposals
+label: email
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

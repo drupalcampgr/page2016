@@ -1,0 +1,26 @@
+uuid: ca098bf2-a6e9-458c-8dbe-f00b08f1d744
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.proposals.body
+    - node.type.proposals
+  module:
+    - text
+    - user
+id: node.proposals.teaser
+targetEntityType: node
+bundle: proposals
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

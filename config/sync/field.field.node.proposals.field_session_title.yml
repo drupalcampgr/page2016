@@ -1,0 +1,19 @@
+uuid: 233212d6-b50e-41a9-a664-588cad218347
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_title
+    - node.type.proposals
+id: node.proposals.field_session_title
+field_name: field_session_title
+entity_type: node
+bundle: proposals
+label: 'Session title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
