@@ -17,3 +17,11 @@ function drupalcamp_update_8102(){
     'menu_name' => 'main',
   ])->save();
 }
+
+function drupalcamp_update_8103(){
+  MenuLinkContent::create([
+      'title' => 'Attendants List',
+      'link' => ['uri' => 'internal:/registered-attendants'],
+      'menu_name' => 'main',
+  ])->save();
+}
