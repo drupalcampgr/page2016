@@ -12,6 +12,13 @@ proposal_page:
   requirements:
     _permission: 'access content'
 
+location:
+  path: '/location'
+  defaults:
+    _controller: '\Drupal\drupalcamp\Controller\DrupalcampLocationPage::getPage'
+  requirements:
+    _permission: 'access content'
+
 code_of_conduct:
   path: '/code-of-conduct'
   defaults:

@@ -33,3 +33,11 @@ function drupalcamp_update_8106(){
       'menu_name' => 'main',
   ])->save();
 }
+
+function drupalcamp_update_8107(){
+  MenuLinkContent::create([
+      'title' => 'Location',
+      'link' => ['uri' => 'internal:/location'],
+      'menu_name' => 'main',
+  ])->save();
+}

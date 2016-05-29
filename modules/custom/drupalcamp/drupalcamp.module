@@ -16,6 +16,11 @@ function drupalcamp_theme() {
       'proposalForm' => NULL,
     ],
   ];
+  $theme['location_page'] = [
+      'variables' => [
+          'content' => NULL,
+      ],
+  ];
 
   return $theme;
 }
