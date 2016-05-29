@@ -25,3 +25,11 @@ function drupalcamp_update_8103(){
       'menu_name' => 'main',
   ])->save();
 }
+
+function drupalcamp_update_8106(){
+  MenuLinkContent::create([
+      'title' => 'Code of Conduct',
+      'link' => ['uri' => 'internal:/code-of-conduct'],
+      'menu_name' => 'main',
+  ])->save();
+}

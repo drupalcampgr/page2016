@@ -11,3 +11,19 @@ proposal_page:
     _controller: '\Drupal\drupalcamp\Controller\DrupalcampSubmitProposalPage::getPage'
   requirements:
     _permission: 'access content'
+
+code_of_conduct:
+  path: '/code-of-conduct'
+  defaults:
+    _title: 'Code of Conduct'
+    _controller: '\Drupal\drupalcamp\Controller\DrupalcampCodeofconductPage::getPage'
+  requirements:
+    _permission: 'access content'
+
+code_of_conduct.settings:
+  path: '/code-of-conduct/config'
+  defaults:
+    _title: 'Code of Conduct'
+    _form: 'Drupal\drupalcamp\Form\CodeofconductConfigForm'
+  requirements:
+    _permission: 'administer site configuration'
