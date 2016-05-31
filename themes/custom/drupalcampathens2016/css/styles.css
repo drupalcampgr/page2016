@@ -408,8 +408,7 @@ h3.dark {
 .main-menu {
   transition: all 0.5s ease;
   background-color: #17337C;
-  border-top: solid 23px #030642;
-  height: 136px;
+  height: 91px;
   margin-bottom: 30px;
 }
 /* line 9, ../sass/components/_main-menu.scss */
@@ -426,17 +425,14 @@ h3.dark {
   color: #FFF !important;
   line-height: 80px;
 }
-/* line 23, ../sass/components/_main-menu.scss */
-.main-menu img {
-  margin-top: -25px;
-}
+
 /* line 27, ../sass/components/_main-menu.scss */
 .main-menu .menu {
   background-color: #17337C;
   font-weight: bold;
   text-transform: uppercase;
   float: right;
-  margin: 15px 50px 0;
+  margin: 0 50px 0;
 }
 /* line 35, ../sass/components/_main-menu.scss */
 .main-menu .menu-item {

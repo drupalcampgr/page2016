@@ -2,8 +2,7 @@
   transition: all 0.5s ease;
   //background-color: #030642;
   background-color: #17337C;
-  border-top: solid 23px #030642;
-  height: 136px;
+  height: 91px;
   margin-bottom: 30px;
 
   &__logo{
@@ -20,16 +19,12 @@
     line-height: 80px;
   }
 
-  img{
-    margin-top: -25px;
-  }
-
   .menu{
     background-color: #17337C;
     font-weight: bold;
     text-transform: uppercase;
     float: right;
-    margin: 15px 50px 0;
+    margin: 0 50px 0;
   }
 
   .menu-item{
