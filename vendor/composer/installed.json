@@ -1373,7 +1373,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/1.0.0",
             "reference": "1.0.0",
             "shasum": ""
         },
@@ -4289,6 +4289,119 @@
             "phpunit",
             "testing",
             "xunit"
+        ]
+    },
+    {
+        "name": "mtdowling/jmespath.php",
+        "version": "2.3.0",
+        "version_normalized": "2.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jmespath/jmespath.php.git",
+            "reference": "192f93e43c2c97acde7694993ab171b3de284093"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/192f93e43c2c97acde7694993ab171b3de284093",
+            "reference": "192f93e43c2c97acde7694993ab171b3de284093",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "time": "2016-01-05 18:25:05",
+        "bin": [
+            "bin/jp.php"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "JmesPath\\": "src/"
+            },
+            "files": [
+                "src/JmesPath.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            }
+        ],
+        "description": "Declaratively specify how to extract elements from a JSON document",
+        "keywords": [
+            "json",
+            "jsonpath"
+        ]
+    },
+    {
+        "name": "jamiehollern/eventbrite",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jamiehollern/eventbrite.git",
+            "reference": "7606e7ba33f823d07e5e090387583b41866e582b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jamiehollern/eventbrite/zipball/7606e7ba33f823d07e5e090387583b41866e582b",
+            "reference": "7606e7ba33f823d07e5e090387583b41866e582b",
+            "shasum": ""
+        },
+        "require": {
+            "guzzlehttp/guzzle": "~6.0",
+            "guzzlehttp/promises": "~1.0",
+            "guzzlehttp/psr7": "~1.0",
+            "mtdowling/jmespath.php": "~2.2",
+            "php": ">=5.5"
+        },
+        "require-dev": {
+            "ext-curl": "*",
+            "mockery/mockery": "~0.9",
+            "monolog/monolog": "~1.13",
+            "oodle/krumo": "*",
+            "phpunit/phpunit": "~4.0",
+            "psr/log": "~1.0",
+            "satooshi/php-coveralls": "dev-master"
+        },
+        "time": "2016-05-13 14:19:47",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "jamiehollern\\eventbrite\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL2"
+        ],
+        "authors": [
+            {
+                "name": "Jamie Hollern",
+                "email": "jamiehollern@gmail.com"
+            }
+        ],
+        "description": "A PHP library to provide interactions with the Eventbrite API.",
+        "keywords": [
+            "event",
+            "eventbrite",
+            "rest"
         ]
     }
 ]

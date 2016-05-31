@@ -39,6 +39,6 @@ eventbrite_webhook:
   path: '/eventbrite-webhook'
   defaults:
     _title: 'Eventbrite Webhook Endpoint'
-    _controller: '\Drupal\drupalcamp\Controller\DrupalcampEventbriteWebhookPage::getPage'
+    _controller: '\Drupal\drupalcamp\Controller\DrupalcampEventbriteWebhookPage::getWebhook'
   requirements:
     _permission: 'access content'
