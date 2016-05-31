@@ -2,6 +2,34 @@
 
 use Drupal\menu_link_content\Entity\MenuLinkContent;
 
+function drupalcamp_install(){
+  MenuLinkContent::create([
+    'title' => 'Register',
+    'link' => ['uri' => 'internal:/register'],
+    'menu_name' => 'main',
+  ])->save();
+  MenuLinkContent::create([
+    'title' => 'Submit your proposal',
+    'link' => ['uri' => 'internal:/submit-proposal'],
+    'menu_name' => 'main',
+  ])->save();
+  MenuLinkContent::create([
+      'title' => 'Attendants List',
+      'link' => ['uri' => 'internal:/registered-attendants'],
+      'menu_name' => 'main',
+  ])->save();
+  MenuLinkContent::create([
+      'title' => 'Code of Conduct',
+      'link' => ['uri' => 'internal:/code-of-conduct'],
+      'menu_name' => 'main',
+  ])->save();
+  MenuLinkContent::create([
+      'title' => 'Location',
+      'link' => ['uri' => 'internal:/location'],
+      'menu_name' => 'main',
+  ])->save();
+}
+
 function drupalcamp_update_8101(){
   MenuLinkContent::create([
     'title' => 'Register',
