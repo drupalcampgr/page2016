@@ -48,10 +48,10 @@
 
   {% block header %}
     <header class="header header--inner">
-      <a class="logo logo--default" href="/">
+      <a class="logo logo--default" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
         <img src="{{ base_path ~ directory }}/irene-styles-full/images/logo_inner.png" alt="DrupalCamp Greece Athens 2016 logo">
       </a>
-      <a class="logo logo--scrolled" href="/">
+      <a class="logo logo--scrolled" href="{{ path('<front>') }}">
         <img src="{{ base_path ~ directory }}/irene-styles-full/images/logo_scrolled.png" alt="DrupalCamp Greece Athens 2016 small logo">
       </a>
       <nav class="main-navigation main-nagivation--inner">
