@@ -84,7 +84,7 @@ header.is-scrolled {
 /* Home */
 .intro {
   text-align: center;
-  background: #17337b url(images/intro_bg.png) 50% 100% no-repeat;
+  background: #17337b url(/themes/custom/drupalcampathens2016/irene-styles-full/images/intro_bg.png) 50% 100% no-repeat;
 }
 .container {
   position: relative;
@@ -121,7 +121,7 @@ header.is-scrolled {
   width: 202px;
   height: 7px;
   margin: 0 0 0 -101px;
-  background: url(images/social_pattern.png) repeat-x;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/social_pattern.png) repeat-x;
 }
 .intro__social:after {
   content: '';
@@ -131,7 +131,7 @@ header.is-scrolled {
   width: 202px;
   height: 10px;
   margin: 0 0 0 -101px;
-  background: url(images/triangles.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/triangles.png) no-repeat;
 }
 .intro__social-title {
   margin: 0 0 20px;
@@ -150,7 +150,7 @@ header.is-scrolled {
 .about {
   padding: 135px 0 65px;
   text-align: center;
-  background: url(images/default_pattern.jpg);
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/default_pattern.jpg);
 }
 .about__container:before {
   content: '';
@@ -159,7 +159,7 @@ header.is-scrolled {
   left: -30px;
   width: 164px;
   height: 56px;
-  background: url(images/clouds1.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/clouds1.png) no-repeat;
 }
 .about__container:after {
   content: '';
@@ -168,7 +168,7 @@ header.is-scrolled {
   right: -70px;
   width: 203px;
   height: 79px;
-  background: url(images/clouds2.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/clouds2.png) no-repeat;
 }
 .upper-title {
   margin: 0 0 45px;
@@ -207,7 +207,7 @@ header.is-scrolled {
   left: -200px;
   width: 320px;
   height: 109px;
-  background: url(images/plane.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/plane.png) no-repeat;
 }
 .about__text:after {
   content: '';
@@ -217,7 +217,7 @@ header.is-scrolled {
   width: 80%;
   margin: -40% 0 0;
   padding-bottom: 80%;
-  background-image: url(images/sun.png), radial-gradient(circle, rgb(252, 241, 186) 0%, rgba(255, 255, 255, 0) 80%);
+  background-image: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/sun.png), radial-gradient(circle, rgb(252, 241, 186) 0%, rgba(255, 255, 255, 0) 80%);
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 50%, 0 0;
   background:;
@@ -246,7 +246,7 @@ header.is-scrolled {
   z-index: 1;
   padding: 55px 0 75px;
   text-align: center;
-  background: url(images/speakers_pattern.jpg);
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/speakers_pattern.jpg);
 }
 .speakers__upper-title {
   margin: 0 0 60px;
@@ -267,7 +267,7 @@ header.is-scrolled {
   left: -100px;
   width: 50px;
   height: 58px;
-  background: url(images/speaker_shape2.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/speaker_shape2.png) no-repeat;
 }
 .speaker:last-child:after {
   content: '';
@@ -276,7 +276,7 @@ header.is-scrolled {
   right: -73px;
   width: 34px;
   height: 81px;
-  background: url(images/speaker_shape1.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/speaker_shape1.png) no-repeat;
 }
 .speaker__photo {
   position: relative;
@@ -291,7 +291,7 @@ header.is-scrolled {
   left: 0;
   width: 187px;
   height: 187px;
-  background: url(images/speaker_mask.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/speaker_mask.png) no-repeat;
 }
 .speaker__name {
   display: block;
@@ -373,7 +373,7 @@ header.is-scrolled {
   left: 30px;
   width: 102px;
   height: 75px;
-  background: url(images/registration_bird.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/registration_bird.png) no-repeat;
 }
 .registration__option:nth-child(2):before {
   content: '';
@@ -382,7 +382,7 @@ header.is-scrolled {
   right: 46px;
   width: 12px;
   height: 20px;
-  background: url(images/registration_shape1.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/registration_shape1.png) no-repeat;
 }
 .registration__option:last-child:before {
   content: '';
@@ -391,7 +391,7 @@ header.is-scrolled {
   right: 46px;
   width: 12px;
   height: 20px;
-  background: url(images/registration_shape2.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/registration_shape2.png) no-repeat;
 }
 .registration__icon {
   position: relative;
@@ -402,7 +402,7 @@ header.is-scrolled {
   border-radius: 50%;
 }
 .registration__icon--free {
-  background: url(images/registration_sun.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/registration_sun.png) no-repeat;
 }
 .registration__icon--paid {
   background: #17337b;
@@ -415,10 +415,10 @@ header.is-scrolled {
   width: 92px;
   height: 140px;
   margin: 0 0 0 -46px;
-  background: url(images/bag_small.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/bag_small.png) no-repeat;
 }
 .registration__icon--volunteers {
-  background: url(images/registration_volunteers.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/registration_volunteers.png) no-repeat;
 }
 .registration__title {
   max-width: 185px;
@@ -467,7 +467,7 @@ color: #88d3db;
   left: 3px;
   width: 78px;
   height: 78px;
-  background: url(images/circle_large.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/circle_large.png) no-repeat;
 }
 .registration__go:hover:before {
   -ms-transform: rotate(31deg);
@@ -490,7 +490,7 @@ color: #88d3db;
 
 .location {
   padding: 90px 0 295px;
-  background: #ffcc00 url(images/acropolis.png) 50% 100% no-repeat;
+  background: #ffcc00 url(/themes/custom/drupalcampathens2016/irene-styles-full/images/acropolis.png) 50% 100% no-repeat;
   background-size: cover;
 }
 .location__main-title {
@@ -511,7 +511,7 @@ color: #88d3db;
   left: 10px;
   right: 10px;
   height: 9px;
-  background: url(images/pattern_lines.png) repeat-x;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/pattern_lines.png) repeat-x;
 }
 .location__athens:after {
   content: '';
@@ -520,7 +520,7 @@ color: #88d3db;
   right: -50px;
   width: 190px;
   height: 36px;
-  background: url(images/location_shape1.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/location_shape1.png) no-repeat;
 }
 .location__athens-subtitle {
   margin: 0 0 24px;
@@ -537,7 +537,7 @@ color: #88d3db;
 
 .newsletter {
   padding: 80px 0 160px;
-  background: #0275bb url(images/newsletter_bg.png) 50% 100% no-repeat;
+  background: #0275bb url(/themes/custom/drupalcampathens2016/irene-styles-full/images/newsletter_bg.png) 50% 100% no-repeat;
   color: #fff;
 }
 .newsletter__container:before {
@@ -547,7 +547,7 @@ color: #88d3db;
   right: 135px;
   width: 45px;
   height: 45px;
-  background: url(images/newsletter_sun.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/newsletter_sun.png) no-repeat;
 }
 .newsletter__container:after {
   content: '';
@@ -556,7 +556,7 @@ color: #88d3db;
   right: -35px;
   width: 381px;
   height: 86px;
-  background: url(images/newsletter_plane.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/newsletter_plane.png) no-repeat;
 }
 .secondary-title {
   margin: 0 0 25px;
@@ -592,7 +592,7 @@ color: #88d3db;
   border: none;
   outline: none;
   text-indent: -9999px;
-  background: #0275bb url(images/newsletter_button.png) no-repeat;
+  background: #0275bb url(/themes/custom/drupalcampathens2016/irene-styles-full/images/newsletter_button.png) no-repeat;
   overflow: hidden;
   cursor: pointer;
   -webkit-transition: 0.2s;
@@ -619,7 +619,7 @@ color: #88d3db;
   left: 10px;
   right: 10px;
   height: 9px;
-  background: url(images/pattern_lines.png) repeat-x;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/pattern_lines.png) repeat-x;
 }
 .social__intro {
   max-width: 370px;
@@ -656,20 +656,20 @@ color: #88d3db;
   height: 26px;
 }
 .social__item--fb:before {
-  background: url(images/facebook.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/facebook.png) no-repeat;
 }
 .social__item--tw:before {
-  background: url(images/twitter.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/twitter.png) no-repeat;
 }
 .social__item--fb:after {
   left: 20px;
   bottom: -13px;
-  background: url(images/facebook_shape.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/facebook_shape.png) no-repeat;
 }
 .social__item--tw:after {
   top: -13px;
   left: 32px;
-  background: url(images/twitter_shape.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/twitter_shape.png) no-repeat;
 }
 .social__item a {
   position: relative;
@@ -701,7 +701,7 @@ color: #88d3db;
   left: 10px;
   right: 10px;
   height: 9px;
-  background: url(images/pattern_lines.png) repeat-x;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/pattern_lines.png) repeat-x;
 }
 .footer-note__date {
   float: left;
@@ -720,7 +720,6 @@ color: #88d3db;
 /* Submit your proposal */
 .header--inner {
   top: 0;
-  border-top: 24px solid #030642;
 }
 .header--home.is-scrolled {
   border: none;
@@ -760,7 +759,7 @@ color: #88d3db;
   left: 0;
   right: 0;
   height: 9px;
-  background: url(images/pattern_lines.png) repeat-x;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/pattern_lines.png) repeat-x;
 }
 h1 {
   font-size: 5rem;
@@ -857,7 +856,7 @@ textarea {
   right: 10px;
   width: 442px;
   height: 260px;
-  background: url(images/paid_top.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/paid_top.png) no-repeat;
 }
 .paid-registration__container:after {
   content: '';
@@ -866,7 +865,7 @@ textarea {
   right: 0;
   width: 446px;
   height: 152px;
-  background: url(images/paid_bottom.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/paid_bottom.png) no-repeat;
 }
 .paid-registration__intro {
   position: relative;
@@ -925,7 +924,7 @@ textarea {
   width: 52px;
   height: 52px;
   margin: -26px 0 0;
-  background: url(images/circle_small.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/circle_small.png) no-repeat;
 }
 .paid-registration__link:hover:before {
   -ms-transform: rotate(31deg);
@@ -940,5 +939,75 @@ textarea {
   width: 17px;
   height: 18px;
   margin: -9px 0 0;
-  background: url(images/register_arrow.png) no-repeat;
+  background: url(/themes/custom/drupalcampathens2016/irene-styles-full/images/register_arrow.png) no-repeat;
+}
+
+/*ADDED NEWSLETTER FROM OLD THEME FOR MAILCHIMP THEMMING*/
+
+.newsletter__form {
+  position: relative;
+  width: 400px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+/* line 29, ../sass/components/_newsletter.scss */
+.newsletter__email {
+  padding: 26px 24px;
+  font-size: 14px;
+  line-height: 14px;
+  width: 360px;
+  border: 0;
+  border-bottom: 1px solid #88d3db;
+  color: #0275bb;
+}
+/* line 38, ../sass/components/_newsletter.scss */
+.newsletter__email::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #0275bb;
+}
+/* line 42, ../sass/components/_newsletter.scss */
+.newsletter__email:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #0275bb;
+  opacity: 1;
+}
+/* line 47, ../sass/components/_newsletter.scss */
+.newsletter__email::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #0275bb;
+  opacity: 1;
+}
+/* line 52, ../sass/components/_newsletter.scss */
+.newsletter__email:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #0275bb;
+}
+/* line 57, ../sass/components/_newsletter.scss */
+.newsletter__submit {
+  width: 80px;
+  height: 100%;
+  border: 0;
+  background: url("../images/submit.jpg") no-repeat 50% 50%;
+  text-indent: -66666px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 20px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.68, -1.55, 0.265, 1.55);
+}
+/* line 69, ../sass/components/_newsletter.scss */
+.newsletter__submit:hover {
+  transform: translateX(15px) scale(1.02);
+}
+
+@media (max-width: 767px) {
+  /* line 79, ../sass/components/_newsletter.scss */
+  .newsletter__form {
+    width: 300px;
+  }
+  /* line 82, ../sass/components/_newsletter.scss */
+  .newsletter__email {
+    width: 300px;
+  }
 }

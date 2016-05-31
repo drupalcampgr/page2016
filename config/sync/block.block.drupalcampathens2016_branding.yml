@@ -1,6 +1,6 @@
 uuid: 297b489a-9a60-41c4-924a-6e6aa87ccb91
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: drupalcampathens2016_branding
 theme: drupalcampathens2016
-region: header
-weight: -6
+region: '-1'
+weight: 3
 provider: null
 plugin: system_branding_block
 settings:

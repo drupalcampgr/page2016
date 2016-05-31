@@ -43,9 +43,11 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
+
+<div class="page">
+
   {% block header %}
-    <header class="header" role="banner">
+    <header class="header header--inner">
       {% if page.header %}
         {{ page.header }}
       {% endif %}
@@ -82,89 +84,70 @@
     {% endif %}
   {% endblock help %}
 
-  {% block main %}
-    <main role="main">
-      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-      <div class="layout-content layout-center">
+  {% block main %}
         {% if page.content %}
           {{ page.content }}
         {% endif %}
-      </div>{# /.layout-content #}
-    </main>
   {% endblock main %}
-  {% block footer %}
-    <footer role="contentinfo">
-      {% if page.footer %}
-        {{ page.footer }}
-      {% endif %}
-      <div class="newsletter">
-        <div class="newsletter__inner layout-center">
-          <h1 class="title title--highlighted newsletter__title">
-            Subscribe to Newsletter
-          </h1>
-          <div class="newsletter__text">
-            We’re gonna have a great lineup so don’t forget to register for news and updates about the event, speakers and schedule.
-          </div>
 
-          <!-- Begin MailChimp Signup Form -->
-          <div id="mc_embed_signup" class="subscription">
-            <form action="//mydrupal.us12.list-manage.com/subscribe/post?u=5fe1061732c70e7bfbb9f1c51&amp;id=4c125a12a0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate newsletter__form" target="_blank" novalidate="novalidate">
-              <div id="mc_embed_signup_scroll">
-                <div class="mc-field-group">
-                  <!-- <label for="mce-EMAIL">Your Email </label> -->
-                  <input type="email" value="" name="EMAIL" class="required email newsletter__email" id="mce-EMAIL" placeholder="Enter your Email here" aria-required="true">
-                </div>
-                <div id="mce-responses" class="clear">
-                  <div class="response" id="mce-error-response" style="display:none"></div>
-                  <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5fe1061732c70e7bfbb9f1c51_4c125a12a0" tabindex="-1" value=""></div>
-                <input type="submit" value="Keep Me Up To Date!" name="subscribe" id="mc-embedded-subscribe" class="button newsletter__submit">
+  {% block footer %}
+    {% if page.footer %}
+      {{ page.footer }}
+    {% endif %}
+  <footer>
+    <section class="newsletter">
+      <div class="newsletter__container container">
+        <h3 class="secondary-title">Subscribe to Newsletter</h3>
+        <div class="newsletter__intro">
+          We’re gonna have a great lineup so don’t forget to register for news and updates about the event, speakers and schedule.
+        </div>
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup" class="subscription">
+          <form action="//mydrupal.us12.list-manage.com/subscribe/post?u=5fe1061732c70e7bfbb9f1c51&amp;id=4c125a12a0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate newsletter__form" target="_blank" novalidate="novalidate">
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group">
+                <!-- <label for="mce-EMAIL">Your Email </label> -->
+                <input type="email" value="" name="EMAIL" class="required email newsletter__email" id="mce-EMAIL" placeholder="Enter your Email here" aria-required="true">
               </div>
-            </form>
-          </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5fe1061732c70e7bfbb9f1c51_4c125a12a0" tabindex="-1" value=""></div>
+              <input type="submit" value="Keep Me Up To Date!" name="subscribe" id="mc-embedded-subscribe" class="button newsletter__submit">
+            </div>
+          </form>
         </div>
       </div>
-      <div class="social">
-        <div class="social__bg-top-lines">&nbsp;</div>
-        <div class="social__inner layout-center">
-          <div class="layout-2column">
-            <div class="layout-2column__col-x">
-              <h2 class="title social__title">
-                Stay Tuned!
-              </h2>
-              <div class="social__text">
-                If you 're interested, follow us on social media and stay tuned about the event!
-              </div>
-              <div class="social__text social__text--small">
-                Or contact at <a href="mailto:info@drupal-camp.gr">info@drupal-camp.gr</a>
-              </div>
-            </div>
-            <div class="layout-2column__col-x">
-              <div class="social__links">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/drupalgr" target="_blank">
-                  <img src="{{ base_path ~ directory }}/images/footer-facebook.png" alt="Facebook">
-                </a>
-                <a class="social__link social__link--twitter" href="https://twitter.com/drupalGr" target="_blank">
-                  <img src="{{ base_path ~ directory }}/images/footer-twitter.png" alt="Twitter">
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="social__copy layout-2column">
-            <div class="social__copyright layout-2column__col-x plain">
-              <img src="{{ base_path ~ directory }}/images/footer-date.png" alt=""> © DrupalCamp Greece, Athens 2016
-            </div>
-            <div class="social__devs layout-2column__col-x plain">
-              Developed by the <a href="http://mydrupal.gr" target="_blank">Greek Drupal Community</a> &amp; Designed by <a href="http://www.speak.gr/" target="_blank">Kostis Vasiliadis</a>
-            </div>
-          </div>
+    </section>
+    <section class="social">
+      <div class="container">
+        <h3 class="secondary-title">Stay Tuned!</h3>
+        <div class="social__intro">
+          If you 're interested, follow us on social media and stay tuned about the event!
         </div>
-        <div class="social__bg-bottom-lines">&nbsp;</div>
+        <ul class="social__list">
+          <li class="social__item social__item--fb" title="Facebook"><a href="https://www.facebook.com/drupalgr" target="_blank">Facebook</a></li>
+          <li class="social__item social__item--tw" title="Twitter"><a href="https://twitter.com/drupalgr" target="_blank">Twitter</a></li>
+        </ul>
+        <div class="social__note">
+          Or contact at <a href="mailto:info@drupal-camp.gr">info@drupal-camp.gr</a>
+        </div>
       </div>
-    </footer>
+    </section>
+    <section class="footer-note">
+      <div class="container">
+        <img class="footer-note__date" src="/themes/custom/drupalcampathens2016/irene-styles-full/images/date_small.png" alt="1-3 July">
+        <span class="footer-note__copy">&copy; DrupalCamp Greece, Athens 2016</span>
+          <span class="footer-note__credits">
+            Developed by the <a href="http://mydrupal.gr" target="_blank">Greek Drupal Community</a> & Designed by <a href="http://www.speak.gr/" target="_blank">Kostis Vasiliadis</a>
+          </span>
+      </div>
+    </section>
+  </footer>
   {% endblock footer %}
 
-</div>{# /.layout-container #}
+
+</div>

@@ -19,3 +19,5 @@ irene-styling-full:
       irene-styles-full/style.css: {}
   js:
     irene-styles-full/script.js: {}
+  dependencies:
+    - core/jquery
