@@ -49,10 +49,10 @@
   {% block header %}
     <header class="header header--inner">
       <a class="logo logo--default" href="/">
-        <img src="/themes/custom/drupalcampathens2016/irene-styles-full/images/logo_inner.png" alt="DrupalCamp Greece Athens 2016 logo">
+        <img src="{{ base_path ~ directory }}/irene-styles-full/images/logo_inner.png" alt="DrupalCamp Greece Athens 2016 logo">
       </a>
       <a class="logo logo--scrolled" href="/">
-        <img src="/themes/custom/drupalcampathens2016/irene-styles-full/images/logo_scrolled.png" alt="DrupalCamp Greece Athens 2016 small logo">
+        <img src="{{ base_path ~ directory }}/irene-styles-full/images/logo_scrolled.png" alt="DrupalCamp Greece Athens 2016 small logo">
       </a>
       <nav class="main-navigation main-nagivation--inner">
         {% if page.header %}
@@ -147,7 +147,7 @@
       </section>
       <section class="footer-note">
         <div class="container">
-          <img class="footer-note__date" src="/themes/custom/drupalcampathens2016/irene-styles-full/images/date_small.png" alt="1-3 July">
+          <img class="footer-note__date" src="{{ base_path ~ directory }}/irene-styles-full/images/date_small.png" alt="1-3 July">
           <span class="footer-note__copy">&copy; DrupalCamp Greece, Athens 2016</span>
           <span class="footer-note__credits">
             Developed by the <a href="http://mydrupal.gr" target="_blank">Greek Drupal Community</a> & Designed by <a href="http://www.speak.gr/" target="_blank">Kostis Vasiliadis</a>
