@@ -61,3 +61,9 @@ drush ev '\Drupal::entityManager()->getStorage("shortcut_set")->load("default")-
 drush cim -y
 ```
 
+-----------------
+Install composer dependencies
+
+```sh
+composer install
+```
