@@ -72,7 +72,7 @@ class proposal extends FormBase {
       '#value' => $this->t('Submit'),
       '#attributes' => [
         'class' => [
-          '',
+          'form__submit',
         ],
       ],
       '#ajax' => [
