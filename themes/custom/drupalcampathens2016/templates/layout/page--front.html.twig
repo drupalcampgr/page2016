@@ -47,7 +47,7 @@
 
 {% block header %}
     <header class="header header--home">
-        <a class="logo" href="/"><img src="/themes/custom/drupalcampathens2016/irene-styles-full/images/logo_scrolled.png" alt="DrupalCamp Greece Athens 2016 small logo"></a>
+        <a class="logo" href="/"><img src="{{ base_path ~ directory }}/irene-styles-full/images/logo_scrolled.png" alt="DrupalCamp Greece Athens 2016 small logo"></a>
         <nav role="main-navigation main-nagivation--home">
             {% if page.header %}
                 {{ page.header }}
@@ -62,10 +62,10 @@
         <section class="intro">
             <div class="intro__container container">
                 <div class="intro__image">
-                    <img src="/themes/custom/drupalcampathens2016/irene-styles-full/images/logo.png" alt="DrupalCamp Greece Athens 2016 logo">
+                    <img src="{{ base_path ~ directory }}/irene-styles-full/images/logo.png" alt="DrupalCamp Greece Athens 2016 logo">
                 </div>
                 <div class="intro__date">
-                    <img src="/themes/custom/drupalcampathens2016/irene-styles-full/images/date.png" alt="1-3 July">
+                    <img src="{{ base_path ~ directory }}/irene-styles-full/images/date.png" alt="1-3 July">
                 </div>
                 <div class="intro__social">
                     <h4 class="intro__social-title">Spread it out</h4>
@@ -93,7 +93,7 @@
                         Drupal is strong because its community is stronger. With the release of Drupal 8 there is so much to hear and talk about that you’ll need lots of notes… Come for the code, stay for the community!
                     </p>
                 </div>
-                <a class="about__drupal" href="http://www.drupal.org" target="_blank"><img src="/themes/custom/drupalcampathens2016/irene-styles-full/images/drupal_logo.png" alt="Drupal"></a>
+                <a class="about__drupal" href="http://www.drupal.org" target="_blank"><img src="{{ base_path ~ directory }}/irene-styles-full/images/drupal_logo.png" alt="Drupal"></a>
             </div>
         </section>
         <section class="speakers">
@@ -103,7 +103,7 @@
                     <li class="speaker">
                         <a href="http://www.drupal.org/u/mortendk" target="_blank">
                 <span class="speaker__photo">
-                  <img src="/themes/custom/drupalcampathens2016/irene-styles-full/images/speakers/mortendk.jpg" alt="Morten DK">
+                  <img src="{{ base_path ~ directory }}/irene-styles-full/images/speakers/mortendk.jpg" alt="Morten DK">
                 </span>
                             <span class="speaker__name">Morten DK</span>
                             <span class="speaker__intro">Drupal 8 theming, Classy theme maintainer, Metal dude, Miniature wargaming. Proud Dad of Freya & English Bulldog owner</span>
