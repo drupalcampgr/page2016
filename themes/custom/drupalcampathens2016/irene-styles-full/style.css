@@ -720,11 +720,10 @@ color: #88d3db;
 /* Submit your proposal */
 .header--inner {
   top: 0;
-  border-top: 22px solid #030642;
+  border-top: 24px solid #030642;
 }
 .header--home.is-scrolled {
   border: none;
-  border-top: 22px solid #030642;
 }
 .logo--default {
   margin: -24px 0 -23px;
