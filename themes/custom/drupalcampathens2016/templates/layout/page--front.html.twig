@@ -47,9 +47,12 @@
 
 {% block header %}
     <header class="header header--home">
-        {% if page.header %}
-            {{ page.header }}
-        {% endif %}
+        <a class="logo" href="/"><img src="/themes/custom/drupalcampathens2016/irene-styles-full/images/logo_scrolled.png" alt="DrupalCamp Greece Athens 2016 small logo"></a>
+        <nav role="main-navigation main-nagivation--home">
+            {% if page.header %}
+                {{ page.header }}
+            {% endif %}
+        </nav>
     </header>
 {% endblock header %}
 
