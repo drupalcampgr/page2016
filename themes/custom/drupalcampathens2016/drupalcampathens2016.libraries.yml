@@ -11,3 +11,11 @@ irene-styling:
   css:
     theme:
       irene-styles/style.css: {}
+
+irene-styling-full:
+  version: 1.x
+  css:
+    theme:
+      irene-styles-full/style.css: {}
+  js:
+    irene-styles-full/script.js: {}
