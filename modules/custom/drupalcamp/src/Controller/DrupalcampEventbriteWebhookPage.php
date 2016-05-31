@@ -58,7 +58,9 @@ class DrupalcampEventbriteWebhookPage extends ControllerBase
       $node->save();
       \Drupal::logger('eventbrite_webhook')->info('New attende saved: '.$lastName.' '.$firstName);
     }
+    
+    $build = [];
 
-    return new JsonResponse($response);
+    return new JsonResponse($build);
   }
 }
