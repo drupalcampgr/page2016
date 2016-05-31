@@ -34,3 +34,11 @@ code_of_conduct.settings:
     _form: 'Drupal\drupalcamp\Form\CodeofconductConfigForm'
   requirements:
     _permission: 'administer site configuration'
+
+eventbrite_webhook:
+  path: '/eventbrite-webhook'
+    defaults:
+      _title: 'Eventbrite Webhook Endpoint'
+      _controller: '\Drupal\drupalcamp\Controller\DrupalcampEventbriteWebhookPage::getPage'
+    requirements:
+      _permission: 'access content'
