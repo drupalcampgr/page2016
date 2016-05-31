@@ -72,7 +72,7 @@ class register extends FormBase {
       '#value' => $this->t('Submit'),
       '#attributes' => [
         'class' => [
-          '',
+          'form__submit',
         ],
       ],
       '#ajax' => [
