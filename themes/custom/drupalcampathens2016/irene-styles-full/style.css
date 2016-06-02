@@ -436,7 +436,7 @@ header.is-scrolled {
   color: #0275bb;
 }
 .registration__subtitle--paid {
-color: #88d3db;
+  color: #88d3db;
 }
 .registration__txt {
   max-width: 185px;
@@ -571,7 +571,7 @@ color: #88d3db;
   position: relative;
   max-width: 360px;
 }
-.newsletter__input--text {
+.newsletter__form input[type="email"] {
   width: 100%;
   padding: 22px 77px 22px 22px;
   border: none;
@@ -583,7 +583,7 @@ color: #88d3db;
   background: #fff;
   color: #0275bb;
 }
-.newsletter__input--submit {
+.newsletter__form input[type="submit"] {
   position: absolute;
   top: 22px;
   right: 22px;
@@ -598,7 +598,7 @@ color: #88d3db;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.newsletter__input--submit:hover {
+.newsletter__form input[type="submit"]:hover {
   background-color: #17337b;
 }
 .newsletter__message {
@@ -794,6 +794,7 @@ h1 {
 }
 .form__label {
   display: inline-block;
+  vertical-align: top;
   margin: -20px 0 0;
   padding: 0 10px;
   font-size: 1.4rem;
@@ -842,173 +843,147 @@ textarea {
   background: #17337b;
 }
 
-.paid-registration {
+.heading--registration {
+  margin: 0 0 70px;
   background: #ed1845;
+}
+.heading--registration:after {
+  display: none;
+}
+.heading--registration h1 {
+  position: relative;
+  z-index: 1;
   color: #fff;
 }
-.paid-registration__container {
-  padding-top: 55px;
-  padding-bottom: 65px;
-}
-.paid-registration__container:before {
+.heading--registration h1:before {
   content: '';
   position: absolute;
-  top: 0;
-  right: 10px;
-  width: 442px;
-  height: 260px;
-  background: url(images/paid_top.png) no-repeat;
+  top: -65px;
+  right: 0;
+  z-index: -1;
+  width: 430px;
+  height: 165px;
+  background: url(images/registration_heading.png) no-repeat;
 }
-.paid-registration__container:after {
+.heading--registration h1:after {
+  content: '';
+  position: absolute;
+  top: -25px;
+  right: 10px;
+  z-index: -1;
+  width: 240px;
+  height: 277px;
+  background: url(images/tshirt.png) no-repeat;
+}
+.register__intro {
+  position: relative;
+  padding: 0 200px 130px 0;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: #464646;
+}
+.register__intro:after {
+  content: '';
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 280px;
+  height: 170px;
+  background: url(images/registration_intro.png) no-repeat;
+}
+.register__form {
+  position: relative;
+  margin: 0 0 30px;
+}
+.register__form:before {
+  content: '';
+  position: absolute;
+  top: -58px;
+  left: 50%;
+  width: 44px;
+  height: 58px;
+  margin: 0 0 0 -22px;
+  background: url(images/registration_form.png) no-repeat;
+}
+.register__footer {
+  position: relative;
+  padding: 0 240px 105px 0;
+  color: #17337b;
+}
+.register__footer:after {
   content: '';
   position: absolute;
   bottom: 0;
-  right: 0;
-  width: 446px;
-  height: 152px;
-  background: url(images/paid_bottom.png) no-repeat;
+  right: 40px;
+  width: 200px;
+  height: 155px;
+  background: url(images/registration_footer.png) no-repeat;
 }
-.paid-registration__intro {
+
+.heading--attendees {
+  background: #88d3db;
+}
+.heading--attendees:after {
+  display: none;
+}
+.heading--attendees h1 {
   position: relative;
-  max-width: 370px;
-  margin: 0 0 25px;
-}
-.paid-registration__photo {
-  position: absolute;
-  top: 50%;
-  right: 120px;
-  z-index: 1;
-  margin: -160px 0 0;
-}
-.paid-registration__info {
-  position: relative;
-  max-width: 440px;
-}
-.paid-registration__more {
-  float: right;
-}
-.paid-registration__title {
-  margin: 5px 0 0;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.paid-registration__cost {
-  font-size: 1.8rem;
-  line-height: 2.4rem;
-  text-transform: uppercase;
-  color: #88d3db;
-}
-.paid-registration__link {
-  position: relative;
-  display: inline-block;
-  padding: 29px 100px 25px 30px;
-  border: none;
-  outline: none;
-  font-size: 2rem;
-  line-height: 2.4rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  background: #10296b;
   color: #fff;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
-.paid-registration__link:before {
+.heading--attendees h1:after {
   content: '';
   position: absolute;
-  top: 50%;
-  right: 12px;
-  width: 52px;
-  height: 52px;
-  margin: -26px 0 0;
-  background: url(images/circle_small.png) no-repeat;
+  bottom: -70px;
+  right: 10px;
+  width: 300px;
+  height: 145px;
+  background: url(images/attendees_heading.png) no-repeat;
 }
-.paid-registration__link:hover:before {
-  -ms-transform: rotate(31deg);
-  -webkit-transform: rotate(31deg);
-  transform: rotate(31deg);
+.attendees__intro {
+  max-width: 740px;
+  margin: 0 0 50px;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: #464646;
 }
-.paid-registration__link:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 28px;
-  width: 17px;
-  height: 18px;
-  margin: -9px 0 0;
-  background: url(images/register_arrow.png) no-repeat;
-}
-
-/*ADDED NEWSLETTER FROM OLD THEME FOR MAILCHIMP THEMMING*/
-
-.newsletter__form {
+.attendees__list {
   position: relative;
-  width: 400px;
-  margin-bottom: 100px;
-  overflow: hidden;
+  margin: 0 0 70px;
+  padding: 8px 0 0;
 }
-/* line 29, ../sass/components/_newsletter.scss */
-.newsletter__email {
-  padding: 26px 24px;
-  font-size: 14px;
-  line-height: 14px;
-  width: 360px;
-  border: 0;
-  border-bottom: 1px solid #88d3db;
-  color: #0275bb;
-}
-/* line 38, ../sass/components/_newsletter.scss */
-.newsletter__email::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
-  color: #0275bb;
-}
-/* line 42, ../sass/components/_newsletter.scss */
-.newsletter__email:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #0275bb;
-  opacity: 1;
-}
-/* line 47, ../sass/components/_newsletter.scss */
-.newsletter__email::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #0275bb;
-  opacity: 1;
-}
-/* line 52, ../sass/components/_newsletter.scss */
-.newsletter__email:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #0275bb;
-}
-/* line 57, ../sass/components/_newsletter.scss */
-.newsletter__submit {
-  width: 80px;
-  height: 100%;
-  border: 0;
-  background: url("../images/submit.jpg") no-repeat 50% 50%;
-  text-indent: -66666px;
+.attendees__list:before {
+  content: '';
   position: absolute;
-  z-index: 10;
   top: 0;
-  right: 20px;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.68, -1.55, 0.265, 1.55);
+  left: -4px;
+  right: 0;
+  height: 9px;
+  background: url(images/pattern_lines_light.png) repeat-x;
 }
-/* line 69, ../sass/components/_newsletter.scss */
-.newsletter__submit:hover {
-  transform: translateX(15px) scale(1.02);
+.attendees__list-item {
+  position: relative;
+  display: block;
+  padding: 30px 0 38px;
 }
-
-@media (max-width: 767px) {
-  /* line 79, ../sass/components/_newsletter.scss */
-  .newsletter__form {
-    width: 300px;
-  }
-  /* line 82, ../sass/components/_newsletter.scss */
-  .newsletter__email {
-    width: 300px;
-  }
+.attendees__list-item:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -4px;
+  right: 0;
+  height: 9px;
+  background: url(images/pattern_lines_light.png) repeat-x;
+}
+.attendees__name {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #17337b;
+}
+.attendees__description {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: #0275bb;
 }

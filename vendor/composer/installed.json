@@ -4381,7 +4381,7 @@
         },
         "time": "2016-05-13 14:19:47",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "jamiehollern\\eventbrite\\": "src/"

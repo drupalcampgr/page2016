@@ -1,37 +1,32 @@
 <main class="main main--inner">
     <article>
-        <div class="heading">
+        <div class="heading heading--registration">
             <h1 class="container">Register to the event</h1>
         </div>
-        <div class="content">
+        <div class="content register">
             <div class="content__container container">
-                <section class="split-content">
-                    <div class="split-content__side">
-                        DrupalCamp Greece is a conference that brings together web developers, designers, site-builders, content administrators and simple curious minds to learn, network and discuss about Drupal, Design, Development and Cutting Edge Web Technologies.
-                    </div>
-                    <div class="split-content__side">
-                        {{  registerForm }}
-                        <div id="response-message"></div>
-                    </div>
-                </section>
-            </div>
-            <div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=25715938063&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #dddddd; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Powered by Eventbrite</a></div></div>
-        </div>
-        <section class="paid-registration">
-            <div class="paid-registration__container container">
-                <h3 class="secondary-title">Give us some love!</h3>
-                <div class="paid-registration__intro">
+                <div class="register__intro">
                     DrupalCamp Greece is a conference that brings together web developers, designers, site-builders, content administrators and simple curious minds to learn, network and discuss about Drupal, Design, Development and Cutting Edge Web Technologies.
                 </div>
-                <img class="paid-registration__photo" src="/themes/custom/drupalcampathens2016/images/bag_large.png" alt="Paid registration promo">
-                <div class="paid-registration__info">
-                    <div class="paid-registration__more">
-                        <div class="paid-registration__title">Paid<br> registration</div>
-                        <div class="paid-registration__cost">30 euros</div>
-                    </div>
-                    <a class="paid-registration__link" href="">Register</a>
+                <div class="register__form">
+                    <div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=25715938063&ref=etckt" frameborder="0" height="300" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #dddddd; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Powered by Eventbrite</a></div></div>
+                </div>
+                <div class="register__footer">
+                    With your love package ticket you will help the event to become a reality. <br>
+                    We want to thank you for that.
                 </div>
             </div>
+        </div>
+
+        <section class="volunteer-registration">
+            <div class="volunteer__container container">
+                <h3 class="secondary-title">Become a volunteer!</h3>
+                <div class="paid-registration__intro">
+                    {{  registerForm }}
+                </div>
+            </div>
+            <br>
         </section>
+
     </article>
 </main>

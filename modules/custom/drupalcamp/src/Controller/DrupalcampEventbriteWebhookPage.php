@@ -52,7 +52,7 @@ class DrupalcampEventbriteWebhookPage extends ControllerBase
           'field_firstname' => $firstName,
           'field_lastname' => $lastName,
           'field_occupation' => $jobTitle,
-          'field_occupation' => TRUE,
+          'field_paid_registration' => TRUE,
       ));
 
       $node->save();
