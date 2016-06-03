@@ -67,7 +67,7 @@ header.is-scrolled {
   text-transform: uppercase;
   color: #fff;
 }
-ul.main-menu__item a.is-active {
+ul .main-menu__item a.is-active {
   color: #fff;
 }
 .main-menu__item a:hover:after,
