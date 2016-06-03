@@ -1,4 +1,4 @@
-uuid: 597d854a-f9b5-4c50-ae4a-5346627c404c
+uuid: bb43179b-c8e7-48eb-9dab-497a8eb6caa6
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ dependencies:
   module:
     - node
     - user
-id: registered_attendants
-label: 'Registered Attendants'
+id: volunteers
+label: Volunteers
 module: views
 description: ''
 tag: ''
@@ -429,7 +429,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: true
+          value: false
           group: 1
           exposed: false
           expose:
@@ -501,7 +501,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: registered-attendants
+      path: volunteers
     cache_metadata:
       max-age: -1
       contexts:
