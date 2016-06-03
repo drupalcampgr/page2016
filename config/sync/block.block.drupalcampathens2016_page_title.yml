@@ -1,6 +1,6 @@
 uuid: b4a1d35d-f237-4a5e-9664-fb8ee831a75f
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - drupalcampathens2016
@@ -8,8 +8,8 @@ _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: drupalcampathens2016_page_title
 theme: drupalcampathens2016
-region: content
-weight: -6
+region: '-1'
+weight: 4
 provider: null
 plugin: page_title_block
 settings:

@@ -11,7 +11,7 @@ _core:
 id: drupalcampathens2016_branding
 theme: drupalcampathens2016
 region: '-1'
-weight: 3
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:
