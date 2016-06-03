@@ -43,10 +43,15 @@
           item.in_active_trail ? 'is-active',
         ]
       %}
+      {%
+        set aclasses = [
+      item.in_active_trail ? 'is-active',
+      ]
+      %}
       <li{{ item.attributes.addClass(classes) }}>
-        {{ link(item.title, item.url) }}
+        {{ link(item.title, item.url, { 'class': aclasses}) }}
         {% if item.below %}
-          {{ menus.menu_links(item.below, attributes.addClass(classes), menu_level + 1) }}
+          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}
       </li>
     {% endfor %}
