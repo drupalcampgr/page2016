@@ -1,3 +1,4 @@
+uuid: bb43179b-c8e7-48eb-9dab-497a8eb6caa6
 langcode: en
 status: true
 dependencies:
@@ -400,17 +401,6 @@ display:
           field_api_classes: false
           plugin_id: field
       filters:
-        status:
-          value: true
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
         type:
           id: type
           table: node_field_data
