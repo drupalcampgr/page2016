@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_volunteer
+    - field.storage.node.field_aggreed_as_volunteer
     - node.type.registered_attendants
-id: node.registered_attendants.field_volunteer
-field_name: field_volunteer
+id: node.registered_attendants.field_aggreed_as_volunteer
+field_name: field_aggreed_as_volunteer
 entity_type: node
 bundle: registered_attendants
-label: volunteer
+label: 'Aggreed As Volunteer'
 description: ''
 required: false
 translatable: false
@@ -17,6 +17,6 @@ default_value:
     value: 0
 default_value_callback: ''
 settings:
-  on_label: Volunteer
+  on_label: 'On'
   off_label: 'Off'
 field_type: boolean

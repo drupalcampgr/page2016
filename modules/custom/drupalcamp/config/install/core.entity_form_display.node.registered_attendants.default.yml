@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.registered_attendants.field_aggreed_as_volunteer
     - field.field.node.registered_attendants.field_email
     - field.field.node.registered_attendants.field_firstname
     - field.field.node.registered_attendants.field_lastname
@@ -21,6 +22,12 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_aggreed_as_volunteer:
+    weight: 37
+    settings:
+      display_label: false
+    third_party_settings: {  }
+    type: boolean_checkbox
   field_email:
     weight: 33
     settings:

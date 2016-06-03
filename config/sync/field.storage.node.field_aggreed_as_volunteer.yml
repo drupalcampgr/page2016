@@ -1,0 +1,18 @@
+uuid: 29f2d857-a62d-47e5-811e-76ef15fe9b3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_aggreed_as_volunteer
+field_name: field_aggreed_as_volunteer
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

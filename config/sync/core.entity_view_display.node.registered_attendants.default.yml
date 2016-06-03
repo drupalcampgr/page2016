@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.registered_attendants.field_aggreed_as_volunteer
     - field.field.node.registered_attendants.field_email
     - field.field.node.registered_attendants.field_firstname
     - field.field.node.registered_attendants.field_lastname
@@ -17,6 +18,15 @@ targetEntityType: node
 bundle: registered_attendants
 mode: default
 content:
+  field_aggreed_as_volunteer:
+    weight: 107
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
   field_email:
     weight: 103
     label: above
