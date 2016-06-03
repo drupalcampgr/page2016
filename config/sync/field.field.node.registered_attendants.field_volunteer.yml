@@ -1,0 +1,23 @@
+uuid: 53e5f0fc-1c5b-4ad3-bd12-3cdbce427920
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_volunteer
+    - node.type.registered_attendants
+id: node.registered_attendants.field_volunteer
+field_name: field_volunteer
+entity_type: node
+bundle: registered_attendants
+label: volunteer
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

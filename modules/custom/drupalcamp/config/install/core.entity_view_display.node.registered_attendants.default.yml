@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.registered_attendants.field_lastname
     - field.field.node.registered_attendants.field_occupation
     - field.field.node.registered_attendants.field_paid_registration
+    - field.field.node.registered_attendants.field_volunteer
     - node.type.registered_attendants
   module:
     - user
@@ -44,6 +45,15 @@ content:
     type: string
   field_paid_registration:
     weight: 105
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_volunteer:
+    weight: 106
     label: above
     settings:
       format: default

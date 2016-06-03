@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.registered_attendants.field_lastname
     - field.field.node.registered_attendants.field_occupation
     - field.field.node.registered_attendants.field_paid_registration
+    - field.field.node.registered_attendants.field_volunteer
     - node.type.registered_attendants
   module:
     - path
@@ -51,6 +52,12 @@ content:
     type: string_textfield
   field_paid_registration:
     weight: 35
+    settings:
+      display_label: false
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_volunteer:
+    weight: 36
     settings:
       display_label: false
     third_party_settings: {  }

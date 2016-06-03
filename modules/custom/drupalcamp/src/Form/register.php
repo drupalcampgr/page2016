@@ -152,6 +152,7 @@ class register extends FormBase {
           'field_firstname' => $firstName,
           'field_lastname' => $lastName,
           'field_occupation' => $occupation,
+          'field_volunteer' => TRUE,
       ));
 
       $node->save();
