@@ -187,6 +187,7 @@ class register extends FormBase {
       $message = t('Registration not send. Please fill in all fields.');
     }
 
+      $message = t('You submitted for volunteer!');
 
     $ajax_response->addCommand(new HtmlCommand('#response-message',$message));
 
