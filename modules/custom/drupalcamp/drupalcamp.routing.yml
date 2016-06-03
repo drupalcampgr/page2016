@@ -5,6 +5,13 @@ register_page:
   requirements:
     _permission: 'access content'
 
+volunteer_page:
+  path: '/volunteer'
+  defaults:
+    _controller: '\Drupal\drupalcamp\Controller\DrupalcampVolunteerPage::getPage'
+  requirements:
+    _permission: 'access content'
+
 proposal_page:
   path: '/submit-proposal'
   defaults:

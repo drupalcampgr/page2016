@@ -60,7 +60,7 @@ class proposal extends FormBase {
     ];
 
     $form['description'] = [
-      '#type' => 'textfield',
+      '#type' => 'textarea',
       '#title' => t('Description'),
       '#required' => TRUE,
       '#prefix' => '',

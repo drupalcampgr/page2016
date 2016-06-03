@@ -21,6 +21,12 @@ function drupalcamp_theme() {
           'content' => NULL,
       ],
   ];
+  $theme['volunteer_page'] = [
+    'variables' => [
+      'content' => NULL,
+      'volunteerForm' => NULL,
+    ],
+  ];
 
   return $theme;
 }
