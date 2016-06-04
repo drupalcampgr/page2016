@@ -494,27 +494,82 @@ color: #88d3db;
 .location {
   padding: 90px 0 295px;
   background: #ffcc00 url(images/acropolis.png) 50% 100% no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .location__main-title {
   margin: 0 0 90px;
   color: #fff;
 }
-.location__athens {
-  position: relative;
-  max-width: 50%;
-  margin: 0 auto;
-  padding: 80px 65px;
-  background: #fff;
+.location__split {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
-.location__athens:before {
+.location__split-side {
+  position: relative;
+  -webkit-flex: 1 0 50%;
+  -ms-flex: 1 0 50%;
+  flex: 1 0 50%;
+  float: left;
+  width: 50%;
+  padding: 80px 65px;
+}
+.location__venue {
+  background: #17337b url(images/pattern_lines.png) 5px 91% repeat-x;
+  color: #fff;
+}
+.location__venue:before {
   content: '';
   position: absolute;
-  top: 30px;
-  left: 10px;
-  right: 10px;
-  height: 9px;
-  background: url(images/pattern_lines.png) repeat-x;
+  top: -100px;
+  left: 78px;
+  width: 96px;
+  height: 150px;
+  background: url(images/location_pin.png) no-repeat;
+}
+.location__venue:after {
+  content: '';
+  position: absolute;
+  bottom: -75px;
+  right: 54px;
+  width: 95px;
+  height: 95px;
+  background: url(images/location_sun.png) no-repeat;
+}
+.venue__name {
+  margin: 0 0 24px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+.venue__address {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+.venue__link {
+  float: left;
+  margin: 0 0 40px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.venue__link:hover {
+  text-decoration: underline;
+}
+.venue__map {
+  float: left;
+  clear: both;
+  border-bottom: 1px solid #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+.location__athens {
+  background: #fff url(images/pattern_lines.png) 5px 30px repeat-x;
 }
 .location__athens:after {
   content: '';
