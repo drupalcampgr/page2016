@@ -1,0 +1,130 @@
+/* Resonsive resets. */
+@media screen and (max-width : 779px) {
+  /* General */
+  .main-title {
+    font-size: 4rem;
+    line-height: 4.1rem;
+  }
+
+  /* Registration */
+  .registration__options {
+    flex-direction: column;
+  }
+
+  .registration__option {
+    float: none;
+    width: 100%;
+  }
+
+  .registration__txt {
+    max-width: 290px;
+  }
+
+  .registration__title {
+    max-width: 280px;
+  }
+
+  .registration__more {
+    padding-top: 18px;
+    position: static;
+    display: block;
+  }
+
+  .registration__intro {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 56px;
+  }
+
+  /* About */
+  .about__text {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .about__text p {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .about__text p:first-child {
+    border: none;
+  }
+
+  .about__text p:last-child {
+    margin-bottom: 0;
+    border: none;
+  }
+
+  .about__promo-title {
+    font-size: 4rem;
+    line-height: 4.1rem;
+    margin-bottom: 50px;
+  }
+
+  /* Social */
+  .social__list {
+    position: static;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .social__intro {
+    margin-right: 0;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    padding: 80px 0 260px;
+  }
+
+  /* Move plane to the bottom. */
+  .newsletter__container:after {
+    top: auto;
+    bottom: -107px;
+  }
+
+  /* Need elements in front of positioned absolute images. */
+  .newsletter__intro,
+  .newsletter .subscription,
+  .newsletter .secondary-title {
+    position: relative;
+    z-index: 1;
+  }
+
+  .newsletter .secondary-title {
+    max-width: 500px;
+  }
+
+  /* Location */
+  .location__split {
+    flex-direction: column;
+  }
+
+  .location__split-side {
+    width: 100%;
+  }
+
+  .venue__link {
+    margin-bottom: 10px;
+  }
+
+  .location__athens-intro {
+    max-width: 472px;
+  }
+
+  .location__venue:after {
+    display: none;
+  }
+}
+@media screen and (max-width : 979px) {
+  body {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
