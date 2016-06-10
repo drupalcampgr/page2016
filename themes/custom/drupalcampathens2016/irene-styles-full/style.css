@@ -408,17 +408,18 @@ ul .main-menu__item a.is-active {
   background: url(images/registration_sun.png) no-repeat;
 }
 .registration__icon--paid {
-  background: #17337b;
+  background: #fff;
+  overflow: hidden;
 }
 .registration__icon--paid:after {
   content: '';
   position: absolute;
-  top: -15px;
+  bottom: 0;
   left: 50%;
-  width: 92px;
-  height: 140px;
-  margin: 0 0 0 -46px;
-  background: url(images/bag_small.png) no-repeat;
+  width: 131px;
+  height: 126px;
+  margin: 0 0 0 -66px;
+  background: url(images/tshirt_half.png) no-repeat;
 }
 .registration__icon--volunteers {
   background: url(images/registration_volunteers.png) no-repeat;
@@ -439,7 +440,7 @@ ul .main-menu__item a.is-active {
   color: #0275bb;
 }
 .registration__subtitle--paid {
-color: #88d3db;
+  color: #88d3db;
 }
 .registration__txt {
   max-width: 205px;
