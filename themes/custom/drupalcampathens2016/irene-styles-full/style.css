@@ -216,14 +216,13 @@ ul .main-menu__item a.is-active {
   content: '';
   position: absolute;
   top: 50%;
-  left: 10%;
-  width: 80%;
-  margin: -40% 0 0;
-  padding-bottom: 80%;
+  left: 50%;
+  width: 680px;
+  margin: -340px 0 0 -340px;
+  padding-bottom: 680px;
   background-image: url(images/sun.png), radial-gradient(circle, rgb(252, 241, 186) 0%, rgba(255, 255, 255, 0) 80%);
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 50%, 0 0;
-  background:;
 }
 .about__text p {
   position: relative;

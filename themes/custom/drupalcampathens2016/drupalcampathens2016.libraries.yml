@@ -21,3 +21,9 @@ irene-styling-full:
     irene-styles-full/script.js: {}
   dependencies:
     - core/jquery
+
+responsive-styles:
+  version: 1.x
+  css:
+    theme:
+      responsive-styles/style.css: {}
