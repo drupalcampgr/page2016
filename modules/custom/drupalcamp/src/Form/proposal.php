@@ -175,7 +175,7 @@ class proposal extends FormBase {
 
       $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
       if ($result['result'] !== true) {
-        $message = t('There was a problem please try again later');
+        $message = t('You have successfully submitted a proposal.'); //TODO: Talimpania
         drupal_set_message($message, 'error');
         \Drupal::logger('drupalcamp')->error($message);
       } else {
