@@ -27,3 +27,16 @@ responsive-styles:
   css:
     theme:
       responsive-styles/style.css: {}
+
+mean-menu:
+  version: 1.x
+  css:
+    theme:
+      responsive-styles/meanmenu.css: {}
+  js:
+    js/MeanMenu/jquery.meanmenu.min.js: {}
+    js/meanmenu.js: {}
+
+  dependencies:
+    - core/jquery
+    - core/drupal

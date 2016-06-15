@@ -14,6 +14,15 @@
   .social__list {
     right: 5%;
   }
+
+  /* Thin header. */
+  .header--inner {
+    border-top: 0;
+  }
+
+  .main--inner {
+    margin-top: 86px;
+  }
 }
 
 @media screen and (min-width : 780px) and (max-width : 979px) {
