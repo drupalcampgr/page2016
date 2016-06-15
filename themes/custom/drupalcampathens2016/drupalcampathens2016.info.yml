@@ -5,6 +5,7 @@ package: Other
 core: 8.x
 libraries:
   - drupalcampathens2016/irene-styling-full
+  - drupalcampathens2016/mean-menu
   - drupalcampathens2016/responsive-styles
 
 base theme: classy

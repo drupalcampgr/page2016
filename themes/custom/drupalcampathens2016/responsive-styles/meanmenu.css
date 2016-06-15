@@ -1,0 +1,244 @@
+
+/*! #######################################################################
+
+	MeanMenu 2.0.7
+	--------
+
+	To be used with jquery.meanmenu.js by Chris Wharton (http://www.meanthemes.com/plugins/meanmenu/)
+
+####################################################################### */
+
+/* hide the link until viewport size is reached */
+a.meanmenu-reveal {
+	display: none;
+}
+
+/* when under viewport size, .mean-container is added to body */
+.mean-container .mean-bar {
+	position: absolute;
+	right: 0;
+	top: 86px;
+	width: 100%;
+	background: #10296b;
+	padding: 0;
+  min-height: 0;
+	z-index: 999999;
+	box-sizing: border-box;
+
+}
+
+.mean-container a.meanmenu-reveal {
+	width: 86px;
+	height: 86px;
+	position: absolute;
+	top: -86px;
+	right: 0;
+	cursor: pointer;
+	color: #fff;
+	background: #10296b;
+	text-decoration: none;
+	font-size: 16px;
+	text-indent: -9999em;
+	line-height: 22px;
+	font-size: 1px;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	margin: 0;
+}
+
+.mean__trigger-icon-wrapper {
+  display: block;
+  position: relative;
+	width: 46px;
+	height: 33px;
+	margin: 27px 20px 26px 20px;
+}
+
+.mean__trigger-icon {
+	display: block;
+	background: #0077bb;
+	height: 5px;
+	width: 100%;
+  position: absolute;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  -moz-transition: -moz-transform 0.2s ease-out, margin 0.2s ease-out 0.2s;
+  -o-transition: -o-transform 0.2s ease-out, margin 0.2s ease-out 0.2s;
+  -webkit-transition: -webkit-transform 0.2s ease-out, margin 0.2s ease-out;
+  -webkit-transition-delay: 0s, 0.2s;
+  transition: transform 0.2s ease-out, margin 0.2s ease-out 0.2s;
+}
+
+.mean__trigger-icon--first {
+	background: #86d5d9;
+	margin-top: 15px;
+}
+
+.mean__trigger-icon--third {
+	background: #f1e310;
+  margin-top: 30px;
+}
+
+.mean__trigger-icon-wrapper--closed .mean__trigger-icon--first {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: 15px;
+}
+
+.mean__trigger-icon-wrapper--closed .mean__trigger-icon--second {
+  opacity: 0;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.mean__trigger-icon-wrapper--closed .mean__trigger-icon--third {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 15px;
+}
+
+.mean-container .mean-nav {
+	float: left;
+	width: 100%;
+	background: #10296b;
+	margin-top: 0;
+}
+
+.mean-container .mean-nav ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style-type: none;
+}
+
+.mean-container .mean-nav ul li {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.mean-container .mean-nav ul li a {
+	display: block;
+	float: left;
+	width: 90%;
+	padding: 1em 5% 0.8em 5%;
+	margin: 0;
+	text-align: left;
+	color: #fff;
+	border-bottom: 3px solid #17337b;
+	text-decoration: none;
+	text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1em;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
+}
+
+.mean-container .mean-nav ul li li a {
+	width: 80%;
+	padding: 1em 10%;
+	border-top: 1px solid #f1f1f1;
+	border-top: 1px solid rgba(255,255,255,0.25);
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+	text-shadow: none !important;
+	visibility: visible;
+}
+
+.mean-container .mean-nav ul li.mean-last a {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.mean-container .mean-nav ul li li li a {
+	width: 70%;
+	padding: 1em 15%;
+}
+
+.mean-container .mean-nav ul li li li li a {
+	width: 60%;
+	padding: 1em 20%;
+}
+
+.mean-container .mean-nav ul li li li li li a {
+	width: 50%;
+	padding: 1em 25%;
+}
+
+.mean-container .mean-nav ul li a:hover {
+	background: #030642;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+	margin-top: 1px;
+	width: 26px;
+	height: 32px;
+	padding: 12px !important;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	font-weight: 700;
+	background: rgba(255,255,255,0.1);
+	border: none !important;
+	border-left: 1px solid rgba(255,255,255,0.4) !important;
+	border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+.mean-container .mean-nav ul li a.mean-expand:hover {
+	background: rgba(0,0,0,0.9);
+}
+
+.mean-container .mean-push {
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+
+.mean-nav .wrapper {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/* Fix for box sizing on Foundation Framework etc. */
+.mean-container .mean-bar, .mean-container .mean-bar * {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+
+.mean-remove {
+	display: none !important;
+}
+
+@media screen and (max-width : 979px) {
+  .mean-container:not(.header--home) {
+  	top: 0;
+  }
+
+  .mean-container:not(.header--home) .logo--default {
+    display: none;
+  }
+
+  .mean-container:not(.header--home) .logo--scrolled {
+    display: block;
+  }
+}
