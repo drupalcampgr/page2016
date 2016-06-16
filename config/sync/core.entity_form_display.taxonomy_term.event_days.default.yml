@@ -1,0 +1,42 @@
+uuid: 70e5681c-98c7-4195-a72e-3f5812041708
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.event_days.field_day_name
+    - taxonomy.vocabulary.event_days
+  module:
+    - path
+    - text
+id: taxonomy_term.event_days.default
+targetEntityType: taxonomy_term
+bundle: event_days
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_day_name:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  name:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

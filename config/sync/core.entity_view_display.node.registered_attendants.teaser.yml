@@ -14,4 +14,11 @@ mode: teaser
 content:
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_aggreed_as_volunteer: true
+  field_email: true
+  field_firstname: true
+  field_lastname: true
+  field_occupation: true
+  field_paid_registration: true
+  field_volunteer: true

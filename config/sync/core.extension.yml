@@ -11,6 +11,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
   drupalcamp: 0
   dynamic_page_cache: 0
   editor: 0
@@ -22,6 +23,7 @@ module:
   history: 0
   image: 0
   image_url_formatter: 0
+  kint: 0
   link: 0
   menu_ui: 0
   node: 0

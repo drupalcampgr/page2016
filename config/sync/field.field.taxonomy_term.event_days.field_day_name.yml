@@ -1,0 +1,19 @@
+uuid: c22f8202-85f5-451b-82ac-08ab8a5d3dd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_day_name
+    - taxonomy.vocabulary.event_days
+id: taxonomy_term.event_days.field_day_name
+field_name: field_day_name
+entity_type: taxonomy_term
+bundle: event_days
+label: 'Day name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

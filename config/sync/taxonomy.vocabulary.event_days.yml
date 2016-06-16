@@ -1,0 +1,9 @@
+uuid: bacd0c0b-04bb-4faa-83ec-c10f3ac021ad
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event Days'
+vid: event_days
+description: ''
+hierarchy: 0
+weight: 0

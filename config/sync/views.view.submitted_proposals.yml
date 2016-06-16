@@ -3,15 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - field.storage.node.field_email
-    - field.storage.node.field_session_title
-    - field.storage.node.field_speaker_name
+    - core.entity_view_mode.node.teaser
+    - field.storage.node.field_day
     - node.type.proposals
-    - user.role.administrator
+    - user.role.anonymous
+    - user.role.authenticated
   module:
     - node
-    - text
     - user
 id: submitted_proposals
 label: 'Submitted proposals'
@@ -32,7 +30,8 @@ display:
         type: role
         options:
           role:
-            administrator: administrator
+            anonymous: anonymous
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -73,19 +72,27 @@ display:
             previous: ‹‹
             next: ››
       style:
-        type: table
+        type: default
+        options:
+          grouping:
+            -
+              field: field_day
+              rendered: true
+              rendered_strip: false
+          row_class: ''
+          default_row_class: false
       row:
         type: fields
       fields:
-        field_speaker_name:
-          id: field_speaker_name
-          table: node__field_speaker_name
-          field: field_speaker_name
+        field_day:
+          id: field_day
+          table: node__field_day
+          field: field_day
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Speaker Name'
-          exclude: false
+          label: ''
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -117,7 +124,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -125,11 +132,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: string
+          click_sort_column: target_id
+          type: entity_reference_entity_view
           settings:
-            link_to_entity: false
-          group_column: value
+            view_mode: default
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -140,14 +147,14 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_email:
-          id: field_email
-          table: node__field_email
-          field: field_email
+        rendered_entity:
+          id: rendered_entity
+          table: node
+          field: rendered_entity
           relationship: none
           group_type: group
           admin_label: ''
-          label: email
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -180,153 +187,17 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
+          element_label_colon: false
+          element_wrapper_type: '0'
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: basic_string
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_session_title:
-          id: field_session_title
-          table: node__field_session_title
-          field: field_session_title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'Session title'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        body:
-          id: body
-          table: node__body
-          field: body
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Body
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
+          view_mode: teaser
+          entity_type: node
+          plugin_id: rendered_entity
       filters:
         type:
           id: type
@@ -366,7 +237,7 @@ display:
         groups:
           1: AND
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -374,10 +245,18 @@ display:
         - 'user.node_grants:view'
         - user.roles
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_email'
-        - 'config:field.storage.node.field_session_title'
-        - 'config:field.storage.node.field_speaker_name'
+        - 'config:core.entity_view_display.node.article.default'
+        - 'config:core.entity_view_display.node.article.rss'
+        - 'config:core.entity_view_display.node.article.teaser'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.proposals.default'
+        - 'config:core.entity_view_display.node.proposals.teaser'
+        - 'config:core.entity_view_display.node.registered_attendants.default'
+        - 'config:core.entity_view_display.node.registered_attendants.teaser'
+        - 'config:core.entity_view_display.node.session_submit.default'
+        - 'config:core.entity_view_display.node.session_submit.teaser'
+        - 'config:field.storage.node.field_day'
   page_1:
     display_plugin: page
     id: page_1
@@ -387,7 +266,7 @@ display:
       display_extenders: {  }
       path: submitted-proposals
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -395,7 +274,15 @@ display:
         - 'user.node_grants:view'
         - user.roles
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_email'
-        - 'config:field.storage.node.field_session_title'
-        - 'config:field.storage.node.field_speaker_name'
+        - 'config:core.entity_view_display.node.article.default'
+        - 'config:core.entity_view_display.node.article.rss'
+        - 'config:core.entity_view_display.node.article.teaser'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.proposals.default'
+        - 'config:core.entity_view_display.node.proposals.teaser'
+        - 'config:core.entity_view_display.node.registered_attendants.default'
+        - 'config:core.entity_view_display.node.registered_attendants.teaser'
+        - 'config:core.entity_view_display.node.session_submit.default'
+        - 'config:core.entity_view_display.node.session_submit.teaser'
+        - 'config:field.storage.node.field_day'

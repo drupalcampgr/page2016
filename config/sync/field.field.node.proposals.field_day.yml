@@ -1,0 +1,28 @@
+uuid: 2cc4b24e-d768-4168-8c25-d11500198ee4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_day
+    - node.type.proposals
+    - taxonomy.vocabulary.event_days
+id: node.proposals.field_day
+field_name: field_day
+entity_type: node
+bundle: proposals
+label: Day
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_days: event_days
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
