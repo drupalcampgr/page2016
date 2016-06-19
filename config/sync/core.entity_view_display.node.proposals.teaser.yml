@@ -9,9 +9,11 @@ dependencies:
     - field.field.node.proposals.field_email
     - field.field.node.proposals.field_session_time
     - field.field.node.proposals.field_session_title
+    - field.field.node.proposals.field_speaker_image
     - field.field.node.proposals.field_speaker_name
     - node.type.proposals
   module:
+    - responsive_image
     - text
     - user
 id: node.proposals.teaser
@@ -38,6 +40,14 @@ content:
     label: hidden
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+  field_speaker_image:
+    type: responsive_image
+    weight: 4
+    label: hidden
+    settings:
+      responsive_image_style: narrow
+      image_link: ''
     third_party_settings: {  }
   field_speaker_name:
     type: string

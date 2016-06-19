@@ -8,9 +8,12 @@ dependencies:
     - field.field.node.proposals.field_email
     - field.field.node.proposals.field_session_time
     - field.field.node.proposals.field_session_title
+    - field.field.node.proposals.field_speaker_image
     - field.field.node.proposals.field_speaker_name
+    - image.style.thumbnail
     - node.type.proposals
   module:
+    - image
     - path
     - text
 id: node.proposals.default
@@ -60,6 +63,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_speaker_image:
+    weight: 37
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
   field_speaker_name:
     weight: 32
     settings:
