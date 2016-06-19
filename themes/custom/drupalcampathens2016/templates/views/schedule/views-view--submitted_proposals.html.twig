@@ -39,6 +39,8 @@
     dom_id ? 'js-view-dom-id-' ~ dom_id,
   ]
 %}
+
+
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if title %}
@@ -62,11 +64,7 @@
   {% endif %}
 
   {% if rows %}
-    <div class="content schedule">
-      <div class="content__container container">
-        {{ rows }}
-      </div>
-    </div>
+    {{ rows }}
   {% elseif empty %}
     <div class="view-empty">
       {{ empty }}
