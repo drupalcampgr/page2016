@@ -1330,7 +1330,7 @@ textarea {
 }
 .schedule__photo {
   position: absolute;
-  top: 50%;
+/*  top: 50%; */
   right: 10px;
   width: 46px;
   margin: -23px 0 0;

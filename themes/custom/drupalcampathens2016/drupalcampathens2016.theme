@@ -173,24 +173,28 @@ function drupalcampathens2016_theme_suggestions_form_alter(array &$suggestions, 
 }
 
 /**
- * Implements template_preprocess_views_view_unformatted().
+ * Implements template_preprocess_views_view_grouping().
  *
  * For view submitted_proposals:
  * - Add class to schedule day.
  */
-function drupalcampathens2016_preprocess_views_view_unformatted(&$variables) {
+function drupalcampathens2016_preprocess_views_view_grouping(&$variables) {
   if ($variables['view']->id() == 'submitted_proposals') {
     // Get session entity.
     if (is_array($variables['rows'])) {
       $first = reset($variables['rows']);
-      $entity = $first['content']['#row']->_entity;
+      $rows = $first['rows'];
+      $first_row = reset($rows);
+      $day = $first_row->node__field_day_field_day_target_id;
     }
     else {
       return;
     }
   }
+  else {
+    return;
+  }
   // Add class based on date.
-  $day = $entity->field_day->entity->id();
   if ($day == 1) {
     $class = 'schedule__day--friday';
   }

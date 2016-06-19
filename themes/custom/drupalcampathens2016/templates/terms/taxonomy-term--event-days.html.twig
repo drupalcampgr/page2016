@@ -29,18 +29,15 @@
     'vocabulary-' ~ term.bundle|clean_class,
   ]
 %}
-<div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
-  <div class="schedule__date">
-    <div class="schedule__subtitle">Day</div>
-    {{ title_prefix }}
-    <div class="schedule__date-month">{{ name }}</div>
-    {{ title_suffix }}
-    <div class="schedule__day-year">
-      <span class="schedule__weekday">{{ term.field_day_name.value }}</span>
-      <span class="schedule__year">2016</span>
-    </div>
-    <div class="schedule__intro">
-      {{ content.description }}
-    </div>
-  </div>
+
+<div class="schedule__subtitle">Day</div>
+{{ title_prefix }}
+<div class="schedule__date-month">{{ name }}</div>
+{{ title_suffix }}
+<div class="schedule__day-year">
+  <span class="schedule__weekday">{{ term.field_day_name.value }}</span>
+  <span class="schedule__year">2016</span>
+</div>
+<div class="schedule__intro">
+  {{ content.description }}
 </div>

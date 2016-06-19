@@ -81,15 +81,11 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<div class="schedule__row">
-  <div class="schedule__session schedule__session--split">
-    <div class="schedule__time">{{ content.field_session_time }}</div>
-    {{ title_prefix }}
-    <div class="schedule__title">{{ content.field_session_title }}Title</div>
-    {{ title_suffix }}
-    <div class="schedule__photo">{{ content.field_speaker_image }}</div>
-    <div class="schedule__by"><strong> By {{ content.field_speaker_name }}</strong></div>
-    <div class="schedule__info">{{ content.body }}</div>
-    <a class="schedule__link" href="">Title</a>
-  </div>
-</div>
+<div class="schedule__time">{{ content.field_session_time }}</div>
+{{ title_prefix }}
+<div class="schedule__title">{{ content.field_session_title }}Title</div>
+{{ title_suffix }}
+<div class="schedule__photo">{{ content.field_speaker_image }}</div>
+<div class="schedule__by"><strong> By {{ content.field_speaker_name }}</strong></div>
+<div class="schedule__info">{{ content.body }}</div>
+<!-- <a class="schedule__link" href="">Title</a> -->
