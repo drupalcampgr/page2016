@@ -23,6 +23,17 @@
   .main--inner {
     margin-top: 86px;
   }
+
+  /*Schedule view*/
+  .schedule__date {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  .schedule__tracks {
+    float: none;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width : 780px) and (max-width : 979px) {
@@ -244,6 +255,28 @@
   .schedule-promo__link {
     margin-top: 20px;
   }
+
+  /*Schedule view*/
+  .schedule__row{
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .schedule__session--split {
+    -webkit-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    float: none;
+    width: 100%;
+    margin: auto;
+  }
+  .schedule__session--split:nth-child(1) {
+    border-bottom: none;
+  }
+  .schedule__session--split:nth-child(2) .schedule__time {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width : 479px) {
