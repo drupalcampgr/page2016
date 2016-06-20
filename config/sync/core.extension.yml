@@ -22,7 +22,6 @@ module:
   history: 0
   image: 0
   image_url_formatter: 0
-  kint: 0
   link: 0
   menu_ui: 0
   node: 0
