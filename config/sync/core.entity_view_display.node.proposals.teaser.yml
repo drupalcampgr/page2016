@@ -23,9 +23,10 @@ mode: teaser
 content:
   body:
     label: hidden
-    type: text_default
+    type: text_summary_or_trimmed
     weight: 3
-    settings: {  }
+    settings:
+      trim_length: 300
     third_party_settings: {  }
   field_session_time:
     type: string
