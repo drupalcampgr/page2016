@@ -1,0 +1,285 @@
+/* Resonsive resets. */
+@media screen and (max-width : 979px) {
+  body {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /* Social */
+  .social__list {
+    right: 5%;
+  }
+
+  /* Thin header. */
+  .header--inner {
+    border-top: 0;
+  }
+
+  .main--inner {
+    margin-top: 86px;
+  }
+}
+
+@media screen and (min-width : 780px) and (max-width : 979px) {
+  /* Footer */
+  .footer-note__credits {
+    float: left;
+  }
+  .footer-note__date {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width : 779px) {
+  /* General */
+  h1,
+  .main-title {
+    font-size: 4rem;
+    line-height: 4.1rem;
+  }
+
+  /* Split content */
+  .split-content {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+  }
+  .split-content__side {
+    max-width: 100%;
+    width: 100%;
+  }
+  .split-content__side:first-child {
+    padding-right: 0;
+    padding-bottom: 4rem;
+  }
+
+  /* Attendees */
+  .heading--attendees h1 {
+    z-index: 1;
+  }
+  .heading--attendees h1:after {
+    z-index: -1;
+  }
+  .attendees__intro {
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+  }
+  .attendees__list-item {
+    padding: 23px 0 26px;
+  }
+  .attendees__name {
+    font-size: 2.4rem;
+  }
+
+  /* Register page. */
+  .heading--registration h1 {
+    padding-right: 175px;
+  }
+  .heading--registration h1:after {
+    width: 165px;
+    background-size: contain;
+  }
+  .register__intro {
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+    padding-right: 0;
+  }
+  .register__intro:after {
+    opacity: 0.6;
+  }
+
+  /* Registration */
+  .registration__options {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .registration__option {
+    float: none;
+    width: 100%;
+  }
+  .registration__txt {
+    max-width: 290px;
+  }
+  .registration__title {
+    max-width: 280px;
+  }
+  .registration__more {
+    padding-top: 18px;
+    position: static;
+    display: block;
+  }
+  .registration__intro {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 56px;
+  }
+
+  /* About */
+  .about__text {
+    text-align: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .about__text p {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .about__text p:first-child {
+    border: none;
+  }
+  .about__text p:last-child {
+    margin-bottom: 0;
+    border: none;
+  }
+  .about__promo-title {
+    font-size: 4rem;
+    line-height: 4.1rem;
+    margin-bottom: 50px;
+  }
+
+  /* Social */
+  .social__list {
+    position: static;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+  .social__intro {
+    margin-right: 0;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    padding: 80px 0 260px;
+  }
+
+  /* Move plane to the bottom. */
+  .newsletter__container:after {
+    top: auto;
+    bottom: -107px;
+  }
+
+  /* Need elements in front of positioned absolute images. */
+  .newsletter__intro,
+  .newsletter .subscription,
+  .newsletter .secondary-title {
+    position: relative;
+    z-index: 1;
+  }
+  .newsletter .secondary-title {
+    max-width: 500px;
+  }
+
+  /* Location */
+  .location__split {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .location__split-side {
+    width: 100%;
+  }
+  .venue__link {
+    margin-bottom: 10px;
+  }
+  .location__athens-intro {
+    max-width: 472px;
+  }
+  .location__venue:after {
+    display: none;
+  }
+
+  /* Footer */
+  .footer-note__date {
+    margin-top: 0;
+    float: none;
+    margin-right: 0;
+  }
+  .footer-note__credits,
+  .footer-note__copy {
+    float: none;
+    margin-right: 0;
+    display: block;
+  }
+
+  /* Smaller druplicon */
+  .location__venue:before {
+    background-size: 80%;
+    top: -86px;
+    left: 66px;
+  }
+
+  /* One column Schedule */
+  .schedule-promo__preview{
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .schedule-promo__day {
+    -webkit-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    float: none;
+    width: 100%;
+    max-width: 290px;
+    padding: 20px 10px;
+    margin: auto;
+    border-top: 2px solid #88d3db;
+    border-left: none;
+  }
+  .schedule-promo__day:first-child {
+    padding-top: 0;
+  }
+  .schedule-promo__day:last-child {
+    padding-top: 0;
+  }
+  .schedule-promo__link {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width : 479px) {
+  .newsletter__container:before {
+    right: 8%;
+    z-index: 0;
+  }
+
+  /* Register page. */
+  .heading--registration h1 {
+    padding-right: 5%;
+  }
+  .heading--registration h1:after {
+    display: none;
+  }
+  .register__intro {
+    padding-right: 5%;
+  }
+  .register__footer {
+    padding-right: 0;
+  }
+  .register__footer:after {
+    opacity: 0.6;
+  }
+
+  /* One column Schedule */
+  .schedule-promo__link {
+    margin: 65px auto -185px
+  }
+  .schedule-promo {
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (max-width : 319px) {
+  .newsletter__container:before {
+    display: none;
+  }
+}
