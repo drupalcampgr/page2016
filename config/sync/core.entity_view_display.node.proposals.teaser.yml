@@ -5,8 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.proposals.body
+    - field.field.node.proposals.field_day
+    - field.field.node.proposals.field_email
+    - field.field.node.proposals.field_session_time
+    - field.field.node.proposals.field_session_title
+    - field.field.node.proposals.field_speaker_image
+    - field.field.node.proposals.field_speaker_name
     - node.type.proposals
   module:
+    - responsive_image
     - text
     - user
 id: node.proposals.teaser
@@ -17,10 +24,40 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 3
     settings:
-      trim_length: 600
+      trim_length: 300
     third_party_settings: {  }
-  links:
-    weight: 100
-hidden: {  }
+  field_session_time:
+    type: string
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_session_title:
+    type: string
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_speaker_image:
+    type: responsive_image
+    weight: 4
+    label: hidden
+    settings:
+      responsive_image_style: narrow
+      image_link: ''
+    third_party_settings: {  }
+  field_speaker_name:
+    type: string
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_day: true
+  field_email: true
+  links: true

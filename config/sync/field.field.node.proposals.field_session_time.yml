@@ -1,0 +1,19 @@
+uuid: 0ca36697-04ff-4c29-82fd-8a2fa4cc57c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_time
+    - node.type.proposals
+id: node.proposals.field_session_time
+field_name: field_session_time
+entity_type: node
+bundle: proposals
+label: 'Session time'
+description: 'ex: 10.00 - 11.00'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

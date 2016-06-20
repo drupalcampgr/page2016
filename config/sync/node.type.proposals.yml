@@ -8,9 +8,9 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Proposals
+name: 'Proposals (Sessions)'
 type: proposals
-description: ''
+description: 'Used for the sessions.'
 help: ''
 new_revision: false
 preview_mode: 0

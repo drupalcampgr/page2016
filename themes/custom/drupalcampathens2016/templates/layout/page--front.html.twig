@@ -112,7 +112,7 @@
                         </a>
                     </li>
                 </ul>
-                <a class="speakers__button" href="{{ url('proposal_page') }}">Submit your proposal</a>
+                <!-- <a class="speakers__button" href="{{ url('proposal_page') }}">Submit your proposal</a> -->
             </div>
         </section>
         <section class="registration">
@@ -166,6 +166,47 @@
                 </div>
             </div>
         </section>
+
+        <section class="schedule-promo">
+          <div class="schedule-promo__container container">
+            <h2 class="schedule-promo__main-title main-title">Schedule</h2>
+            <div class="schedule-promo__preview">
+              <div class="schedule-promo__day">
+                <div class="schedule-promo__date">1 July</div>
+                <div class="schedule-promo__weekday">Friday</div>
+                <div class="schedule-promo__info">Social event</div>
+              </div>
+              <div class="schedule-promo__day">
+                <div class="schedule-promo__date">2 July</div>
+                <div class="schedule-promo__weekday">Saturday</div>
+                <div class="schedule-promo__info">keynote, sessions</div>
+              </div>
+              <div class="schedule-promo__day">
+                <div class="schedule-promo__date">3 July</div>
+                <div class="schedule-promo__weekday">Sunday</div>
+                <div class="schedule-promo__info">sessions, workshops, sprints</div>
+              </div>
+              <!-- <a class="schedule-promo__link" href="{{ url('view.submitted_proposals.page_1') }}">View the full schedule</a> -->
+            </div>
+          </div>
+        </section>
+        <section class="coorganisation">
+          <div class="coorganisation__container container">
+            <h2 class="coorganisation__main-title main-title">Co-organiser</h2>
+            <a href="http://www.panteion.gr/index.php?p=content&section=26&id=103&lang=en" target="_blank">
+              <img src="{{ base_path ~ directory }}/irene-styles-full/images/external/panteion.png" alt="Panteion University">
+            </a>
+          </div>
+        </section>
+        <section class="sponsors">
+          <div class="sponsors__container container">
+            <h2 class="sponsors__main-title main-title">Sponsors</h2>
+            <a href="https://assoc.drupal.org/" target="_blank">
+              <img src="{{ base_path ~ directory }}/irene-styles-full/images/external/drupal_association.png" alt="Drupal Association">
+            </a>
+          </div>
+        </section>
+
         <section class="location">
             <div class="location__container container">
                 <h2 class="location__main-title main-title">The Location</h2>

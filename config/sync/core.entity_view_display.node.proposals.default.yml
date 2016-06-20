@@ -4,11 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.proposals.body
+    - field.field.node.proposals.field_day
     - field.field.node.proposals.field_email
+    - field.field.node.proposals.field_session_time
     - field.field.node.proposals.field_session_title
+    - field.field.node.proposals.field_speaker_image
     - field.field.node.proposals.field_speaker_name
     - node.type.proposals
   module:
+    - image
     - text
     - user
 id: node.proposals.default
@@ -22,12 +26,26 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+  field_day:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   field_email:
     weight: 103
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
+  field_session_time:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
   field_session_title:
     weight: 104
     label: above
@@ -35,6 +53,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_speaker_image:
+    weight: 107
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
   field_speaker_name:
     weight: 102
     label: above

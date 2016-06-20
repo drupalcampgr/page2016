@@ -4,11 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.node.proposals.body
+    - field.field.node.proposals.field_day
     - field.field.node.proposals.field_email
+    - field.field.node.proposals.field_session_time
     - field.field.node.proposals.field_session_title
+    - field.field.node.proposals.field_speaker_image
     - field.field.node.proposals.field_speaker_name
+    - image.style.thumbnail
     - node.type.proposals
   module:
+    - image
     - path
     - text
 id: node.proposals.default
@@ -29,6 +34,14 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_day:
+    weight: 36
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_email:
     weight: 33
     settings:
@@ -36,6 +49,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
+  field_session_time:
+    weight: 35
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   field_session_title:
     weight: 34
     settings:
@@ -43,6 +63,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_speaker_image:
+    weight: 37
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
   field_speaker_name:
     weight: 32
     settings:

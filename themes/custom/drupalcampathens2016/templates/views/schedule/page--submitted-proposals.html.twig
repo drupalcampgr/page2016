@@ -95,7 +95,22 @@
 
   {% block main %}
     {% if page.content %}
+
+<main class="main main--inner">
+    <article>
+      <div class="heading heading--schedule">
+        <h1 class="container">Schedule</h1>
+      </div>
+      <div class="content schedule">
+        <div class="content__container container">
+
       {{ page.content }}
+
+        </div>
+      </div>
+    </article>
+</main>
+
     {% endif %}
   {% endblock main %}
 
@@ -131,12 +146,12 @@
         </div>
       </section>
       <section class="social">
-        <div class="container clearfix">
+        <div class="container">
           <h3 class="secondary-title">Stay Tuned!</h3>
           <div class="social__intro">
             If you 're interested, follow us on social media and stay tuned about the event!
           </div>
-          <ul class="social__list clearfix">
+          <ul class="social__list">
             <li class="social__item social__item--fb" title="Facebook"><a href="https://www.facebook.com/drupalgr" target="_blank">Facebook</a></li>
             <li class="social__item social__item--tw" title="Twitter"><a href="https://twitter.com/drupalgr" target="_blank">Twitter</a></li>
           </ul>
