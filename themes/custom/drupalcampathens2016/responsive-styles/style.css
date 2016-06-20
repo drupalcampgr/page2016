@@ -45,6 +45,8 @@
 
   /* Split content */
   .split-content {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     font-size: 2.2rem;
     line-height: 3.1rem;
@@ -95,6 +97,8 @@
 
   /* Registration */
   .registration__options {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .registration__option {
@@ -121,6 +125,8 @@
   /* About */
   .about__text {
     text-align: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .about__text p {
@@ -174,6 +180,8 @@
 
   /* Location */
   .location__split {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .location__split-side {
@@ -208,6 +216,34 @@
     top: -86px;
     left: 66px;
   }
+
+  /* One column Schedule */
+  .schedule-promo__preview{
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .schedule-promo__day {
+    -webkit-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    float: none;
+    width: 100%;
+    max-width: 290px;
+    padding: 20px 10px;
+    margin: auto;
+    border-top: 2px solid #88d3db;
+    border-left: none;
+  }
+  .schedule-promo__day:first-child {
+    padding-top: 0;
+  }
+  .schedule-promo__day:last-child {
+    padding-top: 0;
+  }
+  .schedule-promo__link {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width : 479px) {
@@ -231,6 +267,14 @@
   }
   .register__footer:after {
     opacity: 0.6;
+  }
+
+  /* One column Schedule */
+  .schedule-promo__link {
+    margin: 65px auto -185px
+  }
+  .schedule-promo {
+    padding-bottom: 200px;
   }
 }
 
