@@ -6,10 +6,16 @@ dependencies:
     - field.field.node.proposals.body
     - field.field.node.proposals.field_day
     - field.field.node.proposals.field_email
+    - field.field.node.proposals.field_link_to
+    - field.field.node.proposals.field_session_level
     - field.field.node.proposals.field_session_time
     - field.field.node.proposals.field_session_title
+    - field.field.node.proposals.field_session_track
     - field.field.node.proposals.field_speaker_image
+    - field.field.node.proposals.field_speaker_intro
+    - field.field.node.proposals.field_speaker_label
     - field.field.node.proposals.field_speaker_name
+    - image.style.speaker_full_155x155
     - node.type.proposals
   module:
     - image
@@ -22,55 +28,75 @@ mode: default
 content:
   body:
     type: text_trimmed
-    weight: 3
-    label: above
+    weight: 1
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
   field_day:
-    weight: 6
-    label: above
+    weight: 4
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
-  field_email:
-    weight: 2
-    label: above
-    settings: {  }
+  field_session_level:
+    weight: 6
+    label: hidden
+    settings:
+      link: false
     third_party_settings: {  }
-    type: basic_string
+    type: entity_reference_label
   field_session_time:
-    weight: 5
-    label: above
+    weight: 3
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_session_title:
-    weight: 4
-    label: above
+    weight: 2
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-  field_speaker_image:
-    weight: 7
-    label: above
+  field_session_track:
+    weight: 9
+    label: hidden
     settings:
-      image_style: ''
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_speaker_image:
+    weight: 5
+    label: hidden
+    settings:
+      image_style: speaker_full_155x155
       image_link: ''
     third_party_settings: {  }
     type: image
-  field_speaker_name:
-    weight: 1
-    label: above
+  field_speaker_intro:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_speaker_label:
+    weight: 8
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-  links:
+  field_speaker_name:
     weight: 0
-    settings: {  }
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-hidden: {  }
+    type: string
+hidden:
+  field_email: true
+  field_link_to: true
+  links: true

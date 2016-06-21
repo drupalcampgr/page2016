@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Template\Attribute;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_preprocess_HOOK() for html.html.twig.
@@ -97,10 +98,25 @@ function drupalcampathens2016_theme_suggestions_fieldset_alter(array &$suggestio
 
 /**
  * Implements hook_preprocess_node().
+ *
+ * For session (proposals) full view:
+ * Add field_day's day to variables array.
+ * For session (proposals) teaser view:
+ * Replace url with the contents of field field_link_to (if set).
  */
 function drupalcampathens2016_preprocess_node(array &$variables) {
-  // Default to turning off byline/submitted.
-  //$variables['display_submitted'] = FALSE;
+  if ($variables['node']->bundle() == 'proposals' && $variables['view_mode'] == 'full') {
+    $node = $variables['node'];
+    $variables['day_name'] = $node->field_day->entity->field_day_name[0]->getValue()['value'];
+  }
+  elseif ($variables['node']->bundle() == 'proposals' && $variables['view_mode'] == 'teaser') {
+    $node = $variables['node'];
+    $uri = $node->field_link_to->uri;
+    if ($uri) {
+      $url = base_path() . Url::fromUri($uri)->getInternalPath();
+      $variables['url'] = $url;
+    }
+  }
 }
 
 /**

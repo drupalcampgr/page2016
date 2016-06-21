@@ -1,0 +1,14 @@
+uuid: 3c066c4e-d33d-472f-bd5a-bd643fa78a8e
+langcode: en
+status: true
+dependencies: {  }
+name: speaker_full_155x155
+label: 'Speaker full 155x155'
+effects:
+  19d380c1-9931-435d-a94a-858e95a4ee99:
+    uuid: 19d380c1-9931-435d-a94a-858e95a4ee99
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 155
+      height: 155

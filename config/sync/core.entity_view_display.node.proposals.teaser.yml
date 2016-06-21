@@ -7,9 +7,14 @@ dependencies:
     - field.field.node.proposals.body
     - field.field.node.proposals.field_day
     - field.field.node.proposals.field_email
+    - field.field.node.proposals.field_link_to
+    - field.field.node.proposals.field_session_level
     - field.field.node.proposals.field_session_time
     - field.field.node.proposals.field_session_title
+    - field.field.node.proposals.field_session_track
     - field.field.node.proposals.field_speaker_image
+    - field.field.node.proposals.field_speaker_intro
+    - field.field.node.proposals.field_speaker_label
     - field.field.node.proposals.field_speaker_name
     - node.type.proposals
   module:
@@ -53,4 +58,9 @@ hidden:
   body: true
   field_day: true
   field_email: true
+  field_link_to: true
+  field_session_level: true
+  field_session_track: true
+  field_speaker_intro: true
+  field_speaker_label: true
   links: true

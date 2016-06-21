@@ -1368,3 +1368,146 @@ textarea {
   text-indent: -9999px;
   overflow: hidden;
 }
+
+/* Session */
+.heading--session {
+  margin: 0;
+  background: #0275bb;
+}
+.heading--session:after {
+  display: none;
+}
+.heading--session h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 5rem;
+  line-height: 5.5rem;
+  font-weight: normal;
+}
+.heading--session h2:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  z-index: -1;
+  width: 242px;
+  height: 81px;
+  margin: -24px 0 0 -54px;
+  background: url(images/schedule_header.png) no-repeat;
+}
+.heading--session h2 a {
+  position: relative;
+  padding: 0 0 0 102px;
+  color: #fff;
+}
+.heading--session h2 a:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 78px;
+  height: 78px;
+  margin: -39px 0 0;
+  background: url(images/session_back.png) no-repeat;
+}
+.session {
+  padding: 85px 0;
+  background: url(images/speakers_pattern.jpg);
+}
+.session__container {
+  position: relative;
+  padding: 80px 360px 55px 0;
+  background: url(images/pattern_lines_light.png) -4px 0 repeat-x, url(images/pattern_lines_light.png) -4px 100% repeat-x;
+}
+.session__date {
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ed1845;
+}
+.session__day {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ed1845;
+}
+.session__year {
+  margin: 0 0 35px;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #88d3db;
+}
+.session__time {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-family: 'Poppins', sans-serif;
+  color: #959595;
+}
+.session__title {
+  font-size: 5rem;
+  line-height: 6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #17337b;
+}
+.session__level {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: bold;
+  color: #17337b;
+}
+.session__track {
+  margin: 0 0 45px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: bold;
+  color: #0275bb;
+}
+.speaker--session {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 240px;
+}
+.speaker--session:before,
+.speaker--session:after {
+  display: none;
+}
+.speaker__photo--session {
+  width: 155px;
+  margin: 0 0 25px;
+}
+.speaker__photo--session:after {
+  width: 155px;
+  height: 155px;
+  background-size: contain;
+
+}
+.speaker__label {
+  margin: 0 0 20px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0275bb;
+}
+.speaker__name--session {
+  margin: 0 0 5px;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.session__description {
+  color: #17337b;
+}
+.session__description p {
+  margin: 0 0 22px;
+}
+.session__description ul {
+  margin: 0 0 22px 20px;
+}
