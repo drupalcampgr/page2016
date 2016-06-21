@@ -1,0 +1,19 @@
+uuid: b3422109-5ba1-4d85-8f79-e07bd5a709e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_speaker_label
+    - node.type.proposals
+id: node.proposals.field_speaker_label
+field_name: field_speaker_label
+entity_type: node
+bundle: proposals
+label: 'Speaker Label'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

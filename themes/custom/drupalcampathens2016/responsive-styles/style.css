@@ -34,6 +34,21 @@
     float: none;
     width: 100%;
   }
+
+  /* Speaker In*/
+  .speaker--session {
+    position: static;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 45px;
+  }
+  .speaker__photo--session {
+    display: none;
+  }
+  .speaker__label {
+   margin-bottom: 10px;
+  }
+
 }
 
 @media screen and (min-width : 780px) and (max-width : 979px) {

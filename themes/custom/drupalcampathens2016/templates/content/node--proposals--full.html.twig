@@ -81,11 +81,32 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<div class="schedule__time">{{ content.field_session_time }}</div>
-{{ title_prefix }}
-<div class="schedule__title">{{ content.field_session_title }}</div>
-{{ title_suffix }}
-<div class="schedule__photo">{{ content.field_speaker_image }}</div>
-<div class="schedule__by"><strong> By {{ content.field_speaker_name }}</strong></div>
-<div class="schedule__info">{{ content.body }}</div>
-<a class="schedule__link" href="{{ url }}">{{ content.field_session_title }}</a>
+<main class="main main--inner">
+  <article>
+    <div class="heading heading--session">
+      <h2 class="container"><a href="{{ url('view.submitted_proposals.page_1') }}">Back to Schedule</a></h2>
+    </div>
+    <div class="content session">
+      <div class="session__container container">
+        <div class="session__date">{{ content.field_day }}</div>
+        <div class="session__day">{{ day_name }}</div>
+        <div class="session__year">2016</div>
+        <div class="session__time">{{ content.field_session_time }}</div>
+        {{ title_prefix }}
+        <div class="session__title">{{ content.field_session_title }}</div>
+        {{ title_suffix }}
+        <div class="session__level">{{ content.field_session_level }}</div>
+        <div class="session__track">{{ content.field_session_track }}</div>
+        <div class="speaker speaker--session">
+          <div class="speaker__photo speaker__photo--session">
+            {{ content.field_speaker_image }}
+          </div>
+          <div class="speaker__label">{{ content.field_speaker_label }}</div>
+          <div class="speaker__name speaker__name--session">{{ content.field_speaker_name }}</div>
+          <div class="speaker__intro">{{ content.field_speaker_intro }}</div>
+        </div>
+        <div class="session__description">{{ content.body }}</div>
+      </div>
+    </div>
+  </article>
+</main>

@@ -1,0 +1,23 @@
+uuid: d9eecd8e-4e8b-4fe4-a1f4-c5995ac20800
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_to
+    - node.type.proposals
+  module:
+    - link
+id: node.proposals.field_link_to
+field_name: field_link_to
+entity_type: node
+bundle: proposals
+label: 'Link to'
+description: 'Used only for workshops and breaks. Provide the link to the full item ex node/4'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 0
+field_type: link

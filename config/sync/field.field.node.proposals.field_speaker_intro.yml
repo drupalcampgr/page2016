@@ -1,0 +1,19 @@
+uuid: e289aaa3-449b-47fc-a798-48ac552f479d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_speaker_intro
+    - node.type.proposals
+id: node.proposals.field_speaker_intro
+field_name: field_speaker_intro
+entity_type: node
+bundle: proposals
+label: 'Speaker Intro'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

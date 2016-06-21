@@ -1,0 +1,28 @@
+uuid: b01d95d3-b267-41d8-82f7-b119c3f33a84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_track
+    - node.type.proposals
+    - taxonomy.vocabulary.track
+id: node.proposals.field_session_track
+field_name: field_session_track
+entity_type: node
+bundle: proposals
+label: Track
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      track: track
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

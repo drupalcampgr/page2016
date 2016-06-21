@@ -1,0 +1,28 @@
+uuid: 14bdf750-f4f2-429d-9b7a-a475375fd3b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_level
+    - node.type.proposals
+    - taxonomy.vocabulary.level
+id: node.proposals.field_session_level
+field_name: field_session_level
+entity_type: node
+bundle: proposals
+label: 'Session Level'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      level: level
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
