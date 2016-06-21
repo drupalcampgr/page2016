@@ -1289,7 +1289,7 @@ textarea {
   -webkit-flex: 1 0 100%;
   -ms-flex: 1 0 100%;
   flex: 1 0 100%;
-  padding: 28px 0;
+  padding: 28px 80px 28px 0;
   border-bottom: 2px solid #88d3db;
 }
 .schedule__session--split {
@@ -1303,7 +1303,7 @@ textarea {
   margin-right: 4%;
 }
 .schedule__row:nth-child(2) .schedule__session {
-  margin: -28px 0 0;
+  margin-top: -28px;
 }
 .schedule__row:last-child .schedule__session {
   border: none;
@@ -1316,7 +1316,7 @@ textarea {
   color: #959595;
 }
 .schedule__title {
-  margin: 0 80px 4px 0;
+  margin: 0 0 4px;
   font-size: 2.5rem;
   line-height: 3rem;
   font-family: 'Poppins', sans-serif;
@@ -1329,7 +1329,7 @@ textarea {
 }
 .schedule__photo {
   position: absolute;
-/*  top: 50%; */
+  top: 50%;
   right: 10px;
   width: 46px;
   margin: -23px 0 0;
