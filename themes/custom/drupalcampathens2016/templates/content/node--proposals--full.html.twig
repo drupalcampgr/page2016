@@ -98,9 +98,11 @@
         <div class="session__level">{{ content.field_session_level }}</div>
         <div class="session__track">{{ content.field_session_track }}</div>
         <div class="speaker speaker--session">
+          {% if content.field_speaker_image|render %}
           <div class="speaker__photo speaker__photo--session">
             {{ content.field_speaker_image }}
           </div>
+          {% endif %}
           <div class="speaker__label">{{ content.field_speaker_label }}</div>
           <div class="speaker__name speaker__name--session">{{ content.field_speaker_name }}</div>
           <div class="speaker__intro">{{ content.field_speaker_intro }}</div>
