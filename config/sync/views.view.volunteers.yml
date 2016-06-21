@@ -499,7 +499,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Registered Attendants'
+      title: Volunteers
       header: {  }
       footer: {  }
       empty: {  }

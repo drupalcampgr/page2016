@@ -302,7 +302,22 @@ display:
           expose:
             label: ''
           plugin_id: standard
-      title: 'Submitted proposals'
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+      title: Schedule
       header: {  }
       footer: {  }
       empty: {  }

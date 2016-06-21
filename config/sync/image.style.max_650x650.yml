@@ -10,11 +10,10 @@ _core:
 name: max_650x650
 label: 'Max 650x650'
 effects:
-  949c201a-77f5-48f6-ba00-be91eb1aad47:
-    uuid: 949c201a-77f5-48f6-ba00-be91eb1aad47
-    id: image_scale
-    weight: 1
+  322b1edb-dad3-49a5-86fb-ab1d4e793409:
+    uuid: 322b1edb-dad3-49a5-86fb-ab1d4e793409
+    id: image_scale_and_crop
+    weight: 2
     data:
       width: 650
       height: 650
-      upscale: false

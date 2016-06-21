@@ -14,20 +14,12 @@ dependencies:
     - node.type.proposals
   module:
     - responsive_image
-    - text
     - user
 id: node.proposals.teaser
 targetEntityType: node
 bundle: proposals
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 3
-    settings:
-      trim_length: 300
-    third_party_settings: {  }
   field_session_time:
     type: string
     weight: 0
@@ -44,7 +36,7 @@ content:
     third_party_settings: {  }
   field_speaker_image:
     type: responsive_image
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       responsive_image_style: narrow
@@ -58,6 +50,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
+  body: true
   field_day: true
   field_email: true
   links: true
