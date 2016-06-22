@@ -1511,3 +1511,19 @@ textarea {
 .session__description ul {
   margin: 0 0 22px 20px;
 }
+
+/* General pages */
+.page {
+
+}
+
+.page h2 {
+  margin: 30px 0;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: #0275bb;
+}
+
+.page p {
+  margin: 1em 0;
+}
