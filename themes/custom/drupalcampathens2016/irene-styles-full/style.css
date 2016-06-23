@@ -1513,17 +1513,13 @@ textarea {
 }
 
 /* General pages */
-.page {
-
-}
-
-.page h2 {
+.content__container h2 {
   margin: 30px 0;
   font-size: 3rem;
   line-height: 3.5rem;
   color: #0275bb;
 }
 
-.page p {
+.content__container p {
   margin: 1em 0;
 }
