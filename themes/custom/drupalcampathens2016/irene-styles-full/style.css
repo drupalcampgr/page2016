@@ -610,6 +610,18 @@ ul .main-menu__item a.is-active {
   margin: 0 0 60px;
   color: #0275bb;
 }
+.sponsors__link--featured {
+  display: block;
+  max-width: 328px;
+  margin: 0 auto;
+}
+.sponsors__link--other {
+  margin: 0 10px;
+  display: inline-block;
+}
+.sponsors__secondary-title {
+  margin: 90px 0 50px;
+}
 
 .location {
   position: relative;
