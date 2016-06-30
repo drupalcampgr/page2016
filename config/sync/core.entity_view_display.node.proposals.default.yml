@@ -27,11 +27,10 @@ bundle: proposals
 mode: default
 content:
   body:
-    type: text_trimmed
+    type: text_default
     weight: 1
     label: hidden
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings: {  }
   field_day:
     weight: 4
