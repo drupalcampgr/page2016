@@ -34,7 +34,7 @@ mean-menu:
     theme:
       responsive-styles/meanmenu.css: {}
   js:
-    js/MeanMenu/jquery.meanmenu.min.js: {}
+    js/meanMenu/jquery.meanmenu.min.js: {}
     js/meanmenu.js: {}
 
   dependencies:
